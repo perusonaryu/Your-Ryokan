@@ -13,10 +13,10 @@ import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
 import Vue from 'vue' 
 import router from './router' 
-// import Vuelidate from 'vuelidate'
+import Vuelidate from 'vuelidate'
 
 
-// Vue.use(Vuelidate)
+Vue.use(Vuelidate)
 Vue.use(Vuetify);
 
 /**
@@ -31,6 +31,10 @@ Vue.use(Vuetify);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+//旅館ページ(RyokanPage)で使う部品
+// Vue.component('RyokanItem', require('./components/Ryokan/RyokanItem.vue').default);
+Vue.component('RyokanForm', require('./components/Ryokan/RyokanForm.vue').default);
+Vue.component('RyokanCalender', require('./components/Ryokan/RyokanCalender.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
