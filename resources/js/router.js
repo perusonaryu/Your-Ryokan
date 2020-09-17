@@ -3,9 +3,10 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter);
 
-import hello from './components/Hello.vue'
-import world from './components/World.vue'
-import example from './components/ExampleComponent.vue'
+
+import toppage from './components/topPage.vue'
+import contact from './components/Contact.vue'
+import event from './components/Event.vue'
 
 
 export default new VueRouter({
@@ -16,30 +17,41 @@ export default new VueRouter({
             // routeのパス設定
             path: '/',
             // 名前付きルートを設定したい場合付与
-            name: 'example',
+            name: 'top-page',
             // コンポーネントの指定
-            component: example,
+            component: toppage,
+            
+            
             
         },
         {
             // routeのパス設定
-            path: '/world',
+            path: '/contact',
             // 名前付きルートを設定したい場合付与
-            name: 'world',
+            name: 'contact',
             // コンポーネントの指定
-            component: world,
+            component: contact,
+            
             
         },
         {
             // routeのパス設定
-            path: '/hello',
+            path: '/event',
             // 名前付きルートを設定したい場合付与
-            name: 'hello',
+            name: 'event',
             // コンポーネントの指定
-            component: hello,
+            component: event,
             
         },
 
 
-    ]
+
+    ],
+    scrollBehavior (to, from, savedPosition) {
+        if (savedPosition) {
+            return savedPosition
+        } else {
+            return { x: 0, y: 0 }
+        }
+    }
 });

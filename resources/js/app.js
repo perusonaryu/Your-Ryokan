@@ -30,7 +30,11 @@ Vue.use(Vuetify);
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('header-component', require('./components/Header.vue').default);
+Vue.component('top-detail', require('./components/topPage/topDetail.vue').default);
+Vue.component('ryokan-detail', require('./components/topPage/topRyokan.vue').default);
+Vue.component('event-detail', require('./components/topPage/topEvent.vue').default);
+Vue.component('footer-component', require('./components/Footer.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
