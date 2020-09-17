@@ -6,26 +6,18 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Laravel + Vue</title>
   <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <base href="<?php echo url('/');?>">
 </head>
-<body>
-  <div id="app">
-  <div class=" bg-gray-100 border-b border-gray-300 py-4">
-    <div class="container mx-auto d-flex justify-between">
-      <div class=" mx-auto">
-        <router-link class="mr-4" to="/">Home</router-link>
-        <router-link to="/about">about</router-link>
-      </div>
-      <div class=" mx-auto">
-        <router-link class="mr-4" to="/hello">hello</router-link>
-        <router-link to="/world">world</router-link>
-      </div>
-    </div>
-  </div>
-    <v-app>
-      <v-container>
-        <router-view></router-view>
-      </v-container>
+
+
+<body style="height:100%;">
+  <div id="app" style="height:100%;">
+    <v-app style="margin-top:64px;">
+      <header-component></header-component>
+      <router-view></router-view>
+      <footer-component></footer-component>
+
     </v-app>
   </div>
   <script src="{{mix('js/app.js')}}"></script>
