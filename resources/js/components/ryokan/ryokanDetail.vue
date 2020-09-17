@@ -62,7 +62,7 @@
    </v-row>
 </template>
 
-<style>
+<style scoped>
     .row{
         margin: 0 auto;
         width: 1100px;
