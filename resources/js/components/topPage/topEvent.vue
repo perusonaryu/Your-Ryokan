@@ -2,11 +2,10 @@
 <div class="event">
     <h1 class="tit">イベント</h1>
     <v-row justify="center">
-        <v-col md="3" class="event-card">
+        <v-col md="3" cols="11" class="event-card">
             <div class="card-wrap">
                 <v-card
                     class="mx-auto"
-                    max-width="400"
                 >
                     <v-img
                     class="white--text align-end"
@@ -38,11 +37,10 @@
 
             </div>
         </v-col>
-        <v-col md="3" class="event-card">
+        <v-col md="3" cols="11" class="event-card">
             <div class="card-wrap">
                 <v-card
                     class="mx-auto"
-                    max-width="400"
                 >
                     <v-img
                     class="white--text align-end"
@@ -74,11 +72,10 @@
 
             </div>
         </v-col>
-        <v-col md="3" class="event-card">
+        <v-col md="3" cols="11" class="event-card">
             <div class="card-wrap">
                 <v-card
                     class="mx-auto"
-                    max-width="400"
                 >
                     <v-img
                     class="white--text align-end"
@@ -111,7 +108,7 @@
         </v-col>
     </v-row>
 
-    <router-link to="/" class="button d-flex align-center justify-center">
+    <router-link to="/event" class="button d-flex align-center justify-center">
       <div>
         イベント一覧
       </div>
@@ -146,7 +143,7 @@ a{
     border-radius: 3px;
 }
 
-.event-card + .event-card{
+.event-card{
     margin-left: 10px;
 }
 
@@ -181,5 +178,15 @@ a{
   background-color:black;
   margin:18px auto 0;
 }
+
+
+@media (max-width: 670px)
+{
+.event-card{
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+}
+
 
 </style>

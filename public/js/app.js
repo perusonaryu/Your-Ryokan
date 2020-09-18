@@ -2066,94 +2066,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2167,6 +2079,25 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2252,7 +2183,40 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
+$(function () {
+  $('.hamburger').click(function () {
+    $(this).toggleClass('active'); // $('.globalMenuSp').fadeIn(1000);
+
+    if ($(this).hasClass('active')) {
+      $('.globalMenuSp').addClass('active').fadeIn(500);
+      $('.logo').hide(); // $('.globalMenuSp').fadeIn(2000);
+    } else {
+      $('.globalMenuSp').removeClass('active').fadeOut(500); // $('.globalMenuSp').fadeOut(1000);
+
+      $('.logo').show();
+    }
+  });
+  $('.link').click(function () {
+    $('.hamburger').toggleClass('active');
+    $('.globalMenuSp').removeClass('active').fadeOut(500);
+    $('.logo').show();
+  });
+});
 
 /***/ }),
 
@@ -2619,6 +2583,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2751,9 +2717,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2767,7 +2730,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -7344,7 +7306,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.form-wrap[data-v-4c2584f6]{\n    padding:130px;\n}\na.button[data-v-4c2584f6]{\n    text-decoration:none;\n    background-color: #1e88e5;\n    color:white;\n    height:50px;\n    border-radius:50px;\n    font-weight:bold;\n}\n\n", ""]);
+exports.push([module.i, "\n.form-wrap[data-v-4c2584f6]{\n    padding:130px 0;\n}\na.button[data-v-4c2584f6]{\n    text-decoration:none;\n    background-color: #1e88e5;\n    color:white;\n    height:50px;\n    border-radius:50px;\n    font-weight:bold;\n}\n\n", ""]);
 
 // exports
 
@@ -7363,7 +7325,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\na[data-v-5793e382]{\n    text-decoration: none;\n    color:white!important;\n}\n.event[data-v-5793e382]{\n    margin: 30px 0;\n}\n.tit[data-v-5793e382]{\n    text-align: center;\n    margin-bottom: 40px;\n}\n\n/* .event-card{\n    padding:0;\n    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);\n    border-radius: 3px;\n} */\n\n/* .event-card + .event-card{\n    margin-left: 10px;\n} */\n\n/* .card-wrap{\n    padding:5px;\n} */\n.card-wrap p[data-v-5793e382]{\n    color:#666666;\n    margin: 0;\n}\n.img-wrap[data-v-5793e382]{\n    padding:0;\n}\n.image[data-v-5793e382]{\n    border-radius:5px 0 0 5px!important;\n}\n.v-card__actions a[data-v-5793e382]{\n    width:100%;\n    text-decoration: none;\n    color:black;\n    background-color: #eeeeee;\n}\n.v-card__text[data-v-5793e382]{\n    padding:0 16px ;\n}\n.detail_btn[data-v-5793e382]{\n    color:black;\n}\n.button[data-v-5793e382]{\n  width:200px;\n  height: 50px;\n  border-radius:50px;\n  background-color:black;\n  margin:18px auto 0;\n}\n", ""]);
+exports.push([module.i, "\n*[data-v-5793e382]{\n    box-sizing: border-box;\n}\na[data-v-5793e382]{\n    text-decoration: none;\n    color:white!important;\n}\n.event[data-v-5793e382]{\n    margin: 30px 0;\n}\n.tit[data-v-5793e382]{\n    text-align: center;\n    margin-bottom: 40px;\n}\n\n/* .event-card{\n    padding:0;\n    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);\n    border-radius: 3px;\n} */\n\n/* .event-card + .event-card{\n    margin-left: 10px;\n} */\n\n/* .card-wrap{\n    padding:5px;\n} */\n.card-wrap p[data-v-5793e382]{\n    color:#666666;\n    margin: 0;\n}\n.img-wrap[data-v-5793e382]{\n    padding:0;\n}\n.image[data-v-5793e382]{\n    border-radius:5px 0 0 5px;\n}\n\n/* .text{\n    padding:0;\n} */\n.v-card__actions a[data-v-5793e382]{\n    width:100%;\n    text-decoration: none;\n    color:black;\n    background-color: #eeeeee;\n}\n.v-card__text[data-v-5793e382]{\n    padding:0 16px ;\n}\n.detail_btn[data-v-5793e382]{\n    color:black;\n}\n.button[data-v-5793e382]{\n  width:200px;\n  height: 50px;\n  border-radius:50px;\n  background-color:black;\n  margin:18px auto 0;\n}\n@media (max-width: 670px)\n{\n.card[data-v-5793e382]{\n    width:100%;\n}\n.event-card[data-v-5793e382]{\n    padding:0;\n    margin-bottom: 10px;\n}\n.text[data-v-5793e382]{\n    padding:0;\n}\n.image[data-v-5793e382]{\n    border-radius:5px;\n}\n.img-wrap[data-v-5793e382]{\n    width:100%;\n}\n.card-wrap[data-v-5793e382]{\n    width:100%;\n}\n}\n", ""]);
 
 // exports
 
@@ -7382,7 +7344,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.footer[data-v-61a7c374]{\n    background-color: black;\n    color:white;\n    padding:30px 0;\n}\n.icons i+i[data-v-61a7c374]{\n    margin-left: 10px;\n}\n.text[data-v-61a7c374]{\n    text-align: center;\n}\n.text p[data-v-61a7c374]{\n    text-align: center;\n}\n.text p+p[data-v-61a7c374]{\n    margin-top: 10px;\n}\n", ""]);
+exports.push([module.i, "\na[data-v-61a7c374]{\n    color:white!important;\n    text-decoration: none;\n}\n.footer[data-v-61a7c374]{\n    background-color: black;\n    color:white;\n    padding:30px 0;\n}\n.icons i+i[data-v-61a7c374]{\n    margin-left: 10px;\n}\n.text[data-v-61a7c374]{\n    text-align: center;\n}\n.text p[data-v-61a7c374]{\n    text-align: center;\n}\n.text p+p[data-v-61a7c374]{\n    margin-top: 10px;\n}\n", ""]);
 
 // exports
 
@@ -7401,7 +7363,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\na[data-v-1f42fb90]{\n    text-decoration:none;\n    color:white!important;\n    font-size:20px;\n}\na+a[data-v-1f42fb90]{\n    margin-left: 20px;\n}\n.header[data-v-1f42fb90]{\n    opacity:0.4;\n}\n.logo[data-v-1f42fb90]{\n    opacity:1;\n    color:white;\n    font-size:30px;\n    font-weight:bold;\n    font-family: 'Noto Serif JP';\n}\n", ""]);
+exports.push([module.i, "\na[data-v-1f42fb90]{\n    text-decoration:none;\n    color:white!important;\n    font-size:20px;\n}\na+a[data-v-1f42fb90]{\n    margin-left: 20px;\n}\n.header[data-v-1f42fb90]{\n    opacity:0.4;\n}\n.logo[data-v-1f42fb90]{\n    opacity:1;\n    color:white;\n    font-size:30px;\n    font-weight:bold;\n    font-family: 'Noto Serif JP';\n}\n\n\n\n\n\n/*ハンバーガーボタン*/\n.hamburger[data-v-1f42fb90] {\n  /* display : block;\n  position: fixed;\n  z-index : 3;\n  right : 13px;\n  top   : 12px;\n  width : 42px;\n  height: 42px;\n  cursor: pointer;\n  text-align: center; */\n  z-index : 3;\n  position: relative;\n  width: 36px;\n  height: 32px;\n  cursor: pointer;\n  /* top   : 12px; */\n  right : 13px;\n  display: none;\n  \n  /* padding:2px 0; */\n}\n.hamburger span[data-v-1f42fb90] {\n  /* display : block;\n  position: absolute;\n  width   : 30px;\n  height  : 2px ;\n  left    : 6px;\n  background : #555;\n  -webkit-transition: 0.3s ease-in-out;\n  -moz-transition   : 0.3s ease-in-out;\n  transition        : 0.3s ease-in-out; */\n  position: absolute;\n  left: 0;\n  width: 100%;\n  height: 2px;\n  background-color: white;\n  border-radius: 4px;\n}\n.hamburger[data-v-1f42fb90], .hamburger span[data-v-1f42fb90]{\n    \n    transition: all .5s;\n    box-sizing: border-box;\n}\n.hamburger span[data-v-1f42fb90]:nth-child(1) {\n  /* top: 10px; */\n  top: 0;\n}\n.hamburger span[data-v-1f42fb90]:nth-child(2) {\n  /* top: 20px; */\n  top: 15px;\n}\n.hamburger span[data-v-1f42fb90]:nth-child(3) {\n  /* top: 30px; */\n  bottom: 0;\n}\n\n/* ナビ開いてる時のボタン */\n.hamburger.active[data-v-1f42fb90] {\n    transform: rotate(360deg);\n}\n.hamburger.active span[data-v-1f42fb90]:nth-child(1) {\n  transform: translateY(15px) rotate(-45deg);\n}\n.hamburger.active span[data-v-1f42fb90]:nth-child(2) {\n  transform: translateY(0) rotate(45deg);\n}\n.hamburger.active span[data-v-1f42fb90]:nth-child(3) {\n  opacity: 0;\n}\nnav.globalMenuSp[data-v-1f42fb90] {\n  position: fixed;\n  z-index : 2;\n  top  : 0;\n  left : 0;\n  color: #fff;\n  background:black;\n  text-align: center;\n  width: 100%;\n  /* opacity: 0; */\n  display: none;\n  min-height:100vh;\n  /* transition: opacity .6s ease, visibility .6s ease; */\n}\nnav.globalMenuSp ul[data-v-1f42fb90] {\n  margin: 0 auto;\n  padding: 0;\n  width: 100%;\n}\nnav.globalMenuSp ul li[data-v-1f42fb90] {\n  list-style-type: none;\n  padding: 0;\n  width: 100%;\n  /* transition: .4s all; */\n}\nnav.globalMenuSp ul li[data-v-1f42fb90]:last-child {\n  padding-bottom: 0;\n}\nnav.globalMenuSp ul li.link[data-v-1f42fb90]:hover{\n  background :#ddd;\n}\nnav.globalMenuSp ul li a[data-v-1f42fb90] {\n  display: block;\n  color: #fff;\n  padding: 1em 0;\n  text-decoration :none;\n}\n\n/* nav.globalMenuSp.active {\n  opacity: 100;\n  display: inline-block;\n\n} */\n@media (max-width: 670px)\n{\n.nav_link[data-v-1f42fb90]{\n    display: none;\n}\n.hamburger[data-v-1f42fb90]{\n    z-index : 3;\n    display: block;\n}\nnav.globalMenuSp.active[data-v-1f42fb90]{\n    display: flex;\n    align-items: center;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -7420,7 +7382,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.row[data-v-31d1c3b6]{\n    margin: 0 auto;\n    width: 1100px;\n}\n.col[data-v-31d1c3b6]{\n    max-height: 440px;\n    height: 100%;\n    /* margin: 0 auto; */\n}\n.aa[data-v-31d1c3b6]{\n    width: 440px;\n}\n.ryokan_detail_card[data-v-31d1c3b6]{\n    position: relative;\n    height: 100%;\n    width: 100%;\n}\n.ryokan_detail_img[data-v-31d1c3b6]{\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform : translate(-50%,-50%);\n    width: 100%;\n    height: 320px;\n    border-radius: 10px;\n    /* vertical-align: bottom; */\n    /* display: block; */\n    /* object-fit: cover; */\n    /* top: 50%;\n    left: 50%;\n    -ms-transform: translate(-50%,-50%);\n    -webkit-transform: translate(-50%,-50%);\n    transform: translate(-50%,-50%);\n    margin:0;\n    padding:0; */\n}\n.ryokan_detail_text[data-v-31d1c3b6]{\n   position: relative;\n   height: 100%;\n   /* text-align: right; */\n}\n.place_ryokan_name[data-v-31d1c3b6]{\n    font-size: 28px;\n    line-height: 2;\n    font-family: serif;\n}\n.ryokan_detail_description[data-v-31d1c3b6]{\n    width: 100%;\n    padding-left:40px;\n    position: absolute;\n    top: 50%;\n    top: 50%;\n    transform : translateY(-50%);;\n    font-size: 16px;\n}\n/* .form{\n    height: 440px;\n} */\n/* .calender{\n    height: 100%;\n} */\n\n/* .v-picker{\n    width: 290px;\n    margin: 0 auto;\n} */\n.col6[data-v-31d1c3b6]{\n    text-align: center;\n}\n", ""]);
+exports.push([module.i, "\n.row[data-v-31d1c3b6]{\n    margin: 0 auto;\n    width: 1100px;\n}\n.col[data-v-31d1c3b6]{\n    max-height: 440px;\n    /* height: 100%;  */\n    margin: 0 auto;\n}\n.aa[data-v-31d1c3b6]{\n    width: 440px;\n}\n.ryokan_detail_card[data-v-31d1c3b6]{\n    position: relative;\n    height: 100%;\n    width: 100%;\n}\n.ryokan_detail_img[data-v-31d1c3b6]{\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform : translate(-50%,-50%);\n    width: 100%;\n    height: 320px;\n    border-radius: 10px;\n}\n.ryokan_detail_text[data-v-31d1c3b6]{\n   position: relative;\n   height: 100%;\n   /* text-align: right; */\n}\n.place_ryokan_name[data-v-31d1c3b6]{\n    font-size: 28px;\n    line-height: 2;\n    font-family: serif;\n}\n.ryokan_detail_description[data-v-31d1c3b6]{\n    width: 100%;\n    padding-left:40px;\n    /* position: absolute; */\n    /* top: 50%; */\n    /* top: 50%; */\n    /* -webkit-transform : translateY(-50%); */\n    /* transform : translateY(-50%);; */\n    font-size: 16px;\n}\n.col6[data-v-31d1c3b6]{\n    text-align: center;\n}\n", ""]);
 
 // exports
 
@@ -7446,6 +7408,25 @@ exports.push([module.i, "\ndiv.ryokan_card{\n    position: relative;\n    height
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n*{\n  box-sizing: border-box;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage/topDetail.vue?vue&type=style&index=0&id=0717af00&scoped=true&lang=css&":
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage/topDetail.vue?vue&type=style&index=0&id=0717af00&scoped=true&lang=css& ***!
@@ -7458,7 +7439,26 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.sub-image img[data-v-0717af00]{\n    width:100%;\n    height:350px;\n    border-radius:10px;\n}\n.text[data-v-0717af00]{\n    text-align: center;\n    line-height:3;\n    margin-top: 60px;\n    font-family: 'Noto Serif JP';\n    font-weight:200;\n}\n", ""]);
+exports.push([module.i, "\n.top-image[data-v-0717af00]{\n    background:url('https://cdn.vuetifyjs.com/images/parallax/material.jpg') center / cover;\n    min-height:100vh;\n    width:100%;\n}\n.sub-image img[data-v-0717af00]{\n    width:100%;\n    height:350px;\n    border-radius:10px;\n}\n.text[data-v-0717af00]{\n    text-align: center;\n    line-height:3;\n    margin-top: 60px;\n    font-family: 'Noto Serif JP';\n    font-weight:200;\n}\n@media (max-width: 670px)\n{\n.sub-image img[data-v-0717af00]{\n    border-radius:0;\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage/topDetail.vue?vue&type=style&index=1&lang=css&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage/topDetail.vue?vue&type=style&index=1&lang=css& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.v-parallax__image{\n    min-height:100vw;\n    background-size: cover;\n}\n", ""]);
 
 // exports
 
@@ -7477,7 +7477,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\na[data-v-77a464bb]{\n    text-decoration: none;\n    color:white!important;\n}\n.event[data-v-77a464bb]{\n    margin: 60px 0 60px;\n}\n.tit[data-v-77a464bb]{\n    text-align: center;\n    margin-bottom: 40px;\n}\n.event-card[data-v-77a464bb]{\n    padding:0;\n    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);\n    border-radius: 3px;\n}\n.event-card + .event-card[data-v-77a464bb]{\n    margin-left: 10px;\n}\n.card-wrap[data-v-77a464bb]{\n    padding:5px;\n}\n.card-wrap p[data-v-77a464bb]{\n    color:#666666;\n    margin: 0;\n}\n.v-card__actions a[data-v-77a464bb]{\n    width:100%;\n    text-decoration: none;\n    color:black;\n    background-color: #eeeeee;\n}\n.v-card__text[data-v-77a464bb]{\n    padding:0 16px ;\n}\n.detail_btn[data-v-77a464bb]{\n    color:black;\n}\n.button[data-v-77a464bb]{\n  width:200px;\n  height: 50px;\n  border-radius:50px;\n  background-color:black;\n  margin:18px auto 0;\n}\n\n", ""]);
+exports.push([module.i, "\na[data-v-77a464bb]{\n    text-decoration: none;\n    color:white!important;\n}\n.event[data-v-77a464bb]{\n    margin: 60px 0 60px;\n}\n.tit[data-v-77a464bb]{\n    text-align: center;\n    margin-bottom: 40px;\n}\n.event-card[data-v-77a464bb]{\n    padding:0;\n    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);\n    border-radius: 3px;\n}\n.event-card[data-v-77a464bb]{\n    margin-left: 10px;\n}\n.card-wrap[data-v-77a464bb]{\n    padding:5px;\n}\n.card-wrap p[data-v-77a464bb]{\n    color:#666666;\n    margin: 0;\n}\n.v-card__actions a[data-v-77a464bb]{\n    width:100%;\n    text-decoration: none;\n    color:black;\n    background-color: #eeeeee;\n}\n.v-card__text[data-v-77a464bb]{\n    padding:0 16px ;\n}\n.detail_btn[data-v-77a464bb]{\n    color:black;\n}\n.button[data-v-77a464bb]{\n  width:200px;\n  height: 50px;\n  border-radius:50px;\n  background-color:black;\n  margin:18px auto 0;\n}\n@media (max-width: 670px)\n{\n.event-card[data-v-77a464bb]{\n    margin-left: 0;\n    margin-bottom: 10px;\n}\n}\n\n\n", ""]);
 
 // exports
 
@@ -38842,6 +38842,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./topPage.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage/topDetail.vue?vue&type=style&index=0&id=0717af00&scoped=true&lang=css&":
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage/topDetail.vue?vue&type=style&index=0&id=0717af00&scoped=true&lang=css& ***!
@@ -38851,6 +38881,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./topDetail.vue?vue&type=style&index=0&id=0717af00&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage/topDetail.vue?vue&type=style&index=0&id=0717af00&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage/topDetail.vue?vue&type=style&index=1&lang=css&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage/topDetail.vue?vue&type=style&index=1&lang=css& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./topDetail.vue?vue&type=style&index=1&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage/topDetail.vue?vue&type=style&index=1&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -39547,7 +39607,7 @@ var render = function() {
             [
               _c(
                 "v-col",
-                { attrs: { md: "7" } },
+                { attrs: { md: "7", cols: "11" } },
                 [
                   _c("v-text-field", {
                     attrs: { outlined: "", label: "お名前", required: "" },
@@ -39641,369 +39701,211 @@ var render = function() {
         "v-row",
         { attrs: { justify: "center", align: "center" } },
         [
-          _c("v-col", { staticClass: "event-card", attrs: { md: "5" } }, [
-            _c(
-              "div",
-              { staticClass: "card-wrap" },
-              [
-                _c(
-                  "v-card",
-                  { staticClass: "mx-auto", attrs: { "max-width": "100%" } },
-                  [
-                    _c(
-                      "v-row",
-                      [
-                        _c(
-                          "v-col",
-                          { staticClass: "img-wrap", attrs: { md: "6" } },
-                          [
-                            _c("v-img", {
-                              staticClass: "white--text image",
-                              attrs: {
-                                height: "100%",
-                                src:
-                                  "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "v-col",
-                          { attrs: { md: "6" } },
-                          [
-                            _c(
-                              "v-card-subtitle",
-                              { staticClass: "pb-0 mb-1" },
-                              [_vm._v("From 2020/6/3 to 2020/9/3")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-card-text",
-                              { staticClass: "text--primary" },
-                              [
-                                _c("h4", { staticClass: "mb-2" }, [
-                                  _vm._v("地名　　旅館名")
-                                ]),
-                                _vm._v(" "),
-                                _c("h4", [_vm._v("イベント名")]),
-                                _vm._v(" "),
-                                _c("p", [
-                                  _vm._v(
-                                    "\n                                あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                                あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                            "
+          _c(
+            "v-col",
+            { staticClass: "event-card", attrs: { md: "5", cols: "11" } },
+            [
+              _c(
+                "div",
+                { staticClass: "card-wrap" },
+                [
+                  _c(
+                    "v-card",
+                    { staticClass: "card" },
+                    [
+                      _c(
+                        "v-row",
+                        { attrs: { justify: "center" } },
+                        [
+                          _c(
+                            "v-col",
+                            {
+                              staticClass: "img-wrap",
+                              attrs: { md: "6", cols: "11" }
+                            },
+                            [
+                              _c("v-img", {
+                                staticClass: "white--text image",
+                                attrs: {
+                                  height: "100%",
+                                  width: "100%",
+                                  src:
+                                    "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                                }
+                              })
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-col",
+                            {
+                              staticClass: "text",
+                              attrs: { md: "6", cols: "11" }
+                            },
+                            [
+                              _c(
+                                "v-card-subtitle",
+                                { staticClass: "pb-0 mb-1" },
+                                [_vm._v("From 2020/6/3 to 2020/9/3")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-card-text",
+                                { staticClass: "text--primary" },
+                                [
+                                  _c("h4", { staticClass: "mb-2" }, [
+                                    _vm._v("地名　　旅館名")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("h4", [_vm._v("イベント名")]),
+                                  _vm._v(" "),
+                                  _c("p", [
+                                    _vm._v(
+                                      "\n                                あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                                あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                            "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-card-actions",
+                                [
+                                  _c(
+                                    "router-link",
+                                    {
+                                      staticClass:
+                                        "d-flex align-center justify-center mb-5",
+                                      attrs: { to: "/" }
+                                    },
+                                    [
+                                      _c("div", { staticClass: "detail_btn" }, [
+                                        _vm._v(
+                                          "\n                                        詳細\n                                    "
+                                        )
+                                      ])
+                                    ]
                                   )
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-card-actions",
-                              [
-                                _c(
-                                  "router-link",
-                                  {
-                                    staticClass:
-                                      "d-flex align-center justify-center mb-5",
-                                    attrs: { to: "/" }
-                                  },
-                                  [
-                                    _c("div", { staticClass: "detail_btn" }, [
-                                      _vm._v(
-                                        "\n                                        詳細\n                                    "
-                                      )
-                                    ])
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ]),
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ]
+          ),
           _vm._v(" "),
-          _c("v-col", { staticClass: "event-card", attrs: { md: "5" } }, [
-            _c(
-              "div",
-              { staticClass: "card-wrap" },
-              [
-                _c(
-                  "v-card",
-                  { staticClass: "mx-auto", attrs: { "max-width": "100%" } },
-                  [
-                    _c(
-                      "v-row",
-                      [
-                        _c(
-                          "v-col",
-                          { staticClass: "img-wrap", attrs: { md: "6" } },
-                          [
-                            _c("v-img", {
-                              staticClass: "white--text image",
-                              attrs: {
-                                height: "100%",
-                                src:
-                                  "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "v-col",
-                          { attrs: { md: "6" } },
-                          [
-                            _c(
-                              "v-card-subtitle",
-                              { staticClass: "pb-0 mb-1" },
-                              [_vm._v("From 2020/6/3 to 2020/9/3")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-card-text",
-                              { staticClass: "text--primary" },
-                              [
-                                _c("h4", { staticClass: "mb-2" }, [
-                                  _vm._v("地名　　旅館名")
-                                ]),
-                                _vm._v(" "),
-                                _c("h4", [_vm._v("イベント名")]),
-                                _vm._v(" "),
-                                _c("p", [
-                                  _vm._v(
-                                    "\n                                あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                                あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                            "
+          _c(
+            "v-col",
+            { staticClass: "event-card", attrs: { md: "5", cols: "11" } },
+            [
+              _c(
+                "div",
+                { staticClass: "card-wrap" },
+                [
+                  _c(
+                    "v-card",
+                    { staticClass: "card" },
+                    [
+                      _c(
+                        "v-row",
+                        { attrs: { justify: "center" } },
+                        [
+                          _c(
+                            "v-col",
+                            {
+                              staticClass: "img-wrap",
+                              attrs: { md: "6", cols: "11" }
+                            },
+                            [
+                              _c("v-img", {
+                                staticClass: "white--text image",
+                                attrs: {
+                                  height: "100%",
+                                  width: "100%",
+                                  src:
+                                    "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                                }
+                              })
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-col",
+                            {
+                              staticClass: "text",
+                              attrs: { md: "6", cols: "11" }
+                            },
+                            [
+                              _c(
+                                "v-card-subtitle",
+                                { staticClass: "pb-0 mb-1" },
+                                [_vm._v("From 2020/6/3 to 2020/9/3")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-card-text",
+                                { staticClass: "text--primary" },
+                                [
+                                  _c("h4", { staticClass: "mb-2" }, [
+                                    _vm._v("地名　　旅館名")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("h4", [_vm._v("イベント名")]),
+                                  _vm._v(" "),
+                                  _c("p", [
+                                    _vm._v(
+                                      "\n                                あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                                あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                            "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-card-actions",
+                                [
+                                  _c(
+                                    "router-link",
+                                    {
+                                      staticClass:
+                                        "d-flex align-center justify-center mb-5",
+                                      attrs: { to: "/" }
+                                    },
+                                    [
+                                      _c("div", { staticClass: "detail_btn" }, [
+                                        _vm._v(
+                                          "\n                                        詳細\n                                    "
+                                        )
+                                      ])
+                                    ]
                                   )
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-card-actions",
-                              [
-                                _c(
-                                  "router-link",
-                                  {
-                                    staticClass:
-                                      "d-flex align-center justify-center mb-5",
-                                    attrs: { to: "/" }
-                                  },
-                                  [
-                                    _c("div", { staticClass: "detail_btn" }, [
-                                      _vm._v(
-                                        "\n                                        詳細\n                                    "
-                                      )
-                                    ])
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ]),
-          _vm._v(" "),
-          _c("v-col", { staticClass: "event-card", attrs: { md: "5" } }, [
-            _c(
-              "div",
-              { staticClass: "card-wrap" },
-              [
-                _c(
-                  "v-card",
-                  { staticClass: "mx-auto", attrs: { "max-width": "100%" } },
-                  [
-                    _c(
-                      "v-row",
-                      [
-                        _c(
-                          "v-col",
-                          { staticClass: "img-wrap", attrs: { md: "6" } },
-                          [
-                            _c("v-img", {
-                              staticClass: "white--text image",
-                              attrs: {
-                                height: "100%",
-                                src:
-                                  "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "v-col",
-                          { attrs: { md: "6" } },
-                          [
-                            _c(
-                              "v-card-subtitle",
-                              { staticClass: "pb-0 mb-1" },
-                              [_vm._v("From 2020/6/3 to 2020/9/3")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-card-text",
-                              { staticClass: "text--primary" },
-                              [
-                                _c("h4", { staticClass: "mb-2" }, [
-                                  _vm._v("地名　　旅館名")
-                                ]),
-                                _vm._v(" "),
-                                _c("h4", [_vm._v("イベント名")]),
-                                _vm._v(" "),
-                                _c("p", [
-                                  _vm._v(
-                                    "\n                                あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                                あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                            "
-                                  )
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-card-actions",
-                              [
-                                _c(
-                                  "router-link",
-                                  {
-                                    staticClass:
-                                      "d-flex align-center justify-center mb-5",
-                                    attrs: { to: "/" }
-                                  },
-                                  [
-                                    _c("div", { staticClass: "detail_btn" }, [
-                                      _vm._v(
-                                        "\n                                        詳細\n                                    "
-                                      )
-                                    ])
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ]),
-          _vm._v(" "),
-          _c("v-col", { staticClass: "event-card", attrs: { md: "5" } }, [
-            _c(
-              "div",
-              { staticClass: "card-wrap" },
-              [
-                _c(
-                  "v-card",
-                  { staticClass: "mx-auto", attrs: { "max-width": "100%" } },
-                  [
-                    _c(
-                      "v-row",
-                      [
-                        _c(
-                          "v-col",
-                          { staticClass: "img-wrap", attrs: { md: "6" } },
-                          [
-                            _c("v-img", {
-                              staticClass: "white--text image",
-                              attrs: {
-                                height: "100%",
-                                src:
-                                  "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "v-col",
-                          { attrs: { md: "6" } },
-                          [
-                            _c(
-                              "v-card-subtitle",
-                              { staticClass: "pb-0 mb-1" },
-                              [_vm._v("From 2020/6/3 to 2020/9/3")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-card-text",
-                              { staticClass: "text--primary" },
-                              [
-                                _c("h4", { staticClass: "mb-2" }, [
-                                  _vm._v("地名　　旅館名")
-                                ]),
-                                _vm._v(" "),
-                                _c("h4", [_vm._v("イベント名")]),
-                                _vm._v(" "),
-                                _c("p", [
-                                  _vm._v(
-                                    "\n                                あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                                あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                            "
-                                  )
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-card-actions",
-                              [
-                                _c(
-                                  "router-link",
-                                  {
-                                    staticClass:
-                                      "d-flex align-center justify-center mb-5",
-                                    attrs: { to: "/" }
-                                  },
-                                  [
-                                    _c("div", { staticClass: "detail_btn" }, [
-                                      _vm._v(
-                                        "\n                                        詳細\n                                    "
-                                      )
-                                    ])
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ])
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ]
+          )
         ],
         1
       ),
@@ -40079,7 +39981,43 @@ var render = function() {
             },
             [
               _c("div", { staticClass: "text" }, [
-                _c("p", [_vm._v("旅館・イベント・お問い合わせ")])
+                _c("p", [
+                  _c(
+                    "span",
+                    [
+                      _c("router-link", { attrs: { to: "/RyokanPage" } }, [
+                        _vm._v(
+                          "\n                      旅館\n                  "
+                        )
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v("\n              ・\n              "),
+                  _c(
+                    "span",
+                    [
+                      _c("router-link", { attrs: { to: "/event" } }, [
+                        _vm._v(
+                          "\n                      イベント\n                  "
+                        )
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v("\n              ・\n              "),
+                  _c(
+                    "span",
+                    [
+                      _c("router-link", { attrs: { to: "/contact" } }, [
+                        _vm._v(
+                          "\n                      お問い合わせ\n                  "
+                        )
+                      ])
+                    ],
+                    1
+                  )
+                ])
               ])
             ]
           ),
@@ -40152,8 +40090,6 @@ var render = function() {
           attrs: { color: "#aaacaf", fixed: "", flat: "" }
         },
         [
-          _c("v-app-bar-nav-icon"),
-          _vm._v(" "),
           _c(
             "router-link",
             { attrs: { to: "/" } },
@@ -40167,12 +40103,68 @@ var render = function() {
           _vm._v(" "),
           _c("v-spacer"),
           _vm._v(" "),
-          _c("router-link", { attrs: { to: "/RyokanPage" } }, [_vm._v("旅館")]),
+          _c(
+            "div",
+            { staticClass: "nav_link" },
+            [
+              _c("router-link", { attrs: { to: "/RyokanPage" } }, [
+                _vm._v("旅館")
+              ]),
+              _vm._v(" "),
+              _c("router-link", { attrs: { to: "/event" } }, [
+                _vm._v("イベント")
+              ]),
+              _vm._v(" "),
+              _c("router-link", { attrs: { to: "/contact" } }, [
+                _vm._v("お問い合わせ")
+              ])
+            ],
+            1
+          ),
           _vm._v(" "),
-          _c("router-link", { attrs: { to: "/event" } }, [_vm._v("イベント")]),
+          _c("div", { staticClass: "hamburger sp" }, [
+            _c("span"),
+            _vm._v(" "),
+            _c("span"),
+            _vm._v(" "),
+            _c("span")
+          ]),
           _vm._v(" "),
-          _c("router-link", { attrs: { to: "/contact" } }, [
-            _vm._v("お問い合わせ")
+          _c("nav", { staticClass: "globalMenuSp" }, [
+            _c("ul", [
+              _c(
+                "li",
+                { staticClass: "link" },
+                [
+                  _c("router-link", { attrs: { to: "/RyokanPage" } }, [
+                    _vm._v("旅館")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "link" },
+                [
+                  _c("router-link", { attrs: { to: "/event" } }, [
+                    _vm._v("イベント")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "link" },
+                [
+                  _c("router-link", { attrs: { to: "/contact" } }, [
+                    _vm._v("お問い合わせ")
+                  ])
+                ],
+                1
+              )
+            ])
           ])
         ],
         1
@@ -40355,136 +40347,153 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "v-row",
-    { attrs: { "no-gutters": "" } },
+    "div",
     [
       _c(
-        "v-col",
-        { staticClass: "aa", attrs: { cols: "5", "no-gutters": "" } },
+        "v-row",
         [
-          _c("div", { staticClass: "ryokan_detail_card" }, [
-            _c("img", {
-              staticClass: "ryokan_detail_img",
-              attrs: {
-                src: __webpack_require__(/*! ../../../.././public/img/yojokan1.jpg */ "./public/img/yojokan1.jpg"),
-                alt: ""
-              }
-            })
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c("v-col", { attrs: { cols: "7" } }, [
-        _c("div", { staticClass: "ryokan_detail_text" }, [
-          _c("p", { staticClass: "ryokan_detail_description" }, [
-            _c("span", { staticClass: "place_ryokan_name" }, [
-              _vm._v("鳥取  養生館")
-            ]),
-            _c("br"),
-            _vm._v(
-              "\n                 心と体を整え、本来の自分に還る宿、古より豊かな水を湛える「東郷湖」"
-            ),
-            _c("br"),
-            _vm._v(
-              "    \n                 その静かな湖畔に私たちが小さな別荘を構えたのは、明治五年のことでした。"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 心を癒す天然温泉、体に染み入る「じげの味」―地元の皆様が集う別荘は、"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 いつしか宿となり、心と体の「養生の館」として親しまれてまいりました。"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 ここには華やかなものはありません。その代わり、いつまでも見飽きること"
-            ),
-            _c("br"),
-            _vm._v(
-              "    \n                 のない「水辺の風景」と「自然の音」があります。日々ひたむきなあなたへ贈る"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 、大人の休息時間。湖畔のリトリート「養生館」へようこそ。\n                 \n             "
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("v-col", { attrs: { cols: "7" } }, [
-        _c("div", { staticClass: "ryokan_detail_text" }, [
-          _c("p", { staticClass: "ryokan_detail_description" }, [
-            _c("span", { staticClass: "place_ryokan_name" }, [
-              _vm._v("鳥取  イベント")
-            ]),
-            _c("br"),
-            _vm._v(
-              "\n                 標高900mの三徳山のふもとにある三徳山三佛寺（みとくさんさんぶつじ）では"
-            ),
-            _c("br"),
-            _vm._v(
-              "    \n                 秋には周囲の山々が紅葉し、高台からの景色が楽しめます。"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 標高440m付近に位置する重文の文殊堂と地蔵堂は、崖の上の岩角に建てられ、"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 周囲は回廊になっているほか、標高520mの断崖絶壁に造られた"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 奥院、国宝投入堂は見るものを圧倒します。"
-            ),
-            _c("br")
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "v-col",
-        { staticClass: "aa", attrs: { cols: "5", "no-gutters": "" } },
-        [
-          _c("div", { staticClass: "ryokan_detail_card" }, [
-            _c("img", {
-              staticClass: "ryokan_detail_img",
-              attrs: {
-                src: __webpack_require__(/*! ../../../.././public/img/tottori_eve1.jpg */ "./public/img/tottori_eve1.jpg"),
-                alt: ""
-              }
-            })
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "v-col",
-        { attrs: { cols: "6" } },
-        [
-          _c("v-date-picker", {
-            attrs: { color: "black", locale: "en", width: "500" },
-            model: {
-              value: _vm.selectDate,
-              callback: function($$v) {
-                _vm.selectDate = $$v
-              },
-              expression: "selectDate"
-            }
-          }),
+          _c(
+            "v-col",
+            { staticClass: "aa", attrs: { cols: "5", "no-gutters": "" } },
+            [
+              _c("div", { staticClass: "ryokan_detail_card" }, [
+                _c("img", {
+                  staticClass: "ryokan_detail_img",
+                  attrs: {
+                    src: __webpack_require__(/*! ../../../.././public/img/yojokan1.jpg */ "./public/img/yojokan1.jpg"),
+                    alt: ""
+                  }
+                })
+              ])
+            ]
+          ),
           _vm._v(" "),
-          _c("v-col", { attrs: { cols: "12" } }, [
-            _c("div", [_vm._v(_vm._s(_vm.selectDate))])
+          _c("v-col", { attrs: { cols: "7" } }, [
+            _c("div", { staticClass: "ryokan_detail_text" }, [
+              _c("p", { staticClass: "ryokan_detail_description" }, [
+                _c("span", { staticClass: "place_ryokan_name" }, [
+                  _vm._v("鳥取  養生館")
+                ]),
+                _c("br"),
+                _vm._v(
+                  "\n                    心と体を整え、本来の自分に還る宿、古より豊かな水を湛える「東郷湖」"
+                ),
+                _c("br"),
+                _vm._v(
+                  "    \n                    その静かな湖畔に私たちが小さな別荘を構えたのは、明治五年のことでした。"
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                    心を癒す天然温泉、体に染み入る「じげの味」―地元の皆様が集う別荘は、"
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                    いつしか宿となり、心と体の「養生の館」として親しまれてまいりました。"
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                    ここには華やかなものはありません。その代わり、いつまでも見飽きること"
+                ),
+                _c("br"),
+                _vm._v(
+                  "    \n                    のない「水辺の風景」と「自然の音」があります。日々ひたむきなあなたへ贈る"
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                    、大人の休息時間。湖畔のリトリート「養生館」へようこそ。\n                    \n                "
+                )
+              ])
+            ])
           ])
         ],
         1
       ),
       _vm._v(" "),
       _c(
-        "v-col",
-        { staticClass: "aa", attrs: { cols: "6" } },
-        [_c("RyokanForm")],
+        "v-row",
+        [
+          _c("v-col", { attrs: { cols: "7" } }, [
+            _c("div", { staticClass: "ryokan_detail_text" }, [
+              _c("p", { staticClass: "ryokan_detail_description" }, [
+                _c("span", { staticClass: "place_ryokan_name" }, [
+                  _vm._v("鳥取  イベント")
+                ]),
+                _c("br"),
+                _vm._v(
+                  "\n                    標高900mの三徳山のふもとにある三徳山三佛寺（みとくさんさんぶつじ）では"
+                ),
+                _c("br"),
+                _vm._v(
+                  "    \n                    秋には周囲の山々が紅葉し、高台からの景色が楽しめます。"
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                    標高440m付近に位置する重文の文殊堂と地蔵堂は、崖の上の岩角に建てられ、"
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                    周囲は回廊になっているほか、標高520mの断崖絶壁に造られた"
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                    奥院、国宝投入堂は見るものを圧倒します。"
+                ),
+                _c("br")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { staticClass: "aa", attrs: { cols: "5", "no-gutters": "" } },
+            [
+              _c("div", { staticClass: "ryokan_detail_card" }, [
+                _c("img", {
+                  staticClass: "ryokan_detail_img",
+                  attrs: {
+                    src: __webpack_require__(/*! ../../../.././public/img/tottori_eve1.jpg */ "./public/img/tottori_eve1.jpg"),
+                    alt: ""
+                  }
+                })
+              ])
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        [
+          _c(
+            "v-col",
+            { attrs: { cols: "6" } },
+            [
+              _c("v-date-picker", {
+                attrs: { color: "black", locale: "en", width: "500" },
+                model: {
+                  value: _vm.selectDate,
+                  callback: function($$v) {
+                    _vm.selectDate = $$v
+                  },
+                  expression: "selectDate"
+                }
+              }),
+              _vm._v(" "),
+              _c("v-col", { attrs: { cols: "12" } }, [
+                _c("div", [_vm._v(_vm._s(_vm.selectDate))])
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { staticClass: "aa", attrs: { cols: "6" } },
+            [_c("RyokanForm")],
+            1
+          )
+        ],
         1
       )
     ],
@@ -40672,13 +40681,13 @@ var render = function() {
           "div",
           { staticClass: "ryokan_card" },
           [
-            _c("p", { staticClass: "ryokan_text" }, [
-              _vm._v("鳥取"),
-              _c("br"),
-              _c("span", [_vm._v("養生館")])
-            ]),
-            _vm._v(" "),
             _c("router-link", { attrs: { to: "/RyokanDetail" } }, [
+              _c("p", { staticClass: "ryokan_text" }, [
+                _vm._v("鳥取"),
+                _c("br"),
+                _c("span", [_vm._v("養生館")])
+              ]),
+              _vm._v(" "),
               _c("img", {
                 staticClass: "ryokan_img",
                 attrs: {
@@ -40827,10 +40836,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee&scoped=true&":
-/*!**********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee&scoped=true& ***!
-  \**********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee&":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee& ***!
+  \**********************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40884,12 +40893,7 @@ var render = function() {
     "div",
     { staticClass: "top-detail" },
     [
-      _c("v-parallax", {
-        attrs: {
-          src: "https://cdn.vuetifyjs.com/images/parallax/material.jpg",
-          height: "650"
-        }
-      }),
+      _c("div", { staticClass: "top-image" }),
       _vm._v(" "),
       _c(
         "v-row",
@@ -40976,215 +40980,227 @@ var render = function() {
         "v-row",
         { attrs: { justify: "center" } },
         [
-          _c("v-col", { staticClass: "event-card", attrs: { md: "3" } }, [
-            _c(
-              "div",
-              { staticClass: "card-wrap" },
-              [
-                _c(
-                  "v-card",
-                  { staticClass: "mx-auto", attrs: { "max-width": "400" } },
-                  [
-                    _c(
-                      "v-img",
-                      {
-                        staticClass: "white--text align-end",
-                        attrs: {
-                          height: "200px",
-                          src:
-                            "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                        }
-                      },
-                      [_c("v-card-title")],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c("v-card-subtitle", { staticClass: "pb-0 mb-1" }, [
-                      _vm._v("From 2020/6/3 to 2020/9/3")
-                    ]),
-                    _vm._v(" "),
-                    _c("v-card-text", { staticClass: "text--primary" }, [
-                      _c("h4", { staticClass: "mb-2" }, [
-                        _vm._v("地名　　旅館名")
+          _c(
+            "v-col",
+            { staticClass: "event-card", attrs: { md: "3", cols: "11" } },
+            [
+              _c(
+                "div",
+                { staticClass: "card-wrap" },
+                [
+                  _c(
+                    "v-card",
+                    { staticClass: "mx-auto" },
+                    [
+                      _c(
+                        "v-img",
+                        {
+                          staticClass: "white--text align-end",
+                          attrs: {
+                            height: "200px",
+                            src:
+                              "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                          }
+                        },
+                        [_c("v-card-title")],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("v-card-subtitle", { staticClass: "pb-0 mb-1" }, [
+                        _vm._v("From 2020/6/3 to 2020/9/3")
                       ]),
                       _vm._v(" "),
-                      _c("h4", [_vm._v("イベント名")]),
+                      _c("v-card-text", { staticClass: "text--primary" }, [
+                        _c("h4", { staticClass: "mb-2" }, [
+                          _vm._v("地名　　旅館名")
+                        ]),
+                        _vm._v(" "),
+                        _c("h4", [_vm._v("イベント名")]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "\n                        あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                        あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                    "
+                          )
+                        ])
+                      ]),
                       _vm._v(" "),
-                      _c("p", [
-                        _vm._v(
-                          "\n                        あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                        あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                    "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "v-card-actions",
-                      [
-                        _c(
-                          "router-link",
-                          {
-                            staticClass:
-                              "d-flex align-center justify-center mb-5",
-                            attrs: { to: "/" }
-                          },
-                          [
-                            _c("div", { staticClass: "detail_btn" }, [
-                              _vm._v(
-                                "\n                                詳細\n                            "
-                              )
-                            ])
-                          ]
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ]),
+                      _c(
+                        "v-card-actions",
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass:
+                                "d-flex align-center justify-center mb-5",
+                              attrs: { to: "/" }
+                            },
+                            [
+                              _c("div", { staticClass: "detail_btn" }, [
+                                _vm._v(
+                                  "\n                                詳細\n                            "
+                                )
+                              ])
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ]
+          ),
           _vm._v(" "),
-          _c("v-col", { staticClass: "event-card", attrs: { md: "3" } }, [
-            _c(
-              "div",
-              { staticClass: "card-wrap" },
-              [
-                _c(
-                  "v-card",
-                  { staticClass: "mx-auto", attrs: { "max-width": "400" } },
-                  [
-                    _c(
-                      "v-img",
-                      {
-                        staticClass: "white--text align-end",
-                        attrs: {
-                          height: "200px",
-                          src:
-                            "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                        }
-                      },
-                      [_c("v-card-title")],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c("v-card-subtitle", { staticClass: "pb-0 mb-1" }, [
-                      _vm._v("From 2020/6/3 to 2020/9/3")
-                    ]),
-                    _vm._v(" "),
-                    _c("v-card-text", { staticClass: "text--primary" }, [
-                      _c("h4", { staticClass: "mb-2" }, [
-                        _vm._v("地名　　旅館名")
+          _c(
+            "v-col",
+            { staticClass: "event-card", attrs: { md: "3", cols: "11" } },
+            [
+              _c(
+                "div",
+                { staticClass: "card-wrap" },
+                [
+                  _c(
+                    "v-card",
+                    { staticClass: "mx-auto" },
+                    [
+                      _c(
+                        "v-img",
+                        {
+                          staticClass: "white--text align-end",
+                          attrs: {
+                            height: "200px",
+                            src:
+                              "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                          }
+                        },
+                        [_c("v-card-title")],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("v-card-subtitle", { staticClass: "pb-0 mb-1" }, [
+                        _vm._v("From 2020/6/3 to 2020/9/3")
                       ]),
                       _vm._v(" "),
-                      _c("h4", [_vm._v("イベント名")]),
+                      _c("v-card-text", { staticClass: "text--primary" }, [
+                        _c("h4", { staticClass: "mb-2" }, [
+                          _vm._v("地名　　旅館名")
+                        ]),
+                        _vm._v(" "),
+                        _c("h4", [_vm._v("イベント名")]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "\n                        あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                        あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                    "
+                          )
+                        ])
+                      ]),
                       _vm._v(" "),
-                      _c("p", [
-                        _vm._v(
-                          "\n                        あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                        あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                    "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "v-card-actions",
-                      [
-                        _c(
-                          "router-link",
-                          {
-                            staticClass:
-                              "d-flex align-center justify-center mb-5",
-                            attrs: { to: "/" }
-                          },
-                          [
-                            _c("div", { staticClass: "detail_btn" }, [
-                              _vm._v(
-                                "\n                                詳細\n                            "
-                              )
-                            ])
-                          ]
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ]),
+                      _c(
+                        "v-card-actions",
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass:
+                                "d-flex align-center justify-center mb-5",
+                              attrs: { to: "/" }
+                            },
+                            [
+                              _c("div", { staticClass: "detail_btn" }, [
+                                _vm._v(
+                                  "\n                                詳細\n                            "
+                                )
+                              ])
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ]
+          ),
           _vm._v(" "),
-          _c("v-col", { staticClass: "event-card", attrs: { md: "3" } }, [
-            _c(
-              "div",
-              { staticClass: "card-wrap" },
-              [
-                _c(
-                  "v-card",
-                  { staticClass: "mx-auto", attrs: { "max-width": "400" } },
-                  [
-                    _c(
-                      "v-img",
-                      {
-                        staticClass: "white--text align-end",
-                        attrs: {
-                          height: "200px",
-                          src:
-                            "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                        }
-                      },
-                      [_c("v-card-title")],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c("v-card-subtitle", { staticClass: "pb-0 mb-1" }, [
-                      _vm._v("From 2020/6/3 to 2020/9/3")
-                    ]),
-                    _vm._v(" "),
-                    _c("v-card-text", { staticClass: "text--primary" }, [
-                      _c("h4", { staticClass: "mb-2" }, [
-                        _vm._v("地名　　旅館名")
+          _c(
+            "v-col",
+            { staticClass: "event-card", attrs: { md: "3", cols: "11" } },
+            [
+              _c(
+                "div",
+                { staticClass: "card-wrap" },
+                [
+                  _c(
+                    "v-card",
+                    { staticClass: "mx-auto" },
+                    [
+                      _c(
+                        "v-img",
+                        {
+                          staticClass: "white--text align-end",
+                          attrs: {
+                            height: "200px",
+                            src:
+                              "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                          }
+                        },
+                        [_c("v-card-title")],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("v-card-subtitle", { staticClass: "pb-0 mb-1" }, [
+                        _vm._v("From 2020/6/3 to 2020/9/3")
                       ]),
                       _vm._v(" "),
-                      _c("h4", [_vm._v("イベント名")]),
+                      _c("v-card-text", { staticClass: "text--primary" }, [
+                        _c("h4", { staticClass: "mb-2" }, [
+                          _vm._v("地名　　旅館名")
+                        ]),
+                        _vm._v(" "),
+                        _c("h4", [_vm._v("イベント名")]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "\n                        あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                        あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                    "
+                          )
+                        ])
+                      ]),
                       _vm._v(" "),
-                      _c("p", [
-                        _vm._v(
-                          "\n                        あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                        あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                    "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "v-card-actions",
-                      [
-                        _c(
-                          "router-link",
-                          {
-                            staticClass:
-                              "d-flex align-center justify-center mb-5",
-                            attrs: { to: "/" }
-                          },
-                          [
-                            _c("div", { staticClass: "detail_btn" }, [
-                              _vm._v(
-                                "\n                                詳細\n                            "
-                              )
-                            ])
-                          ]
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ])
+                      _c(
+                        "v-card-actions",
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass:
+                                "d-flex align-center justify-center mb-5",
+                              attrs: { to: "/" }
+                            },
+                            [
+                              _c("div", { staticClass: "detail_btn" }, [
+                                _vm._v(
+                                  "\n                                詳細\n                            "
+                                )
+                              ])
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ]
+          )
         ],
         1
       ),
@@ -41193,7 +41209,7 @@ var render = function() {
         "router-link",
         {
           staticClass: "button d-flex align-center justify-center",
-          attrs: { to: "/" }
+          attrs: { to: "/event" }
         },
         [_c("div", [_vm._v("\n        イベント一覧\n      ")])]
       )
@@ -41493,7 +41509,7 @@ var render = function() {
         "router-link",
         {
           staticClass: "button d-flex align-center justify-center",
-          attrs: { to: "/" }
+          attrs: { to: "/RyokanPage" }
         },
         [_c("div", [_vm._v("\n      旅館一覧\n    ")])]
       )
@@ -103270,9 +103286,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _topPage_vue_vue_type_template_id_26dbf5ee_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./topPage.vue?vue&type=template&id=26dbf5ee&scoped=true& */ "./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee&scoped=true&");
+/* harmony import */ var _topPage_vue_vue_type_template_id_26dbf5ee___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./topPage.vue?vue&type=template&id=26dbf5ee& */ "./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee&");
 /* harmony import */ var _topPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./topPage.vue?vue&type=script&lang=js& */ "./resources/js/components/topPage.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _topPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./topPage.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -103280,13 +103298,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _topPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _topPage_vue_vue_type_template_id_26dbf5ee_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _topPage_vue_vue_type_template_id_26dbf5ee_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _topPage_vue_vue_type_template_id_26dbf5ee___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _topPage_vue_vue_type_template_id_26dbf5ee___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  "26dbf5ee",
+  null,
   null
   
 )
@@ -103312,19 +103330,35 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee&scoped=true&":
-/*!****************************************************************************************!*\
-  !*** ./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee&scoped=true& ***!
-  \****************************************************************************************/
+/***/ "./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css& ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./topPage.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee& ***!
+  \****************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_topPage_vue_vue_type_template_id_26dbf5ee_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./topPage.vue?vue&type=template&id=26dbf5ee&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_topPage_vue_vue_type_template_id_26dbf5ee_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_topPage_vue_vue_type_template_id_26dbf5ee___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./topPage.vue?vue&type=template&id=26dbf5ee& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_topPage_vue_vue_type_template_id_26dbf5ee___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_topPage_vue_vue_type_template_id_26dbf5ee_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_topPage_vue_vue_type_template_id_26dbf5ee___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -103342,7 +103376,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _topDetail_vue_vue_type_template_id_0717af00_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./topDetail.vue?vue&type=template&id=0717af00&scoped=true& */ "./resources/js/components/topPage/topDetail.vue?vue&type=template&id=0717af00&scoped=true&");
 /* harmony import */ var _topDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./topDetail.vue?vue&type=script&lang=js& */ "./resources/js/components/topPage/topDetail.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _topDetail_vue_vue_type_style_index_0_id_0717af00_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./topDetail.vue?vue&type=style&index=0&id=0717af00&scoped=true&lang=css& */ "./resources/js/components/topPage/topDetail.vue?vue&type=style&index=0&id=0717af00&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _topDetail_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./topDetail.vue?vue&type=style&index=1&lang=css& */ "./resources/js/components/topPage/topDetail.vue?vue&type=style&index=1&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -103351,7 +103387,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__["default"])(
   _topDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _topDetail_vue_vue_type_template_id_0717af00_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _topDetail_vue_vue_type_template_id_0717af00_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -103396,6 +103432,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topDetail_vue_vue_type_style_index_0_id_0717af00_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topDetail_vue_vue_type_style_index_0_id_0717af00_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topDetail_vue_vue_type_style_index_0_id_0717af00_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topDetail_vue_vue_type_style_index_0_id_0717af00_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
  /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topDetail_vue_vue_type_style_index_0_id_0717af00_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/topPage/topDetail.vue?vue&type=style&index=1&lang=css&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/topPage/topDetail.vue?vue&type=style&index=1&lang=css& ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topDetail_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./topDetail.vue?vue&type=style&index=1&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage/topDetail.vue?vue&type=style&index=1&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topDetail_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topDetail_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topDetail_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topDetail_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topDetail_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

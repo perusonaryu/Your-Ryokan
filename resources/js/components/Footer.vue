@@ -16,7 +16,26 @@
       </v-col>
       <v-col md="3" cols="12" class="d-flex justify-center align-center">
           <div class="text">
-            <p>旅館・イベント・お問い合わせ</p>
+            <p>
+                <span>
+                    <router-link to="/RyokanPage">
+                        旅館
+                    </router-link>
+                </span>
+                ・
+                <span>
+                    <router-link to="/event">
+                        イベント
+                    </router-link>
+                </span>
+                ・
+                <span>
+                    <router-link to="/contact">
+                        お問い合わせ
+                    </router-link>
+                </span>
+                
+            </p>
           </div>
       </v-col>
       <v-col md="3" cols="12" class="d-flex justify-center align-center">
@@ -49,6 +68,11 @@ export default {
 </script>
 
 <style scoped>
+a{
+    color:white!important;
+    text-decoration: none;
+}
+
 .footer{
     background-color: black;
     color:white;

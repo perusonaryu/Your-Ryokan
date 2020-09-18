@@ -2,7 +2,7 @@
   <div class="contact">
       <v-container>
         <v-row justify="center" align="center" class="form-wrap">
-            <v-col md="7">
+            <v-col md="7" cols="11">
                 <v-text-field
                 outlined
                 v-model="name"
@@ -45,7 +45,7 @@ export default {
 <style scoped>
 
 .form-wrap{
-    padding:130px;
+    padding:130px 0;
 }
 
 a.button{
