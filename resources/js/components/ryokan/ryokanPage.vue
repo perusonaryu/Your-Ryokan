@@ -4,16 +4,16 @@
       
         <v-col cols="6">
             <div class="ryokan_card">
-                <p class="ryokan_text">鳥取<br><span>養生館</span></p>
                 <router-link :to="`/RyokanDetail`">
                     <img src="../../../.././public/img/yojokan1.jpg" alt="" class="ryokan_img">
+                    <p class="ryokan_text">鳥取<br><span>養生館</span></p> 
                 </router-link> 
             </div> 
         </v-col>    
         <v-col cols="3" >
             <div class="ryokan_card">
-                <p class="ryokan_text">鳥取<br><span>養生館</span></p>
                 <router-link :to="`/RyokanDetail`">
+                    <p class="ryokan_text">鳥取<br><span>養生館</span></p>
                     <img src="../../../.././public/img/yojokan2.jpg" alt="" class="ryokan_img">
                 </router-link>
             </div>

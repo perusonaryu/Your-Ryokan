@@ -4,12 +4,12 @@
 
         <v-col cols="5" no-gutters class="aa">
             <div class="ryokan_detail_card">
-                <img src="../../../.././public/img/yojokan1.jpg" alt="" class="ryokan_detail_img">
+                <img src="../../../.././public/img/yojokan1.jpg" alt="" class="ryokan_detail_img" width="100%">
             </div>
         </v-col>
 
         <v-col cols="7">
-            <div class="ryokan_detail_text">
+            <!-- <div class="ryokan_detail_text"> -->
                 <p class="ryokan_detail_description">
                     <span class="place_ryokan_name">鳥取  養生館</span><br>
                     心と体を整え、本来の自分に還る宿、古より豊かな水を湛える「東郷湖」<br>    
@@ -21,10 +21,10 @@
                     、大人の休息時間。湖畔のリトリート「養生館」へようこそ。
                     
                 </p>
-            </div>
+            <!-- </div> -->
         </v-col>
 
-        <v-col cols="7">
+        <!-- <v-col cols="7">
             <div class="ryokan_detail_text">
                 <p class="ryokan_detail_description">
                     <span class="place_ryokan_name">鳥取  イベント</span><br>
@@ -36,33 +36,35 @@
                     
                 </p>
             </div>
-        </v-col>
+        </v-col> -->
           
-        <v-col cols="5" no-gutters class="aa">
+        <!-- <v-col cols="5" no-gutters class="aa">
             <div class="ryokan_detail_card">
                 <img src="../../../.././public/img/tottori_eve1.jpg" alt="" class="ryokan_detail_img">
             </div>
         </v-col>
 
         
-            <v-col cols="6" >
+            <v-col cols="6" > -->
                <!-- <v-container class="mt-12"> -->
                 
-                    <v-date-picker v-model="selectDate" color="black" locale="en" width="500"></v-date-picker>
+                    <!-- <v-date-picker v-model="selectDate" color="black" locale="en" width="500"></v-date-picker>
                 <v-col cols=12>
                     <div>{{ selectDate }}</div>
-                </v-col>
+                </v-col> -->
             
             <!-- </v-container> -->
-            </v-col>
+            <!-- </v-col>
             <v-col cols="6" class="aa">
                 <RyokanForm/>
-            </v-col>
+            </v-col> -->
                  
    </v-row>
 </template>
 
 <style scoped>
+
+
     .row{
         margin: 0 auto;
         width: 1100px;
@@ -93,13 +95,13 @@
         /* vertical-align: bottom; */
         /* display: block; */
         /* object-fit: cover; */
-        /* top: 50%;
+        top: 50%;
         left: 50%;
         -ms-transform: translate(-50%,-50%);
         -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
         margin:0;
-        padding:0; */
+        padding:0;
     }
 
     .ryokan_detail_text{
@@ -135,8 +137,8 @@
         margin: 0 auto;
     } */
 
-    .col6{
+    /* .col6{
         text-align: center;
-    }
+    } */
 </style>
 

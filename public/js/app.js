@@ -2256,6 +2256,88 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Kanri/RyokanAdd.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Kanri/RyokanAdd.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      ryokan: {},
+      ryokan_name: "",
+      ryokan_place: "",
+      ryokan_img: "",
+      ryokan_discription: "",
+      ryokan_url: "",
+      ryokan_region: ""
+    };
+  },
+  methods: {
+    addRyokan: function addRyokan() {
+      var _this = this;
+
+      axios.post("/api/ryokan", {
+        ryokan_name: this.ryokan_name,
+        ryokan_place: this.ryokan_place,
+        ryokan_img: this.ryokan_img,
+        ryokan_discription: this.ryokan_discription,
+        ryokan_url: this.ryokan_url,
+        ryokan_region: this.ryokan_region
+      }).then(function (response) {
+        _this.ryokan_name = "";
+        _this.ryokan_place = "";
+        _this.ryokan_img = "";
+        _this.ryokan_discription = "";
+        _this.ryokan_url = "";
+        _this.ryokan_region = "";
+      })["catch"](function (err) {
+        _this.message = err;
+      });
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanCalender.vue?vue&type=script&lang=js&":
 /*!********************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Ryokan/RyokanCalender.vue?vue&type=script&lang=js& ***!
@@ -7420,7 +7502,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.row[data-v-31d1c3b6]{\n    margin: 0 auto;\n    width: 1100px;\n}\n.col[data-v-31d1c3b6]{\n    max-height: 440px;\n    height: 100%;\n    /* margin: 0 auto; */\n}\n.aa[data-v-31d1c3b6]{\n    width: 440px;\n}\n.ryokan_detail_card[data-v-31d1c3b6]{\n    position: relative;\n    height: 100%;\n    width: 100%;\n}\n.ryokan_detail_img[data-v-31d1c3b6]{\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform : translate(-50%,-50%);\n    width: 100%;\n    height: 320px;\n    border-radius: 10px;\n    /* vertical-align: bottom; */\n    /* display: block; */\n    /* object-fit: cover; */\n    /* top: 50%;\n    left: 50%;\n    -ms-transform: translate(-50%,-50%);\n    -webkit-transform: translate(-50%,-50%);\n    transform: translate(-50%,-50%);\n    margin:0;\n    padding:0; */\n}\n.ryokan_detail_text[data-v-31d1c3b6]{\n   position: relative;\n   height: 100%;\n   /* text-align: right; */\n}\n.place_ryokan_name[data-v-31d1c3b6]{\n    font-size: 28px;\n    line-height: 2;\n    font-family: serif;\n}\n.ryokan_detail_description[data-v-31d1c3b6]{\n    width: 100%;\n    padding-left:40px;\n    position: absolute;\n    top: 50%;\n    top: 50%;\n    transform : translateY(-50%);;\n    font-size: 16px;\n}\n/* .form{\n    height: 440px;\n} */\n/* .calender{\n    height: 100%;\n} */\n\n/* .v-picker{\n    width: 290px;\n    margin: 0 auto;\n} */\n.col6[data-v-31d1c3b6]{\n    text-align: center;\n}\n", ""]);
+exports.push([module.i, "\n.row[data-v-31d1c3b6]{\n    margin: 0 auto;\n    width: 1100px;\n}\n.col[data-v-31d1c3b6]{\n    max-height: 440px;\n    height: 100%;\n    /* margin: 0 auto; */\n}\n.aa[data-v-31d1c3b6]{\n    width: 440px;\n}\n.ryokan_detail_card[data-v-31d1c3b6]{\n    position: relative;\n    height: 100%;\n    width: 100%;\n}\n.ryokan_detail_img[data-v-31d1c3b6]{\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform : translate(-50%,-50%);\n    width: 100%;\n    height: 320px;\n    border-radius: 10px;\n    /* vertical-align: bottom; */\n    /* display: block; */\n    /* object-fit: cover; */\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%,-50%);\n    margin:0;\n    padding:0;\n}\n.ryokan_detail_text[data-v-31d1c3b6]{\n   position: relative;\n   height: 100%;\n   /* text-align: right; */\n}\n.place_ryokan_name[data-v-31d1c3b6]{\n    font-size: 28px;\n    line-height: 2;\n    font-family: serif;\n}\n.ryokan_detail_description[data-v-31d1c3b6]{\n    width: 100%;\n    padding-left:40px;\n    position: absolute;\n    top: 50%;\n    top: 50%;\n    transform : translateY(-50%);;\n    font-size: 16px;\n}\n/* .form{\n    height: 440px;\n} */\n/* .calender{\n    height: 100%;\n} */\n\n/* .v-picker{\n    width: 290px;\n    margin: 0 auto;\n} */\n\n/* .col6{\n    text-align: center;\n} */\n", ""]);
 
 // exports
 
@@ -40188,6 +40270,200 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Kanri/RyokanAdd.vue?vue&type=template&id=31d79876&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Kanri/RyokanAdd.vue?vue&type=template&id=31d79876& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("form", [
+    _c("div", { staticClass: "form-group" }, [
+      _c("label", { attrs: { for: "exampleInputText" } }, [_vm._v("旅館名")]),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.ryokan_name,
+            expression: "ryokan_name"
+          }
+        ],
+        staticClass: "form-control",
+        attrs: { type: "text", id: "exampleInputText", placeholder: "養生館" },
+        domProps: { value: _vm.ryokan_name },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.ryokan_name = $event.target.value
+          }
+        }
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-group" }, [
+      _c("label", { attrs: { for: "exampleInputText" } }, [_vm._v("旅館住所")]),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.ryokan_place,
+            expression: "ryokan_place"
+          }
+        ],
+        staticClass: "form-control",
+        attrs: {
+          type: "text",
+          id: "exampleInputText",
+          placeholder: "鳥取県〜"
+        },
+        domProps: { value: _vm.ryokan_place },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.ryokan_place = $event.target.value
+          }
+        }
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-group" }, [
+      _c("label", { attrs: { for: "exampleInputText" } }, [_vm._v("旅館画像")]),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.ryokan_img,
+            expression: "ryokan_img"
+          }
+        ],
+        staticClass: "form-control",
+        attrs: { type: "text", id: "exampleInputText", placeholder: "養生館" },
+        domProps: { value: _vm.ryokan_img },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.ryokan_img = $event.target.value
+          }
+        }
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-group" }, [
+      _c("label", { attrs: { for: "exampleInputText" } }, [_vm._v("旅館説明")]),
+      _vm._v(" "),
+      _c("textarea", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.ryokan_discription,
+            expression: "ryokan_discription"
+          }
+        ],
+        staticClass: "form-control",
+        attrs: { id: "exampleFormControlTextarea1", rows: "5" },
+        domProps: { value: _vm.ryokan_discription },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.ryokan_discription = $event.target.value
+          }
+        }
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-group" }, [
+      _c("label", { attrs: { for: "exampleInputText" } }, [_vm._v("旅館url")]),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.ryokan_url,
+            expression: "ryokan_url"
+          }
+        ],
+        staticClass: "form-control",
+        attrs: { type: "text", id: "exampleInputText", placeholder: "旅館url" },
+        domProps: { value: _vm.ryokan_url },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.ryokan_url = $event.target.value
+          }
+        }
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-group" }, [
+      _c("label", { attrs: { for: "exampleInputText" } }, [_vm._v("地域")]),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.ryokan_region,
+            expression: "ryokan_region"
+          }
+        ],
+        staticClass: "form-control",
+        attrs: { type: "text", id: "exampleInputText", placeholder: "鳥取" },
+        domProps: { value: _vm.ryokan_region },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.ryokan_region = $event.target.value
+          }
+        }
+      })
+    ]),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        staticClass: "btn btn-primary button",
+        attrs: { type: "submit" },
+        on: { click: _vm.addRyokan }
+      },
+      [_vm._v("登録")]
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanCalender.vue?vue&type=template&id=e1ffb3e4&":
 /*!************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Ryokan/RyokanCalender.vue?vue&type=template&id=e1ffb3e4& ***!
@@ -40367,7 +40643,8 @@ var render = function() {
               staticClass: "ryokan_detail_img",
               attrs: {
                 src: __webpack_require__(/*! ../../../.././public/img/yojokan1.jpg */ "./public/img/yojokan1.jpg"),
-                alt: ""
+                alt: "",
+                width: "100%"
               }
             })
           ])
@@ -40375,118 +40652,40 @@ var render = function() {
       ),
       _vm._v(" "),
       _c("v-col", { attrs: { cols: "7" } }, [
-        _c("div", { staticClass: "ryokan_detail_text" }, [
-          _c("p", { staticClass: "ryokan_detail_description" }, [
-            _c("span", { staticClass: "place_ryokan_name" }, [
-              _vm._v("鳥取  養生館")
-            ]),
-            _c("br"),
-            _vm._v(
-              "\n                 心と体を整え、本来の自分に還る宿、古より豊かな水を湛える「東郷湖」"
-            ),
-            _c("br"),
-            _vm._v(
-              "    \n                 その静かな湖畔に私たちが小さな別荘を構えたのは、明治五年のことでした。"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 心を癒す天然温泉、体に染み入る「じげの味」―地元の皆様が集う別荘は、"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 いつしか宿となり、心と体の「養生の館」として親しまれてまいりました。"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 ここには華やかなものはありません。その代わり、いつまでも見飽きること"
-            ),
-            _c("br"),
-            _vm._v(
-              "    \n                 のない「水辺の風景」と「自然の音」があります。日々ひたむきなあなたへ贈る"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 、大人の休息時間。湖畔のリトリート「養生館」へようこそ。\n                 \n             "
-            )
-          ])
+        _c("p", { staticClass: "ryokan_detail_description" }, [
+          _c("span", { staticClass: "place_ryokan_name" }, [
+            _vm._v("鳥取  養生館")
+          ]),
+          _c("br"),
+          _vm._v(
+            "\n                 心と体を整え、本来の自分に還る宿、古より豊かな水を湛える「東郷湖」"
+          ),
+          _c("br"),
+          _vm._v(
+            "    \n                 その静かな湖畔に私たちが小さな別荘を構えたのは、明治五年のことでした。"
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                 心を癒す天然温泉、体に染み入る「じげの味」―地元の皆様が集う別荘は、"
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                 いつしか宿となり、心と体の「養生の館」として親しまれてまいりました。"
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                 ここには華やかなものはありません。その代わり、いつまでも見飽きること"
+          ),
+          _c("br"),
+          _vm._v(
+            "    \n                 のない「水辺の風景」と「自然の音」があります。日々ひたむきなあなたへ贈る"
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                 、大人の休息時間。湖畔のリトリート「養生館」へようこそ。\n                 \n             "
+          )
         ])
-      ]),
-      _vm._v(" "),
-      _c("v-col", { attrs: { cols: "7" } }, [
-        _c("div", { staticClass: "ryokan_detail_text" }, [
-          _c("p", { staticClass: "ryokan_detail_description" }, [
-            _c("span", { staticClass: "place_ryokan_name" }, [
-              _vm._v("鳥取  イベント")
-            ]),
-            _c("br"),
-            _vm._v(
-              "\n                 標高900mの三徳山のふもとにある三徳山三佛寺（みとくさんさんぶつじ）では"
-            ),
-            _c("br"),
-            _vm._v(
-              "    \n                 秋には周囲の山々が紅葉し、高台からの景色が楽しめます。"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 標高440m付近に位置する重文の文殊堂と地蔵堂は、崖の上の岩角に建てられ、"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 周囲は回廊になっているほか、標高520mの断崖絶壁に造られた"
-            ),
-            _c("br"),
-            _vm._v(
-              "\n                 奥院、国宝投入堂は見るものを圧倒します。"
-            ),
-            _c("br")
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "v-col",
-        { staticClass: "aa", attrs: { cols: "5", "no-gutters": "" } },
-        [
-          _c("div", { staticClass: "ryokan_detail_card" }, [
-            _c("img", {
-              staticClass: "ryokan_detail_img",
-              attrs: {
-                src: __webpack_require__(/*! ../../../.././public/img/tottori_eve1.jpg */ "./public/img/tottori_eve1.jpg"),
-                alt: ""
-              }
-            })
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "v-col",
-        { attrs: { cols: "6" } },
-        [
-          _c("v-date-picker", {
-            attrs: { color: "black", locale: "en", width: "500" },
-            model: {
-              value: _vm.selectDate,
-              callback: function($$v) {
-                _vm.selectDate = $$v
-              },
-              expression: "selectDate"
-            }
-          }),
-          _vm._v(" "),
-          _c("v-col", { attrs: { cols: "12" } }, [
-            _c("div", [_vm._v(_vm._s(_vm.selectDate))])
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "v-col",
-        { staticClass: "aa", attrs: { cols: "6" } },
-        [_c("RyokanForm")],
-        1
-      )
+      ])
     ],
     1
   )
@@ -40672,12 +40871,6 @@ var render = function() {
           "div",
           { staticClass: "ryokan_card" },
           [
-            _c("p", { staticClass: "ryokan_text" }, [
-              _vm._v("鳥取"),
-              _c("br"),
-              _c("span", [_vm._v("養生館")])
-            ]),
-            _vm._v(" "),
             _c("router-link", { attrs: { to: "/RyokanDetail" } }, [
               _c("img", {
                 staticClass: "ryokan_img",
@@ -40685,7 +40878,13 @@ var render = function() {
                   src: __webpack_require__(/*! ../../../.././public/img/yojokan1.jpg */ "./public/img/yojokan1.jpg"),
                   alt: ""
                 }
-              })
+              }),
+              _vm._v(" "),
+              _c("p", { staticClass: "ryokan_text" }, [
+                _vm._v("鳥取"),
+                _c("br"),
+                _c("span", [_vm._v("養生館")])
+              ])
             ])
           ],
           1
@@ -40697,13 +40896,13 @@ var render = function() {
           "div",
           { staticClass: "ryokan_card" },
           [
-            _c("p", { staticClass: "ryokan_text" }, [
-              _vm._v("鳥取"),
-              _c("br"),
-              _c("span", [_vm._v("養生館")])
-            ]),
-            _vm._v(" "),
             _c("router-link", { attrs: { to: "/RyokanDetail" } }, [
+              _c("p", { staticClass: "ryokan_text" }, [
+                _vm._v("鳥取"),
+                _c("br"),
+                _c("span", [_vm._v("養生館")])
+              ]),
+              _vm._v(" "),
               _c("img", {
                 staticClass: "ryokan_img",
                 attrs: {
@@ -102445,17 +102644,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./public/img/tottori_eve1.jpg":
-/*!*************************************!*\
-  !*** ./public/img/tottori_eve1.jpg ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/tottori_eve1.jpg?017fb00dacec45b09e3d8eeca097b9ec";
-
-/***/ }),
-
 /***/ "./public/img/yojokan1.jpg":
 /*!*********************************!*\
   !*** ./public/img/yojokan1.jpg ***!
@@ -102976,6 +103164,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_template_id_1f42fb90_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_template_id_1f42fb90_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Kanri/RyokanAdd.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/Kanri/RyokanAdd.vue ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _RyokanAdd_vue_vue_type_template_id_31d79876___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RyokanAdd.vue?vue&type=template&id=31d79876& */ "./resources/js/components/Kanri/RyokanAdd.vue?vue&type=template&id=31d79876&");
+/* harmony import */ var _RyokanAdd_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RyokanAdd.vue?vue&type=script&lang=js& */ "./resources/js/components/Kanri/RyokanAdd.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _RyokanAdd_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _RyokanAdd_vue_vue_type_template_id_31d79876___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _RyokanAdd_vue_vue_type_template_id_31d79876___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Kanri/RyokanAdd.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Kanri/RyokanAdd.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/Kanri/RyokanAdd.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanAdd_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./RyokanAdd.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Kanri/RyokanAdd.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanAdd_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Kanri/RyokanAdd.vue?vue&type=template&id=31d79876&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/Kanri/RyokanAdd.vue?vue&type=template&id=31d79876& ***!
+  \************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanAdd_vue_vue_type_template_id_31d79876___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./RyokanAdd.vue?vue&type=template&id=31d79876& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Kanri/RyokanAdd.vue?vue&type=template&id=31d79876&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanAdd_vue_vue_type_template_id_31d79876___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanAdd_vue_vue_type_template_id_31d79876___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -103605,12 +103862,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _components_Ryokan_RyokanPage_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Ryokan/RyokanPage.vue */ "./resources/js/components/Ryokan/RyokanPage.vue");
 /* harmony import */ var _components_Ryokan_RyokanDetail_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Ryokan/RyokanDetail.vue */ "./resources/js/components/Ryokan/RyokanDetail.vue");
-/* harmony import */ var _components_topPage_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/topPage.vue */ "./resources/js/components/topPage.vue");
-/* harmony import */ var _components_Contact_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Contact.vue */ "./resources/js/components/Contact.vue");
-/* harmony import */ var _components_Event_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Event.vue */ "./resources/js/components/Event.vue");
+/* harmony import */ var _components_Kanri_RyokanAdd_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Kanri/RyokanAdd.vue */ "./resources/js/components/Kanri/RyokanAdd.vue");
+/* harmony import */ var _components_topPage_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/topPage.vue */ "./resources/js/components/topPage.vue");
+/* harmony import */ var _components_Contact_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Contact.vue */ "./resources/js/components/Contact.vue");
+/* harmony import */ var _components_Event_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Event.vue */ "./resources/js/components/Event.vue");
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
 
 
 
@@ -103625,21 +103884,21 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
     // 名前付きルートを設定したい場合付与
     name: 'top-page',
     // コンポーネントの指定
-    component: _components_topPage_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
+    component: _components_topPage_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
   }, {
     // routeのパス設定
     path: '/contact',
     // 名前付きルートを設定したい場合付与
     name: 'contact',
     // コンポーネントの指定
-    component: _components_Contact_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
+    component: _components_Contact_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
   }, {
     // routeのパス設定
     path: '/event',
     // 名前付きルートを設定したい場合付与
     name: 'event',
     // コンポーネントの指定
-    component: _components_Event_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
+    component: _components_Event_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
   }, {
     // routeのパス設定
     path: '/RyokanPage',
@@ -103654,6 +103913,13 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
     name: 'RyokanDetail',
     // コンポーネントの指定
     component: _components_Ryokan_RyokanDetail_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }, {
+    // routeのパス設定
+    path: '/RyokanAdd',
+    // 名前付きルートを設定したい場合付与
+    name: 'RyokanAdd',
+    // コンポーネントの指定
+    component: _components_Kanri_RyokanAdd_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
   }],
   scrollBehavior: function scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

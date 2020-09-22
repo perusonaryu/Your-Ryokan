@@ -7,6 +7,7 @@ Vue.use(VueRouter);
 
 import RyokanPage from './components/Ryokan/RyokanPage.vue'
 import RyokanDetail from './components/Ryokan/RyokanDetail.vue'
+import RyokanAdd from './components/Kanri/RyokanAdd.vue'
 
 import toppage from './components/topPage.vue'
 import contact from './components/Contact.vue'
@@ -63,6 +64,15 @@ export default new VueRouter({
             name: 'RyokanDetail',
             // コンポーネントの指定
             component: RyokanDetail,
+            
+        },
+        {
+            // routeのパス設定
+            path: '/RyokanAdd',
+            // 名前付きルートを設定したい場合付与
+            name: 'RyokanAdd',
+            // コンポーネントの指定
+            component: RyokanAdd,
             
         },
 

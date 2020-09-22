@@ -53,6 +53,7 @@ export default {
     background-color: black;
     color:white;
     padding:30px 0;
+    
 }
 
 .icons i+i{
