@@ -7,13 +7,19 @@
   <title>Laravel + Vue</title>
   <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <base href="<?php echo url('/');?>">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+  <base href="<?php echo url('/');?>">
+  <style>
+    #app{
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 
-<body style="height:100%;">
-  <div id="app" style="height:100%;">
-    <v-app style="margin-top:64px;">
+<body style="width:100%; height:100%;">
+  <div class="content" id="app" style="width:100%; height:100%;">
+    <v-app style="width:100%; height:100%;">
       <header-component></header-component>
       <router-view></router-view>
       <footer-component></footer-component>

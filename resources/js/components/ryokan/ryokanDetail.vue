@@ -1,6 +1,6 @@
 <template>
-
-    <v-row no-gutters>
+<div>
+    <v-row>
 
         <v-col cols="5" no-gutters class="aa">
             <div class="ryokan_detail_card">
@@ -23,8 +23,11 @@
                 </p>
             <!-- </div> -->
         </v-col>
+    </v-row>
 
         <!-- <v-col cols="7">
+    <v-row>
+        <v-col cols="7">
             <div class="ryokan_detail_text">
                 <p class="ryokan_detail_description">
                     <span class="place_ryokan_name">鳥取  イベント</span><br>
@@ -43,7 +46,9 @@
                 <img src="../../../.././public/img/tottori_eve1.jpg" alt="" class="ryokan_detail_img">
             </div>
         </v-col>
+    </v-row>
 
+    <v-row>
         
             <v-col cols="6" > -->
                <!-- <v-container class="mt-12"> -->
@@ -59,7 +64,9 @@
                 <RyokanForm/>
             </v-col> -->
                  
-   </v-row>
+   <!-- </v-row> -->
+
+</div>
 </template>
 
 <style scoped>
@@ -69,20 +76,23 @@
         margin: 0 auto;
         width: 1100px;
     }
+
     .col{
         max-height: 440px;
-        height: 100%;
-        /* margin: 0 auto; */
+        /* height: 100%;  */
+        margin: 0 auto; 
     }
+
     .aa{
         width: 440px;
     }
+
     .ryokan_detail_card{
         position: relative;
         height: 100%;
         width: 100%;  
     }
-    
+
     .ryokan_detail_img{
         position: absolute;
         top: 50%;
@@ -115,27 +125,17 @@
         line-height: 2;
         font-family: serif;
     }
+
     .ryokan_detail_description{
         width: 100%;
         padding-left:40px;
-        position: absolute;
-        top: 50%;
-        top: 50%;
-        -webkit-transform : translateY(-50%);
-        transform : translateY(-50%);;
+        /* position: absolute; */
+        /* top: 50%; */
+        /* top: 50%; */
+        /* -webkit-transform : translateY(-50%); */
+        /* transform : translateY(-50%);; */
         font-size: 16px;
     }
-    /* .form{
-        height: 440px;
-    } */
-    /* .calender{
-        height: 100%;
-    } */
-
-    /* .v-picker{
-        width: 290px;
-        margin: 0 auto;
-    } */
 
     /* .col6{
         text-align: center;

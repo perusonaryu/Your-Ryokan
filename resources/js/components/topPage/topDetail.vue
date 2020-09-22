@@ -1,11 +1,13 @@
 <template>
   <div class="top-detail">
-    <v-parallax 
+    <!-- <v-parallax 
     src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-    height="650"      
+    class="top-image"      
     >
-    </v-parallax>
-
+    </v-parallax> -->
+    <div class="top-image">
+        
+    </div>
     <v-row
     justify="center"
     >
@@ -39,6 +41,14 @@ export default {
 </script>
 
 <style scoped>
+
+.top-image{
+    background:url('https://cdn.vuetifyjs.com/images/parallax/material.jpg') center / cover;
+    min-height:100vh;
+    width:100%;
+
+}
+
 .sub-image img{
     width:100%;
     height:350px;
@@ -51,5 +61,20 @@ export default {
     margin-top: 60px;
     font-family: 'Noto Serif JP';
     font-weight:200;
+}
+
+@media (max-width: 670px)
+{
+.sub-image img{
+    border-radius:0;
+}
+
+}
+</style>
+
+<style>
+.v-parallax__image{
+    min-height:100vw;
+    background-size: cover;
 }
 </style>

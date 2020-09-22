@@ -48,7 +48,6 @@
           <div>
             <h5>地名</h5>
             <h4>旅館名</h4>
-
           </div>
         </div>
         </v-img>
@@ -66,7 +65,7 @@
         src="https://images.unsplash.com/photo-1505069446780-4ef442b5207f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjYzNDZ9"
         class="image"
         >
-        <div class="d-flex justify-center align-center ryokan-name">
+        <div class="d-flex justify-center align-center ryokan-name" >
           <div>
             <h5>地名</h5>
             <h4>旅館名</h4>
@@ -110,7 +109,7 @@
     </v-col>
     </v-row>
 
-    <router-link to="/" class="button d-flex align-center justify-center">
+    <router-link to="/RyokanPage" class="button d-flex align-center justify-center">
       <div>
         旅館一覧
       </div>

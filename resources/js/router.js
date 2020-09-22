@@ -12,6 +12,7 @@ import RyokanAdd from './components/Kanri/RyokanAdd.vue'
 import toppage from './components/topPage.vue'
 import contact from './components/Contact.vue'
 import event from './components/Event.vue'
+import eventRegister from './components/EventRegister.vue'
 
 
 export default new VueRouter({
@@ -68,11 +69,19 @@ export default new VueRouter({
         },
         {
             // routeのパス設定
+<<<<<<< HEAD
             path: '/RyokanAdd',
             // 名前付きルートを設定したい場合付与
             name: 'RyokanAdd',
             // コンポーネントの指定
             component: RyokanAdd,
+=======
+            path: '/eventRegister',
+            // 名前付きルートを設定したい場合付与
+            name: 'eventRegister',
+            // コンポーネントの指定
+            component: eventRegister,
+>>>>>>> 8b327264cbd1b005d2b7b6afb9aaeb783088c48a
             
         },
 
