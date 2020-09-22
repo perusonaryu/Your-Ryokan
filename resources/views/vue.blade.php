@@ -7,6 +7,7 @@
   <title>Laravel + Vue</title>
   <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
   <base href="<?php echo url('/');?>">
   <style>
     #app{
