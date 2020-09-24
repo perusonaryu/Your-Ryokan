@@ -60,12 +60,12 @@ export default new VueRouter({
         },
         {
             // routeのパス設定
-            path: '/RyokanDetail',
+            path: '/RyokanDetail/:id',
             // 名前付きルートを設定したい場合付与
             name: 'RyokanDetail',
             // コンポーネントの指定
             component: RyokanDetail,
-            
+            props: true
         },
         {
             // routeのパス設定
@@ -76,6 +76,8 @@ export default new VueRouter({
             component: RyokanAdd,
         },
         {
+
+        
             path: '/eventRegister',
             // 名前付きルートを設定したい場合付与
             name: 'eventRegister',

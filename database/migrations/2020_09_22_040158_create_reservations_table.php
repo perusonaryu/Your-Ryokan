@@ -20,7 +20,7 @@ class CreateReservationsTable extends Migration
             $table->string('phone');
             $table->string('visit_duration')->nullable();
             $table->string('room');
-            $table->string('ryokan_id');
+            $table->string('ryokan_id')->nullable();
             $table->timestamps();
         });
     }

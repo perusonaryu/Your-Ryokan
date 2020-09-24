@@ -115,7 +115,25 @@
 
     methods: {
       submit () {
-        this.$v.$touch()
+        let data = new FormData();
+        data.append("name", this.name);
+        data.append("email", this.email);
+        data.append("phone", this.phone);
+        data.append("visit_duration", this.ReservationDate);
+        data.append("room", this.ReservationRoom);
+        axios.post('api/reservation',data)
+        .then( ( res ) => {
+                this.name = "";
+                this.email = "";
+                this.phone = "";
+                this.ReservationDate = "";
+                this.ReservationRoom = "";
+                // this.message="予約が完了しました！"
+                console.log(res);
+            })
+            .catch(err => {
+                    console.log(err);
+                });
       },
       clear () {
         this.$v.$reset()
