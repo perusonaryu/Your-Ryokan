@@ -1,8 +1,8 @@
 <template>
 
-  <v-row no-gutters>
-      
-        <v-col cols="6">
+  <v-row>
+
+        <v-col cols="6" >
             <div class="ryokan_card">
                 <router-link :to="`/RyokanDetail`">
                     <p class="ryokan_text">鳥取<br><span>養生館</span></p>
@@ -11,7 +11,7 @@
                 </router-link> 
             </div> 
         </v-col>    
-        <v-col cols="3" >
+        <v-col cols="3">
             <div class="ryokan_card">
                 <router-link :to="`/RyokanDetail`">
                     <p class="ryokan_text">鳥取<br><span>養生館</span></p>
@@ -61,6 +61,16 @@
     
 
 </template>
+
+<script>
+export default {
+    data: ()=> ({
+        items:[
+            {message: 'aaaa'}
+        ]
+    })
+}
+</script>
 
 <style >
     div.ryokan_card{
