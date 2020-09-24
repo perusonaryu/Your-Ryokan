@@ -1946,7 +1946,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      name: '',
+      email: '',
+      message: ''
+    };
+  },
+  methods: {
+    send: function send() {
+      axios.post('/contactadd', {
+        contact_name: this.name,
+        contact_email: this.email,
+        contact_message: this.message
+      }).then(function (response) {
+        console.log('OK');
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -2066,7 +2087,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      eventsData: ''
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('/eventget').then(function (response) {
+      _this.eventsData = response.data;
+      console.log(response.data);
+    })["catch"](function (error) {
+      return console.log(error);
+    });
+  },
+  methods: {}
+});
 
 /***/ }),
 
@@ -2120,30 +2159,46 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mixins: [vuelidate__WEBPACK_IMPORTED_MODULE_0__["validationMixin"]],
   validations: {
-    // storeName: { required },
-    address: {
+    ryokanName: {
       required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"]
     },
-    introduction: {
+    eventTitle: {
       required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"]
     },
-    category: {
+    eventDescription: {
+      required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"]
+    },
+    eventDuration: {
+      required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"]
+    },
+    eventImage: {
       required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"]
     }
   },
   data: function data() {
     return {
       // storeName: '',
-      address: '',
-      introduction: '',
-      category: '',
-      user: '',
-      store_id: ''
+      ryokanName: '',
+      eventTitle: '',
+      eventDescription: '',
+      eventDuration: '',
+      eventImage: ''
     };
   },
   computed: {
@@ -2154,23 +2209,48 @@ __webpack_require__.r(__webpack_exports__);
     //   !this.$v.storeName.required && errors.push('storeName is required.')
     //   return errors
     // },
-    addressErrors: function addressErrors() {
+    ryokanNameErrors: function ryokanNameErrors() {
       var errors = [];
-      if (!this.$v.address.$dirty) return errors;
-      !this.$v.address.required && errors.push('address is required');
+      if (!this.$v.ryokanName.$dirty) return errors;
+      !this.$v.ryokanName.required && errors.push('旅館名を入力してください');
       return errors;
     },
-    introductionErrors: function introductionErrors() {
+    eventTitleErrors: function eventTitleErrors() {
       var errors = [];
-      if (!this.$v.introduction.$dirty) return errors;
-      !this.$v.introduction.required && errors.push('introduction is required');
+      if (!this.$v.eventTitle.$dirty) return errors;
+      !this.$v.eventTitle.required && errors.push('イベントのタイトルを入力してください');
       return errors;
     },
-    categoryErrors: function categoryErrors() {
+    eventDescriptionErrors: function eventDescriptionErrors() {
       var errors = [];
-      if (!this.$v.category.$dirty) return errors;
-      !this.$v.category.required && errors.push('category is required');
+      if (!this.$v.eventDescription.$dirty) return errors;
+      !this.$v.eventDescription.required && errors.push('イベント詳細を入力してください');
       return errors;
+    },
+    eventDurationErrors: function eventDurationErrors() {
+      var errors = [];
+      if (!this.$v.eventDuration.$dirty) return errors;
+      !this.$v.eventDuration.required && errors.push('イベント期間を入力してください');
+      return errors;
+    }
+  },
+  methods: {
+    fileSelected: function fileSelected(event) {
+      this.eventImage = event[0];
+      console.log(event[0]);
+    },
+    eventAdd: function eventAdd() {
+      var eventData = new FormData();
+      eventData.append('ryokan_name', this.ryokanName);
+      eventData.append('event_title', this.eventTitle);
+      eventData.append('event_description', this.eventDescription);
+      eventData.append('event_duration', this.eventDuration);
+      eventData.append('event_img_main', this.eventImage);
+      axios.post('/eventadd', eventData).then(function (response) {
+        console.log('OK');
+      })["catch"](function (error) {
+        return console.log(error);
+      });
     }
   }
 });
@@ -2663,25 +2743,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submit: function submit() {
-      var _this = this;
-
-      var data = new FormData();
-      data.append("name", this.name);
-      data.append("email", this.email);
-      data.append("phone", this.phone);
-      data.append("visit_duration", this.ReservationDate);
-      data.append("room", this.ReservationRoom);
-      axios.post('api/reservation', data).then(function (res) {
-        _this.name = "";
-        _this.email = "";
-        _this.phone = "";
-        _this.ReservationDate = "";
-        _this.ReservationRoom = ""; // this.message="予約が完了しました！"
-
-        console.log(res);
-      })["catch"](function (err) {
-        console.log(err);
-      });
+      this.$v.$touch();
     },
     clear: function clear() {
       this.$v.$reset();
@@ -3052,7 +3114,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      eventsData: ''
+    };
+  },
+  mounted: function mounted() {
+    this.eventGet();
+  },
+  methods: {
+    eventGet: function eventGet() {
+      var _this = this;
+
+      axios.get('/eventgettop').then(function (response) {
+        _this.eventsData = response.data;
+        console.log(response.data);
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -7660,7 +7743,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n*[data-v-5793e382]{\n    box-sizing: border-box;\n}\na[data-v-5793e382]{\n    text-decoration: none;\n    color:white!important;\n}\n.event[data-v-5793e382]{\n    margin: 30px 0;\n}\n.tit[data-v-5793e382]{\n    text-align: center;\n    margin-bottom: 40px;\n}\n\n/* .event-card{\n    padding:0;\n    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);\n    border-radius: 3px;\n} */\n\n/* .event-card + .event-card{\n    margin-left: 10px;\n} */\n\n/* .card-wrap{\n    padding:5px;\n} */\n.card-wrap p[data-v-5793e382]{\n    color:#666666;\n    margin: 0;\n}\n.img-wrap[data-v-5793e382]{\n    padding:0;\n}\n.image[data-v-5793e382]{\n    border-radius:5px 0 0 5px;\n}\n\n/* .text{\n    padding:0;\n} */\n.v-card__actions a[data-v-5793e382]{\n    width:100%;\n    text-decoration: none;\n    color:black;\n    background-color: #eeeeee;\n}\n.v-card__text[data-v-5793e382]{\n    padding:0 16px ;\n}\n.detail_btn[data-v-5793e382]{\n    color:black;\n}\n.button[data-v-5793e382]{\n  width:200px;\n  height: 50px;\n  border-radius:50px;\n  background-color:black;\n  margin:18px auto 0;\n}\n@media (max-width: 670px)\n{\n.card[data-v-5793e382]{\n    width:100%;\n}\n.event-card[data-v-5793e382]{\n    padding:0;\n    margin-bottom: 10px;\n}\n.text[data-v-5793e382]{\n    padding:0;\n}\n.image[data-v-5793e382]{\n    border-radius:5px;\n}\n.img-wrap[data-v-5793e382]{\n    width:100%;\n}\n.card-wrap[data-v-5793e382]{\n    width:100%;\n}\n}\n", ""]);
+exports.push([module.i, "\n*[data-v-5793e382]{\n    box-sizing: border-box;\n}\na[data-v-5793e382]{\n    text-decoration: none;\n    color:white!important;\n}\n.event[data-v-5793e382]{\n    margin: 100px 0 20px;\n}\n.tit[data-v-5793e382]{\n    text-align: center;\n    margin-bottom: 40px;\n}\n\n/* .event-card{\n    padding:0;\n    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);\n    border-radius: 3px;\n} */\n\n/* .event-card + .event-card{\n    margin-left: 10px;\n} */\n\n/* .card-wrap{\n    padding:5px;\n} */\n.card-wrap p[data-v-5793e382]{\n    color:#666666;\n    margin: 0;\n}\n.img-wrap[data-v-5793e382]{\n    padding:0;\n}\n.image[data-v-5793e382]{\n    border-radius:5px 0 0 5px;\n}\n\n/* .text{\n    padding:0;\n} */\n.v-card__actions a[data-v-5793e382]{\n    width:100%;\n    text-decoration: none;\n    color:black;\n    background-color: #eeeeee;\n}\n.v-card__text[data-v-5793e382]{\n    padding:0 16px ;\n}\n.detail_btn[data-v-5793e382]{\n    color:black;\n}\n.button[data-v-5793e382]{\n  width:200px;\n  height: 50px;\n  border-radius:50px;\n  background-color:black;\n  margin:18px auto 0;\n}\n@media (max-width: 670px)\n{\n.card[data-v-5793e382]{\n    width:100%;\n}\n.event-card[data-v-5793e382]{\n    padding:0;\n    margin-bottom: 10px;\n}\n.text[data-v-5793e382]{\n    padding:0;\n}\n.image[data-v-5793e382]{\n    border-radius:5px;\n}\n.img-wrap[data-v-5793e382]{\n    width:100%;\n}\n.card-wrap[data-v-5793e382]{\n    width:100%;\n}\n}\n", ""]);
 
 // exports
 
@@ -40069,17 +40152,21 @@ var render = function() {
                   }),
                   _vm._v(" "),
                   _c("v-textarea", {
-                    attrs: {
-                      outlined: "",
-                      name: "input-7-4",
-                      label: "メッセージ"
+                    attrs: { outlined: "", label: "メッセージ" },
+                    model: {
+                      value: _vm.message,
+                      callback: function($$v) {
+                        _vm.message = $$v
+                      },
+                      expression: "message"
                     }
                   }),
                   _vm._v(" "),
                   _c(
                     "a",
                     {
-                      staticClass: "button d-flex justify-center align-center"
+                      staticClass: "button d-flex justify-center align-center",
+                      on: { click: _vm.send }
                     },
                     [
                       _c("div", [
@@ -40133,10 +40220,14 @@ var render = function() {
       _c(
         "v-row",
         { attrs: { justify: "center", align: "center" } },
-        [
-          _c(
+        _vm._l(_vm.eventsData, function(event) {
+          return _c(
             "v-col",
-            { staticClass: "event-card", attrs: { md: "5", cols: "11" } },
+            {
+              key: event.id,
+              staticClass: "event-card",
+              attrs: { md: "5", cols: "11" }
+            },
             [
               _c(
                 "div",
@@ -40160,10 +40251,9 @@ var render = function() {
                               _c("v-img", {
                                 staticClass: "white--text image",
                                 attrs: {
-                                  height: "100%",
+                                  height: "300",
                                   width: "100%",
-                                  src:
-                                    "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                                  src: " " + event.event_img_main + " "
                                 }
                               })
                             ],
@@ -40180,125 +40270,32 @@ var render = function() {
                               _c(
                                 "v-card-subtitle",
                                 { staticClass: "pb-0 mb-1" },
-                                [_vm._v("From 2020/6/3 to 2020/9/3")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-card-text",
-                                { staticClass: "text--primary" },
                                 [
-                                  _c("h4", { staticClass: "mb-2" }, [
-                                    _vm._v("地名　　旅館名")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("h4", [_vm._v("イベント名")]),
-                                  _vm._v(" "),
-                                  _c("p", [
-                                    _vm._v(
-                                      "\n                                あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                                あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                            "
-                                    )
-                                  ])
+                                  _vm._v(
+                                    "From " + _vm._s(event.event_duration) + " "
+                                  )
                                 ]
                               ),
                               _vm._v(" "),
                               _c(
-                                "v-card-actions",
-                                [
-                                  _c(
-                                    "router-link",
-                                    {
-                                      staticClass:
-                                        "d-flex align-center justify-center mb-5",
-                                      attrs: { to: "/" }
-                                    },
-                                    [
-                                      _c("div", { staticClass: "detail_btn" }, [
-                                        _vm._v(
-                                          "\n                                        詳細\n                                    "
-                                        )
-                                      ])
-                                    ]
-                                  )
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "v-col",
-            { staticClass: "event-card", attrs: { md: "5", cols: "11" } },
-            [
-              _c(
-                "div",
-                { staticClass: "card-wrap" },
-                [
-                  _c(
-                    "v-card",
-                    { staticClass: "card" },
-                    [
-                      _c(
-                        "v-row",
-                        { attrs: { justify: "center" } },
-                        [
-                          _c(
-                            "v-col",
-                            {
-                              staticClass: "img-wrap",
-                              attrs: { md: "6", cols: "11" }
-                            },
-                            [
-                              _c("v-img", {
-                                staticClass: "white--text image",
-                                attrs: {
-                                  height: "100%",
-                                  width: "100%",
-                                  src:
-                                    "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-col",
-                            {
-                              staticClass: "text",
-                              attrs: { md: "6", cols: "11" }
-                            },
-                            [
-                              _c(
-                                "v-card-subtitle",
-                                { staticClass: "pb-0 mb-1" },
-                                [_vm._v("From 2020/6/3 to 2020/9/3")]
-                              ),
-                              _vm._v(" "),
-                              _c(
                                 "v-card-text",
                                 { staticClass: "text--primary" },
                                 [
                                   _c("h4", { staticClass: "mb-2" }, [
-                                    _vm._v("地名　　旅館名")
+                                    _vm._v(
+                                      " " + _vm._s(event.ryokan_name) + " "
+                                    )
                                   ]),
                                   _vm._v(" "),
-                                  _c("h4", [_vm._v("イベント名")]),
+                                  _c("h4", [
+                                    _vm._v(" " + _vm._s(event.event_title))
+                                  ]),
                                   _vm._v(" "),
                                   _c("p", [
                                     _vm._v(
-                                      "\n                                あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                                あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                            "
+                                      "\n                                " +
+                                        _vm._s(event.event_description) +
+                                        "\n                            "
                                     )
                                   ])
                                 ]
@@ -40339,7 +40336,7 @@ var render = function() {
               )
             ]
           )
-        ],
+        }),
         1
       ),
       _vm._v(" "),
@@ -40383,95 +40380,110 @@ var render = function() {
     [
       _c("v-text-field", {
         attrs: {
-          "error-messages": _vm.addressErrors,
+          "error-messages": _vm.ryokanNameErrors,
           label: "旅館名",
           required: ""
         },
         on: {
           input: function($event) {
-            return _vm.$v.address.$touch()
+            return _vm.$v.ryokanName.$touch()
           },
           blur: function($event) {
-            return _vm.$v.address.$touch()
+            return _vm.$v.ryokanName.$touch()
           }
         },
         model: {
-          value: _vm.address,
+          value: _vm.ryokanName,
           callback: function($$v) {
-            _vm.address = $$v
+            _vm.ryokanName = $$v
           },
-          expression: "address"
+          expression: "ryokanName"
         }
       }),
       _vm._v(" "),
       _c("v-text-field", {
         attrs: {
-          "error-messages": _vm.introductionErrors,
+          "error-messages": _vm.eventTitleErrors,
           label: "イベントタイトル",
           required: ""
         },
         on: {
           input: function($event) {
-            return _vm.$v.introduction.$touch()
+            return _vm.$v.eventTitle.$touch()
           },
           blur: function($event) {
-            return _vm.$v.introduction.$touch()
+            return _vm.$v.eventTitle.$touch()
           }
         },
         model: {
-          value: _vm.introduction,
+          value: _vm.eventTitle,
           callback: function($$v) {
-            _vm.introduction = $$v
+            _vm.eventTitle = $$v
           },
-          expression: "introduction"
+          expression: "eventTitle"
         }
       }),
       _vm._v(" "),
       _c("v-text-field", {
         attrs: {
-          "error-messages": _vm.categoryErrors,
+          "error-messages": _vm.eventDescriptionErrors,
           label: "イベント詳細",
           required: ""
         },
         on: {
           input: function($event) {
-            return _vm.$v.category.$touch()
+            return _vm.$v.eventDescription.$touch()
           },
           blur: function($event) {
-            return _vm.$v.category.$touch()
+            return _vm.$v.eventDescription.$touch()
           }
         },
         model: {
-          value: _vm.category,
+          value: _vm.eventDescription,
           callback: function($$v) {
-            _vm.category = $$v
+            _vm.eventDescription = $$v
           },
-          expression: "category"
+          expression: "eventDescription"
         }
       }),
       _vm._v(" "),
       _c("v-text-field", {
         attrs: {
-          "error-messages": _vm.categoryErrors,
+          "error-messages": _vm.eventDurationErrors,
           label: "イベント期間",
           required: ""
         },
         on: {
           input: function($event) {
-            return _vm.$v.category.$touch()
+            return _vm.$v.eventDuration.$touch()
           },
           blur: function($event) {
-            return _vm.$v.category.$touch()
+            return _vm.$v.eventDuration.$touch()
           }
         },
         model: {
-          value: _vm.category,
+          value: _vm.eventDuration,
           callback: function($$v) {
-            _vm.category = $$v
+            _vm.eventDuration = $$v
           },
-          expression: "category"
+          expression: "eventDuration"
         }
-      })
+      }),
+      _vm._v(" "),
+      _c("v-file-input", {
+        attrs: {
+          multiple: "",
+          label: "店舗画像",
+          "prepend-inner-icon": "mdi-camera",
+          "prepend-icon": "",
+          "show-size": ""
+        },
+        on: { change: _vm.fileSelected }
+      }),
+      _vm._v(" "),
+      _c("v-btn", { staticClass: "mr-4", on: { click: _vm.eventAdd } }, [
+        _vm._v("登録")
+      ])
     ],
     1
   )
@@ -41472,10 +41484,14 @@ var render = function() {
       _c(
         "v-row",
         { attrs: { justify: "center" } },
-        [
-          _c(
+        _vm._l(_vm.eventsData, function(event) {
+          return _c(
             "v-col",
-            { staticClass: "event-card", attrs: { md: "3", cols: "11" } },
+            {
+              key: event.id,
+              staticClass: "event-card",
+              attrs: { md: "3", cols: "11" }
+            },
             [
               _c(
                 "div",
@@ -41491,8 +41507,7 @@ var render = function() {
                           staticClass: "white--text align-end",
                           attrs: {
                             height: "200px",
-                            src:
-                              "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                            src: " " + event.event_img_main + " "
                           }
                         },
                         [_c("v-card-title")],
@@ -41500,167 +41515,21 @@ var render = function() {
                       ),
                       _vm._v(" "),
                       _c("v-card-subtitle", { staticClass: "pb-0 mb-1" }, [
-                        _vm._v("From 2020/6/3 to 2020/9/3")
+                        _vm._v("From " + _vm._s(event.event_duration))
                       ]),
                       _vm._v(" "),
                       _c("v-card-text", { staticClass: "text--primary" }, [
                         _c("h4", { staticClass: "mb-2" }, [
-                          _vm._v("地名　　旅館名")
+                          _vm._v(_vm._s(event.ryokan_name))
                         ]),
                         _vm._v(" "),
-                        _c("h4", [_vm._v("イベント名")]),
+                        _c("h4", [_vm._v(_vm._s(event.event_title))]),
                         _vm._v(" "),
                         _c("p", [
                           _vm._v(
-                            "\n                        あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                        あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                    "
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-card-actions",
-                        [
-                          _c(
-                            "router-link",
-                            {
-                              staticClass:
-                                "d-flex align-center justify-center mb-5",
-                              attrs: { to: "/" }
-                            },
-                            [
-                              _c("div", { staticClass: "detail_btn" }, [
-                                _vm._v(
-                                  "\n                                詳細\n                            "
-                                )
-                              ])
-                            ]
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "v-col",
-            { staticClass: "event-card", attrs: { md: "3", cols: "11" } },
-            [
-              _c(
-                "div",
-                { staticClass: "card-wrap" },
-                [
-                  _c(
-                    "v-card",
-                    { staticClass: "mx-auto" },
-                    [
-                      _c(
-                        "v-img",
-                        {
-                          staticClass: "white--text align-end",
-                          attrs: {
-                            height: "200px",
-                            src:
-                              "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                          }
-                        },
-                        [_c("v-card-title")],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("v-card-subtitle", { staticClass: "pb-0 mb-1" }, [
-                        _vm._v("From 2020/6/3 to 2020/9/3")
-                      ]),
-                      _vm._v(" "),
-                      _c("v-card-text", { staticClass: "text--primary" }, [
-                        _c("h4", { staticClass: "mb-2" }, [
-                          _vm._v("地名　　旅館名")
-                        ]),
-                        _vm._v(" "),
-                        _c("h4", [_vm._v("イベント名")]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "\n                        あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                        あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                    "
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "v-card-actions",
-                        [
-                          _c(
-                            "router-link",
-                            {
-                              staticClass:
-                                "d-flex align-center justify-center mb-5",
-                              attrs: { to: "/" }
-                            },
-                            [
-                              _c("div", { staticClass: "detail_btn" }, [
-                                _vm._v(
-                                  "\n                                詳細\n                            "
-                                )
-                              ])
-                            ]
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "v-col",
-            { staticClass: "event-card", attrs: { md: "3", cols: "11" } },
-            [
-              _c(
-                "div",
-                { staticClass: "card-wrap" },
-                [
-                  _c(
-                    "v-card",
-                    { staticClass: "mx-auto" },
-                    [
-                      _c(
-                        "v-img",
-                        {
-                          staticClass: "white--text align-end",
-                          attrs: {
-                            height: "200px",
-                            src:
-                              "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                          }
-                        },
-                        [_c("v-card-title")],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("v-card-subtitle", { staticClass: "pb-0 mb-1" }, [
-                        _vm._v("From 2020/6/3 to 2020/9/3")
-                      ]),
-                      _vm._v(" "),
-                      _c("v-card-text", { staticClass: "text--primary" }, [
-                        _c("h4", { staticClass: "mb-2" }, [
-                          _vm._v("地名　　旅館名")
-                        ]),
-                        _vm._v(" "),
-                        _c("h4", [_vm._v("イベント名")]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "\n                        あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、\n                        あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。\n                    "
+                            "\n                        " +
+                              _vm._s(event.event_description) +
+                              "\n                    "
                           )
                         ])
                       ]),
@@ -41694,7 +41563,7 @@ var render = function() {
               )
             ]
           )
-        ],
+        }),
         1
       ),
       _vm._v(" "),

@@ -19,13 +19,13 @@
 
                 <v-textarea
                 outlined
-                name="input-7-4"
+                v-model="message"
                 label="メッセージ"
                 ></v-textarea>
 
 
-                <a class="button d-flex justify-center align-center">
-                    <div>
+                <a class="button d-flex justify-center align-center" @click="send">
+                    <div >
                         送信
                     </div>
                 </a>
@@ -38,7 +38,24 @@
 
 <script>
 export default {
-
+    data: () => ({
+        name:'',
+        email: '',
+        message: '',
+    }),
+    methods:{
+        send(){
+            axios.post('/contactadd',{
+                contact_name:this.name,
+                contact_email:this.email,
+                contact_message:this.message,
+            })
+            .then(response => {
+                console.log('OK');
+            })
+            .catch(error => console.log(error));
+        }
+    }
 }
 </script>
 

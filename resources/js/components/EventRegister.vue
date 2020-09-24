@@ -1,37 +1,48 @@
 <template>
     <div class="eventRegister">
         <v-text-field
-        v-model="address"
-        :error-messages="addressErrors"
+        v-model="ryokanName"
+        :error-messages="ryokanNameErrors"
         label="旅館名"
         required
-        @input="$v.address.$touch()"
-        @blur="$v.address.$touch()"
+        @input="$v.ryokanName.$touch()"
+        @blur="$v.ryokanName.$touch()"
         ></v-text-field>
         <v-text-field
-        v-model="introduction"
-        :error-messages="introductionErrors"
+        v-model="eventTitle"
+        :error-messages="eventTitleErrors"
         label="イベントタイトル"
         required
-        @input="$v.introduction.$touch()"
-        @blur="$v.introduction.$touch()"
+        @input="$v.eventTitle.$touch()"
+        @blur="$v.eventTitle.$touch()"
         ></v-text-field>
         <v-text-field
-        v-model="category"
-        :error-messages="categoryErrors"
+        v-model="eventDescription"
+        :error-messages="eventDescriptionErrors"
         label="イベント詳細"
         required
-        @input="$v.category.$touch()"
-        @blur="$v.category.$touch()"
+        @input="$v.eventDescription.$touch()"
+        @blur="$v.eventDescription.$touch()"
         ></v-text-field>
         <v-text-field
-        v-model="category"
-        :error-messages="categoryErrors"
+        v-model="eventDuration"
+        :error-messages="eventDurationErrors"
         label="イベント期間"
         required
-        @input="$v.category.$touch()"
-        @blur="$v.category.$touch()"
+        @input="$v.eventDuration.$touch()"
+        @blur="$v.eventDuration.$touch()"
         ></v-text-field>
+
+        <v-file-input 
+        multiple 
+        label="店舗画像"
+        prepend-inner-icon="mdi-camera"
+        prepend-icon
+        show-size
+        v-on:change="fileSelected"
+        ></v-file-input>
+
+        <v-btn class="mr-4" @click="eventAdd" >登録</v-btn>
     </div>
 </template>
 
@@ -44,19 +55,20 @@ export default {
     mixins: [validationMixin],
 
     validations: {
-      // storeName: { required },
-      address: { required },
-      introduction:{required},
-      category: {required},
+      ryokanName: { required },
+      eventTitle: { required },
+      eventDescription:{required},
+      eventDuration: {required},
+      eventImage: {required},
     },
 
     data: () => ({
       // storeName: '',
-      address: '',
-      introduction: '',
-      category: '',
-      user:'',
-      store_id:''
+      ryokanName: '',
+      eventTitle: '',
+      eventDescription: '',
+      eventDuration:'',
+      eventImage:''
     }),
 
     computed: {
@@ -67,26 +79,57 @@ export default {
       //   !this.$v.storeName.required && errors.push('storeName is required.')
       //   return errors
       // },
-      addressErrors () {
+      ryokanNameErrors () {
         const errors = []
-        if (!this.$v.address.$dirty) return errors
-        !this.$v.address.required && errors.push('address is required')
+        if (!this.$v.ryokanName.$dirty) return errors
+        !this.$v.ryokanName.required && errors.push('旅館名を入力してください')
         return errors
       },
-      introductionErrors () {
+      eventTitleErrors () {
         const errors = []
-        if (!this.$v.introduction.$dirty) return errors
-        !this.$v.introduction.required && errors.push('introduction is required')
+        if (!this.$v.eventTitle.$dirty) return errors
+        !this.$v.eventTitle.required && errors.push('イベントのタイトルを入力してください')
         return errors
       },
-      categoryErrors () {
+      eventDescriptionErrors () {
         const errors = []
-        if (!this.$v.category.$dirty) return errors
-        !this.$v.category.required && errors.push('category is required')
+        if (!this.$v.eventDescription.$dirty) return errors
+        !this.$v.eventDescription.required && errors.push('イベント詳細を入力してください')
+        return errors
+      },
+      eventDurationErrors () {
+        const errors = []
+        if (!this.$v.eventDuration.$dirty) return errors
+        !this.$v.eventDuration.required && errors.push('イベント期間を入力してください')
         return errors
       },
       
     },
+
+    methods:{
+
+        fileSelected(event){
+            this.eventImage = event[0];
+            console.log(event[0]);
+        },
+
+        eventAdd(){
+            let eventData = new FormData();
+            eventData.append('ryokan_name',this.ryokanName);
+            eventData.append('event_title',this.eventTitle);
+            eventData.append('event_description',this.eventDescription);
+            eventData.append('event_duration',this.eventDuration);
+            eventData.append('event_img_main',this.eventImage);
+
+            
+            axios.post('/eventadd',eventData)
+            .then(response => {
+                console.log('OK');
+            })
+            .catch(error => console.log(error));
+        }
+
+    }
 
 
     

@@ -12,6 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// イベント機能たち
+Route::post('/eventadd', 'EventController@store');
+Route::get('/eventget','EventController@index');
+Route::get('/eventgettop','EventController@indextop');
+
+// コンタクト機能たち
+Route::post('/contactadd', 'ContactController@store');
+
+
 
 Route::get('/{any}', function () {
     return view('vue');
