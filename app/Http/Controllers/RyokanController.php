@@ -28,7 +28,23 @@ class RyokanController extends Controller
     public function store(ValidRyokan $request)
     {
         //
-        Ryokan::create($request->all());
+        // dd($request->file);
+        if($request->file){
+            $file_name=$request->ryokan_name.'.'.$request->file->getClientOriginalExtension();//ファイル名の作成
+            $request->file->storeAs('public/ryokan_images',$file_name);
+
+            $ryokan = new Ryokan();
+            $ryokan->ryokan_name = $request->ryokan_name;
+            $ryokan->ryokan_region = $request->ryokan_region;
+            $ryokan->ryokan_place = $request->ryokan_place;
+            $ryokan->ryokan_img = 'storage/ryokan_images/' . $file_name;//publicにシンボリックリンク
+            $ryokan->ryokan_discription = $request->ryokan_discription;
+            $ryokan->ryokan_url = $request->ryokan_url;
+            $ryokan->save();
+
+            return ['success' => '登録しました!'];
+        }
+        // Ryokan::create($request->all());
     }
 
     /**
@@ -40,6 +56,8 @@ class RyokanController extends Controller
     public function show($id)
     {
         //
+    $ryokan = Ryokan::find($id);
+        return $ryokan;
     }
 
     /**
