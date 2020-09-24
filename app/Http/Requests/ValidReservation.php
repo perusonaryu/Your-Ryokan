@@ -28,9 +28,9 @@ class ValidReservation extends FormRequest
             'name'=>'required',
             'email'=>'required',
             'phone'=>'required',
-            // 'visit_duration'=>'required',
+            'visit_duration'=>'required',
             'room'=>'required',
-            'ryokan_id'=>'required',
+            // 'ryokan_id'=>'required',
         ];
     }
 }

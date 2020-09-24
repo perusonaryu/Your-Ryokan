@@ -26,11 +26,12 @@ class ValidRyokan extends FormRequest
         return [
             //
             'ryokan_name'=>'required',
+            'ryokan_region'=>'required',
             'ryokan_place'=>'required',
-            // 'ryokan_img'=>'required',
+            'file' => 'required|image',
             'ryokan_discription'=>'required',
             'ryokan_url'=>'required',
-            'ryokan_region'=>'required',
+            
         ];
     }
 }
