@@ -8,6 +8,7 @@ Vue.use(VueRouter);
 import RyokanPage from './components/Ryokan/RyokanPage.vue'
 import RyokanDetail from './components/Ryokan/RyokanDetail.vue'
 import RyokanAdd from './components/Kanri/RyokanAdd.vue'
+import EventDetail from './components/Ryokan/EventDetail.vue'
 
 import toppage from './components/topPage.vue'
 import contact from './components/Contact.vue'
@@ -60,7 +61,7 @@ export default new VueRouter({
         },
         {
             // routeのパス設定
-            path: '/RyokanDetail/:id',
+            path: '/RyokanDetail/:ryokanId',
             // 名前付きルートを設定したい場合付与
             name: 'RyokanDetail',
             // コンポーネントの指定
@@ -85,7 +86,15 @@ export default new VueRouter({
             component: eventRegister,
             
         },
-
+        // {
+        //     // routeのパス設定
+        //     path: '/EventDetail/:id',
+        //     // 名前付きルートを設定したい場合付与
+        //     name: 'RyokanDetail',
+        //     // コンポーネントの指定
+        //     component: EventDetail,
+        //     props: true
+        // },
 
 
     ],

@@ -5,7 +5,7 @@
           <!-- <div >  ,-->
             <v-col md="6" cols="12"   v-for="(ryokan,index) in ryokaninfo" :key="ryokan.id" v-if="index===0 || index===3">
             <router-link  class="detail_link "  
-            v-bind:to="{name: 'RyokanDetail', params: {id: ryokan.id}}">
+            v-bind:to="{name: 'RyokanDetail', params: {ryokanId: ryokan.id}}">
             <v-img
             class="white--text image align-center"
             align="center"
