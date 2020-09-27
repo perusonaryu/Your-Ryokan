@@ -30,7 +30,7 @@
                             </v-card-text>
 
                             <v-card-actions >
-                                <router-link v-bind:to="{name: 'RyokanDetail', params: {id: event.ryokan_id}}"
+                                <router-link v-bind:to="{name: 'RyokanDetail', params: {ryokanId: event.ryokan_id}}"
                                 class="d-flex align-center justify-center mb-5">
                                     <div class="detail_btn">
                                         詳細

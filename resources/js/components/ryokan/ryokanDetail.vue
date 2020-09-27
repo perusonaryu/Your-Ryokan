@@ -82,8 +82,6 @@ export default {
             axios.get('/api/ryokan/' + this.ryokanId)//$route.params.id/
             .then( ( res ) => {
                 this.ryokanitem = res.data;
-                this.ryokanitem_name = res.data.ryokan_name;
-                this.ryokanitem_place = res.data.ryokan_place;
                 console.log(res.data);
             })
             .catch(err => {

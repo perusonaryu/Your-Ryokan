@@ -2639,8 +2639,6 @@ __webpack_require__.r(__webpack_exports__);
       axios.get('/api/ryokan/' + this.ryokanId) //$route.params.id/
       .then(function (res) {
         _this.ryokanitem = res.data;
-        _this.ryokanitem_name = res.data.ryokan_name;
-        _this.ryokanitem_place = res.data.ryokan_place;
         console.log(res.data);
       })["catch"](function (err) {
         console.log(err);
@@ -40391,7 +40389,7 @@ var render = function() {
                                       attrs: {
                                         to: {
                                           name: "RyokanDetail",
-                                          params: { id: event.ryokan_id }
+                                          params: { ryokanId: event.ryokan_id }
                                         }
                                       }
                                     },
