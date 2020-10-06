@@ -12,7 +12,7 @@ import RyokanAdd from './components/Kanri/RyokanAdd.vue'
 import toppage from './components/topPage.vue'
 import contact from './components/Contact.vue'
 import event from './components/Event.vue'
-import eventRegister from './components/EventRegister.vue'
+import eventRegister from './components/Kanri/EventRegister.vue'
 
 
 export default new VueRouter({

@@ -1,10 +1,11 @@
 <template>
 <div>
     <v-app-bar
-    color="#aaacaf"
+    color="black"
     fixed
     flat
     class="header"
+    height="64px"
     >
         <router-link to="/">
             <v-toolbar-title class="logo">
@@ -82,7 +83,7 @@ a+a{
     margin-left: 20px;
 }
 .header{
-    opacity:0.4;
+  background-color:rgba(0,0,0,0);
 }
 
 .logo{

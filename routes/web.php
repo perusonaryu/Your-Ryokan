@@ -17,8 +17,13 @@ Route::post('/eventadd', 'EventController@store');
 Route::get('/eventget','EventController@index');
 Route::get('/eventgettop','EventController@indextop');
 
+//トップページの旅館取得
+Route::get('/topryokan','RyokanController@topget');
+
 // コンタクト機能たち
 Route::post('/contactadd', 'ContactController@store');
+
+Route::post('/contactmail','MailSendController@send');
 
 
 
