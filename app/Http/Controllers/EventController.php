@@ -28,6 +28,19 @@ class EventController extends Controller
         return $event;
     }
 
+    public function show($ryokanId)
+    {
+        //
+    
+    // $ryokanId=$request->ryokan_id;
+    // $event = Event::find('ryokan_id',$ryokanId);
+    
+    $query = Event::query();
+    $event = $query->where('ryokan_id',$ryokanId)->get();
+    // dd($event);
+    return $event;
+    }
+
 
 
 

@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('/eventadd', 'EventController@store');
 Route::get('/eventget','EventController@index');
 Route::get('/eventgettop','EventController@indextop');
+Route::get('/eventdetail/{ryokanId}','EventController@show');
 
 //トップページの旅館取得
 Route::get('/topryokan','RyokanController@topget');
