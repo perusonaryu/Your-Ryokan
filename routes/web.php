@@ -23,6 +23,11 @@ Route::post('/contactadd', 'ContactController@store');
 
 
 
+
 Route::get('/{any}', function () {
     return view('vue');
 })->where('any', '.*');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
