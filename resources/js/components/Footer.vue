@@ -77,6 +77,10 @@ a{
     background-color: black;
     color:white;
     padding:30px 0;
+    position: absolute;
+    width:100%;
+    bottom:0;
+    margin-top: 250px;
     
 }
 
