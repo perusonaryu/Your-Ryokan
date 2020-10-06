@@ -1,101 +1,81 @@
 <template>
-<div>
-    <v-app-bar
-    color="#aaacaf"
-    fixed
-    flat
-    class="header"
-    >
-        <router-link to="/">
-            <v-toolbar-title class="logo">
-                YOUR RYOKAN
-            </v-toolbar-title>
+  <div>
+    <v-app-bar color="black" fixed flat class="header" height="64px">
+      <router-link to="/">
+        <v-toolbar-title class="logo"> YOUR RYOKAN </v-toolbar-title>
+      </router-link>
 
-        </router-link>
+      <v-spacer></v-spacer>
+      <div class="nav_link">
+        <router-link to="/RyokanPage">旅館</router-link>
+        <router-link to="/event">イベント</router-link>
+        <router-link to="/contact">お問い合わせ</router-link>
+      </div>
 
-        <v-spacer></v-spacer>
-        <div class="nav_link">
-            <router-link to="/RyokanPage">旅館</router-link>
-            <router-link to="/event">イベント</router-link>
+      <div class="hamburger sp">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="globalMenuSp">
+        <ul>
+          <li class="link"><router-link to="/RyokanPage">旅館</router-link></li>
+          <li class="link"><router-link to="/event">イベント</router-link></li>
+          <li class="link">
             <router-link to="/contact">お問い合わせ</router-link>
-        </div>
-
-        <div class="hamburger sp">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <nav class="globalMenuSp">
-            <ul>
-                <li class="link"><router-link to="/RyokanPage">旅館</router-link></li>
-                <li class="link"><router-link to="/event">イベント</router-link></li>
-                <li class="link"><router-link to="/contact">お問い合わせ</router-link></li>
-            </ul>
-        </nav>
-
+          </li>
+        </ul>
+      </nav>
     </v-app-bar>
-</div>
-  
-  
+  </div>
 </template>
 
 <script>
-export default {
+export default {};
 
-}
+$(function () {
+  $(".hamburger").click(function () {
+    $(this).toggleClass("active");
 
-$(function() {
-    $('.hamburger').click(function() {
-        $(this).toggleClass('active');
-        // $('.globalMenuSp').fadeIn(1000);
- 
-        if ($(this).hasClass('active')) {
-            $('.globalMenuSp').addClass('active').fadeIn(500);
-            $('.logo').hide();
-            // $('.globalMenuSp').fadeIn(2000);
-        } else {
-            $('.globalMenuSp').removeClass('active').fadeOut(500);
-            // $('.globalMenuSp').fadeOut(1000);
-            $('.logo').show();
-        }
-    });
+    if ($(this).hasClass("active")) {
+      $(".globalMenuSp").addClass("active").fadeIn(500);
+      $(".logo").hide();
+    } else {
+      $(".globalMenuSp").removeClass("active").fadeOut(500);
+      $(".logo").show();
+    }
+  });
 
-    $('.link').click(function(){
-        $('.hamburger').toggleClass('active');
-        $('.globalMenuSp').removeClass('active').fadeOut(500);
-        $('.logo').show();
-    });
+  $(".link").click(function () {
+    $(".hamburger").toggleClass("active");
+    $(".globalMenuSp").removeClass("active").fadeOut(500);
+    $(".logo").show();
+  });
 });
 </script>
 
 <style scoped>
-
-a{
-    text-decoration:none;
-    color:white!important;
-    font-size:20px;
-
+a {
+  text-decoration: none;
+  color: white !important;
+  font-size: 20px;
 }
 
-a+a{
-    margin-left: 20px;
+a + a {
+  margin-left: 20px;
 }
-.header{
-    opacity:0.4;
-}
-
-.logo{
-    opacity:1;
-    color:white;
-    font-size:30px;
-    font-weight:bold;
-    font-family: 'Noto Serif JP';
+.header {
+  background-color: rgba(0, 0, 0, 0);
 }
 
-
-
-
+.logo {
+  opacity: 1;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Noto Serif JP";
+}
 
 /*ハンバーガーボタン*/
 .hamburger {
@@ -108,15 +88,15 @@ a+a{
   height: 42px;
   cursor: pointer;
   text-align: center; */
-  z-index : 3;
+  z-index: 3;
   position: relative;
   width: 36px;
   height: 32px;
   cursor: pointer;
   /* top   : 12px; */
-  right : 13px;
+  right: 13px;
   display: none;
-  
+
   /* padding:2px 0; */
 }
 
@@ -138,10 +118,10 @@ a+a{
   border-radius: 4px;
 }
 
-.hamburger , .hamburger span{
-    
-    transition: all .5s;
-    box-sizing: border-box;
+.hamburger,
+.hamburger span {
+  transition: all 0.5s;
+  box-sizing: border-box;
 }
 
 .hamburger span:nth-child(1) {
@@ -160,8 +140,8 @@ a+a{
 /* ナビ開いてる時のボタン */
 
 .hamburger.active {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .hamburger.active span:nth-child(1) {
   -webkit-transform: translateY(15px) rotate(-45deg);
@@ -177,16 +157,16 @@ a+a{
 
 nav.globalMenuSp {
   position: fixed;
-  z-index : 2;
-  top  : 0;
-  left : 0;
+  z-index: 2;
+  top: 0;
+  left: 0;
   color: #fff;
-  background:black;
+  background: black;
   text-align: center;
   width: 100%;
   /* opacity: 0; */
   display: none;
-  min-height:100vh;
+  min-height: 100vh;
   /* transition: opacity .6s ease, visibility .6s ease; */
 }
 
@@ -206,15 +186,15 @@ nav.globalMenuSp ul li {
 nav.globalMenuSp ul li:last-child {
   padding-bottom: 0;
 }
-nav.globalMenuSp ul li.link:hover{
-  background :#ddd;
+nav.globalMenuSp ul li.link:hover {
+  background: #ddd;
 }
 
 nav.globalMenuSp ul li a {
   display: block;
   color: #fff;
   padding: 1em 0;
-  text-decoration :none;
+  text-decoration: none;
 }
 
 /* nav.globalMenuSp.active {
@@ -223,21 +203,18 @@ nav.globalMenuSp ul li a {
 
 } */
 
-@media (max-width: 670px)
-{
-.nav_link{
+@media (max-width: 670px) {
+  .nav_link {
     display: none;
-}
-.hamburger{
-    z-index : 3;
+  }
+  .hamburger {
+    z-index: 3;
     display: block;
-}
+  }
 
-nav.globalMenuSp.active{
+  nav.globalMenuSp.active {
     display: flex;
     align-items: center;
+  }
 }
-
-}
-
 </style>

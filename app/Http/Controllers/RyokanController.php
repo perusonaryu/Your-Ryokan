@@ -19,6 +19,12 @@ class RyokanController extends Controller
         return Ryokan::all();
     }
 
+    public function topget()
+    {
+        $ryokan = Ryokan::orderBy('id','DESC')->take(6)->get();
+        return $ryokan;
+    }
+
     /**
      * Store a newly created resource in storage.
      *

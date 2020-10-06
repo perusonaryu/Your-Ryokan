@@ -1,0 +1,65 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.3
+-- https://www.phpmyadmin.net/
+--
+-- ホスト: localhost:8889
+-- 生成日時: 2020 年 10 月 05 日 14:27
+-- サーバのバージョン： 5.7.26
+-- PHP のバージョン: 7.4.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- データベース: `your_ryokan`
+--
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `ryokans`
+--
+
+CREATE TABLE `ryokans` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `ryokan_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ryokan_place` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ryokan_img` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ryokan_discription` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ryokan_url` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ryokan_region` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- テーブルのデータのダンプ `ryokans`
+--
+
+INSERT INTO `ryokans` (`id`, `ryokan_name`, `ryokan_place`, `ryokan_img`, `ryokan_discription`, `ryokan_url`, `ryokan_region`, `created_at`, `updated_at`) VALUES
+(1, 'test旅館', '沖縄県', 'storage/ryokan_images/test旅館.jpg', 'testtesttesttesttesttesttesttesttesttesttesttesttesttesttest', 'testtesttesttesttesttest', '沖縄', '2020-10-04 21:37:35', '2020-10-04 21:37:35'),
+(2, 'test2旅館', '大阪府', 'storage/ryokan_images/test2旅館.jpg', 'testtesttesttesttesttest', 'testtesttesttesttesttest', '大阪', '2020-10-04 21:39:51', '2020-10-04 21:39:51'),
+(3, 'test旅館', '京都府', 'storage/ryokan_images/test旅館.jpg', 'testtesttesttest', 'testtesttesttest', '京都', '2020-10-04 21:56:00', '2020-10-04 21:56:00'),
+(4, 'test4旅館', '鳥取県', 'storage/ryokan_images/test4旅館.jpg', 'teessstttttttttt', 'tttttttttttttttttt', '鳥取', '2020-10-04 23:58:31', '2020-10-04 23:58:31'),
+(5, 'test5旅館', '福岡県', 'storage/ryokan_images/test5旅館.jpg', 'aaaaaaaaaaaaaaaaa', 'eeeeeeeeeeeeeeeeeeeeeeee', '福岡', '2020-10-04 23:59:52', '2020-10-04 23:59:52'),
+(6, 'test6旅館', '大分県', 'storage/ryokan_images/test6旅館.jpg', 'あああああああああああああ', 'っっっっっっっっっd', '大分', '2020-10-05 00:00:39', '2020-10-05 00:00:39');
+
+--
+-- ダンプしたテーブルのインデックス
+--
+
+--
+-- テーブルのインデックス `ryokans`
+--
+ALTER TABLE `ryokans`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- ダンプしたテーブルのAUTO_INCREMENT
+--
+
+--
+-- テーブルのAUTO_INCREMENT `ryokans`
+--
+ALTER TABLE `ryokans`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;

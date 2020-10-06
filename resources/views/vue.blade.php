@@ -13,16 +13,31 @@
   <style>
     #app{
       overflow: hidden;
+      background-image:url('../../storage/washi.jpg');
+      position:relative;
+    }
+
+    .content{
+      margin-bottom:250px;
+      
+    }
+
+    @media (max-width: 670px){
+      .content{
+        margin-bottom:400px;
+      }
     }
   </style>
 </head>
 
 
-<body style="width:100%; height:100%;">
-  <div class="content" id="app" style="width:100%; height:100%;">
-    <v-app style="width:100%; height:100%;">
+<body style="width:100%; height:100%; margin-top:64px;">
+  <div id="app" style="width:100%; height:100%;">
+    <v-app  style="width:100%; height:100%;">
       <header-component></header-component>
-      <router-view></router-view>
+      <div class="content">
+        <router-view></router-view>
+      </div>
       <footer-component></footer-component>
 
     </v-app>
