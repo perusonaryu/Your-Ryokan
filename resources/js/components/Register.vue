@@ -1,6 +1,6 @@
 <template>
-<div class="flex flex-wrap w-full justify-center items-center pt-56">
-    <div class="flex flex-wrap max-w-xl">
+<div class="d-flex align-items-center justify-content-center " style="height:500px !important;">
+    <div class="align-items-center" style="width:500px !important; height:300px !important;">
         <div class="p-2 text-2xl "><h1>登録</h1></div>
         <div class="p-2 w-full ">
         <label for="name" class="w-full">名前</label>

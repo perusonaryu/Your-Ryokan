@@ -115,7 +115,7 @@ export default {
 }
 @media screen and (max-width:960px){
 .wrapper {
-   margin:55px 0px;
+   margin:0px 0px 200px;
 }
 }
 .text_content{

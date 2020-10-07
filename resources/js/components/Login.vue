@@ -1,6 +1,6 @@
 <template>
-<div class="flex flex-wrap w-full justify-center items-center pt-56">
-    <div class="flex flex-wrap max-w-xl">
+<div class="d-flex align-items-center justify-content-center" style="height:500px !important; ">
+    <div class="align-items-center" style="width:500px !important; height:300px !important;">
         <div class="p-2 text-2xl "><h1>アカウントにログイン</h1></div>
          <div class="p-2 w-full ">
             <label for="email" class="w-full">メールアドレス</label>
@@ -15,8 +15,7 @@
             v-model="form.password" name="password">
         </div>
         <div class="p-2 w-full mt-4">
-            <button type="submit" @click.prevent="login" class="flex bg-indigo-500
-            border-0 py-2 px-8 focus:out-line-none hover:bg-indigo-600 rounded text-lg">ログイン</button>
+            <button type="submit" @click.prevent="login" class="">ログイン</button>
         </div>
     </div>  
 </div>

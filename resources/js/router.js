@@ -17,8 +17,8 @@ import event from './components/Event.vue'
 //管理画面
 import Login from './components/Login.vue'
 import Register from './components/Register.vue'
-import Dashboard from './components/Dashboard.vue'
-import eventRegister from './components/EventRegister.vue'
+import Dashboard from './components/Kanri/Dashboard.vue'
+import eventRegister from './components//Kanri/EventRegister.vue'
 import RyokanAdd from './components/Kanri/RyokanAdd.vue'
 import Axios from 'axios';
 

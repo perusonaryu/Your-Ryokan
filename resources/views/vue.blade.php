@@ -19,7 +19,7 @@
 
     .content{
       margin-bottom:250px;
-      
+      height:100%;
     }
 
     @media (max-width: 670px){
