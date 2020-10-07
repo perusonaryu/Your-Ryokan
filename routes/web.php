@@ -28,6 +28,11 @@ Route::post('/contactmail','MailSendController@send');
 
 
 
+
 Route::get('/{any}', function () {
     return view('vue');
 })->where('any', '.*');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
