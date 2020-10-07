@@ -47,86 +47,8 @@
           </v-img>
         </router-link>
       </v-col>
-
-      <!-- </div> -->
-
-      <!-- <v-col md="3" cols="12" >
-            <router-link :to="`/RyokanDetail`" class="detail_link" v-else>
-            <v-img
-            class="white--text image align-center"
-            align="center"
-            height="100%"
-            width="100%"
-            :src="ryokan.ryokan_img"
-            >
-            <p class="ryokan_text">{{ryokan.ryokan_place}}<br><span>{{ryokan.ryokan_name}}</span></p>
-            </v-img>
-            </router-link>
-        </v-col>  -->
-      <!-- <v-col md="3" cols="12" >
-            <router-link :to="`/RyokanDetail`" class="detail_link">
-            <v-img
-            class="white--text image align-center"
-            align="center"
-            height="100%"
-            width="100%"
-            :src="ryokan.ryokan_img"
-            >
-            <p class="ryokan_text">{{ryokan.ryokan_place}}<br><span>{{ryokan.ryokan_name}}</span></p>
-            </v-img>
-            </router-link>
-        </v-col>  -->
-
-      <!-- <v-col md="3" cols="12" >
-            <router-link :to="`/RyokanDetail`" class="detail_link">
-            <v-img
-            class="white--text image"
-            height="100%"
-            width="100%"
-            :src="ryokan">
-            <p class="ryokan_text">{{place}}<br><span>{{name}}</span></p>
-            </v-img>
-            </router-link>
-        </v-col>     -->
-      <!-- <v-col md="3" cols="12" >
-            <div class="ryokan_card">
-                <p class="ryokan_text">鳥取<br><span>養生館</span></p>
-                <router-link :to="`/RyokanDetail`">
-                <img src="../../../.././public/img/yojokan3.jpg" alt="" class="ryokan_img">
-                </router-link>
-        </div>
-        </v-col>     -->
-      <!-- 
-        <v-col md="3" cols="12">
-            <div class="ryokan_card">
-                <p class="ryokan_text">鳥取<br><span>養生館</span></p>
-                <router-link :to="`/RyokanDetail`">
-                    <img src="../../../.././public/img/yojokan6.jpg" alt="" class="ryokan_img">
-                </router-link>
-            </div>   
-        </v-col>    
-        <v-col md="3" cols="12" >
-            <div class="ryokan_card">
-                <p class="ryokan_text">鳥取<br><span>養生館</span></p>
-                <router-link :to="`/RyokanDetail`">
-                    <img src="../../../.././public/img/yojokan5.jpg" alt="" class="ryokan_img">
-                </router-link>
-            </div>
-        </v-col>    
-        <v-col md="6" cols="12" >
-            <div class="ryokan_card">
-                <p class="ryokan_text">鳥取<br><span>養生館</span></p>
-                <router-link :to="`/RyokanDetail`">
-                    <img src="../../../.././public/img/yojokan4.jpg" alt="" class="ryokan_img">
-                </router-link>
-            </div>
-        </v-col>
-     -->
-      <!-- <p class="p1">あ</p>
-    <p class="p2">あ</p>
-    <p class="p3">あ</p> -->
     </v-row>
-    <!-- </v-row> -->
+
   </div>
 </template>
 <script>

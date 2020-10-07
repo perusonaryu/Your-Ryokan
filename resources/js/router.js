@@ -86,15 +86,15 @@ export default new VueRouter({
             component: eventRegister,
             
         },
-        // {
-        //     // routeのパス設定
-        //     path: '/EventDetail/:id',
-        //     // 名前付きルートを設定したい場合付与
-        //     name: 'RyokanDetail',
-        //     // コンポーネントの指定
-        //     component: EventDetail,
-        //     props: true
-        // },
+        {
+            // routeのパス設定
+            path: '/EventDetail/:id',
+            // 名前付きルートを設定したい場合付与
+            name: 'RyokanDetail',
+            // コンポーネントの指定
+            component: EventDetail,
+            props: true
+        },
 
 
     ],

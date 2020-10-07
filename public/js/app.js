@@ -2228,34 +2228,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 $(function () {
-  $('.hamburger').click(function () {
-    $(this).toggleClass('active'); // $('.globalMenuSp').fadeIn(1000);
+  $(".hamburger").click(function () {
+    $(this).toggleClass("active");
 
-    if ($(this).hasClass('active')) {
-      $('.globalMenuSp').addClass('active').fadeIn(500);
-      $('.logo').hide(); // $('.globalMenuSp').fadeIn(2000);
+    if ($(this).hasClass("active")) {
+      $(".globalMenuSp").addClass("active").fadeIn(500);
+      $(".logo").hide();
     } else {
-      $('.globalMenuSp').removeClass('active').fadeOut(500); // $('.globalMenuSp').fadeOut(1000);
-
-      $('.logo').show();
+      $(".globalMenuSp").removeClass("active").fadeOut(500);
+      $(".logo").show();
     }
   });
-  $('.link').click(function () {
-    $('.hamburger').toggleClass('active');
-    $('.globalMenuSp').removeClass('active').fadeOut(500);
-    $('.logo').show();
+  $(".link").click(function () {
+    $(".hamburger").toggleClass("active");
+    $(".globalMenuSp").removeClass("active").fadeOut(500);
+    $(".logo").show();
   });
 });
 
@@ -2855,84 +2844,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -7886,7 +7797,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\na[data-v-61a7c374]{\n    color:white!important;\n    text-decoration: none;\n}\n.footer[data-v-61a7c374]{\n    background-color: black;\n    color:white;\n    padding:30px 0;\n    position: absolute;\n    width:100%;\n    bottom:0;\n    margin-top: 250px;\n}\n.icons i+i[data-v-61a7c374]{\n    margin-left: 10px;\n}\n.text[data-v-61a7c374]{\n    text-align: center;\n}\n.text p[data-v-61a7c374]{\n    text-align: center;\n}\n.text p+p[data-v-61a7c374]{\n    margin-top: 10px;\n}\n", ""]);
+exports.push([module.i, "\na[data-v-61a7c374]{\n    color:white!important;\n    text-decoration: none;\n}\n.footer[data-v-61a7c374]{\n    background-color: black;\n    color:white;\n    padding:30px 0;\n    position: absolute;\n    width:100%;\n    bottom:0;\n}\n.icons i+i[data-v-61a7c374]{\n    margin-left: 10px;\n}\n.text[data-v-61a7c374]{\n    text-align: center;\n}\n.text p[data-v-61a7c374]{\n    text-align: center;\n}\n.text p+p[data-v-61a7c374]{\n    margin-top: 10px;\n}\n", ""]);
 
 // exports
 
@@ -7905,7 +7816,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\na[data-v-1f42fb90]{\n    text-decoration:none;\n    color:white!important;\n    font-size:20px;\n}\na+a[data-v-1f42fb90]{\n    margin-left: 20px;\n}\n.header[data-v-1f42fb90]{\n  background-color:rgba(0,0,0,0);\n}\n.logo[data-v-1f42fb90]{\n    opacity:1;\n    color:white;\n    font-size:30px;\n    font-weight:bold;\n    font-family: 'Noto Serif JP';\n}\n\n\n\n\n\n/*ハンバーガーボタン*/\n.hamburger[data-v-1f42fb90] {\n  /* display : block;\n  position: fixed;\n  z-index : 3;\n  right : 13px;\n  top   : 12px;\n  width : 42px;\n  height: 42px;\n  cursor: pointer;\n  text-align: center; */\n  z-index : 3;\n  position: relative;\n  width: 36px;\n  height: 32px;\n  cursor: pointer;\n  /* top   : 12px; */\n  right : 13px;\n  display: none;\n  \n  /* padding:2px 0; */\n}\n.hamburger span[data-v-1f42fb90] {\n  /* display : block;\n  position: absolute;\n  width   : 30px;\n  height  : 2px ;\n  left    : 6px;\n  background : #555;\n  -webkit-transition: 0.3s ease-in-out;\n  -moz-transition   : 0.3s ease-in-out;\n  transition        : 0.3s ease-in-out; */\n  position: absolute;\n  left: 0;\n  width: 100%;\n  height: 2px;\n  background-color: white;\n  border-radius: 4px;\n}\n.hamburger[data-v-1f42fb90], .hamburger span[data-v-1f42fb90]{\n    \n    transition: all .5s;\n    box-sizing: border-box;\n}\n.hamburger span[data-v-1f42fb90]:nth-child(1) {\n  /* top: 10px; */\n  top: 0;\n}\n.hamburger span[data-v-1f42fb90]:nth-child(2) {\n  /* top: 20px; */\n  top: 15px;\n}\n.hamburger span[data-v-1f42fb90]:nth-child(3) {\n  /* top: 30px; */\n  bottom: 0;\n}\n\n/* ナビ開いてる時のボタン */\n.hamburger.active[data-v-1f42fb90] {\n    transform: rotate(360deg);\n}\n.hamburger.active span[data-v-1f42fb90]:nth-child(1) {\n  transform: translateY(15px) rotate(-45deg);\n}\n.hamburger.active span[data-v-1f42fb90]:nth-child(2) {\n  transform: translateY(0) rotate(45deg);\n}\n.hamburger.active span[data-v-1f42fb90]:nth-child(3) {\n  opacity: 0;\n}\nnav.globalMenuSp[data-v-1f42fb90] {\n  position: fixed;\n  z-index : 2;\n  top  : 0;\n  left : 0;\n  color: #fff;\n  background:black;\n  text-align: center;\n  width: 100%;\n  /* opacity: 0; */\n  display: none;\n  min-height:100vh;\n  /* transition: opacity .6s ease, visibility .6s ease; */\n}\nnav.globalMenuSp ul[data-v-1f42fb90] {\n  margin: 0 auto;\n  padding: 0;\n  width: 100%;\n}\nnav.globalMenuSp ul li[data-v-1f42fb90] {\n  list-style-type: none;\n  padding: 0;\n  width: 100%;\n  /* transition: .4s all; */\n}\nnav.globalMenuSp ul li[data-v-1f42fb90]:last-child {\n  padding-bottom: 0;\n}\nnav.globalMenuSp ul li.link[data-v-1f42fb90]:hover{\n  background :#ddd;\n}\nnav.globalMenuSp ul li a[data-v-1f42fb90] {\n  display: block;\n  color: #fff;\n  padding: 1em 0;\n  text-decoration :none;\n}\n\n/* nav.globalMenuSp.active {\n  opacity: 100;\n  display: inline-block;\n\n} */\n@media (max-width: 670px)\n{\n.nav_link[data-v-1f42fb90]{\n    display: none;\n}\n.hamburger[data-v-1f42fb90]{\n    z-index : 3;\n    display: block;\n}\nnav.globalMenuSp.active[data-v-1f42fb90]{\n    display: flex;\n    align-items: center;\n}\n}\n\n", ""]);
+exports.push([module.i, "\na[data-v-1f42fb90] {\n  text-decoration: none;\n  color: white !important;\n  font-size: 20px;\n}\na + a[data-v-1f42fb90] {\n  margin-left: 20px;\n}\n.header[data-v-1f42fb90] {\n  background-color: rgba(0, 0, 0, 0);\n}\n.logo[data-v-1f42fb90] {\n  opacity: 1;\n  color: white;\n  font-size: 30px;\n  font-weight: bold;\n  font-family: \"Noto Serif JP\";\n}\n\n/*ハンバーガーボタン*/\n.hamburger[data-v-1f42fb90] {\n  /* display : block;\n  position: fixed;\n  z-index : 3;\n  right : 13px;\n  top   : 12px;\n  width : 42px;\n  height: 42px;\n  cursor: pointer;\n  text-align: center; */\n  z-index: 3;\n  position: relative;\n  width: 36px;\n  height: 32px;\n  cursor: pointer;\n  /* top   : 12px; */\n  right: 13px;\n  display: none;\n\n  /* padding:2px 0; */\n}\n.hamburger span[data-v-1f42fb90] {\n  /* display : block;\n  position: absolute;\n  width   : 30px;\n  height  : 2px ;\n  left    : 6px;\n  background : #555;\n  -webkit-transition: 0.3s ease-in-out;\n  -moz-transition   : 0.3s ease-in-out;\n  transition        : 0.3s ease-in-out; */\n  position: absolute;\n  left: 0;\n  width: 100%;\n  height: 2px;\n  background-color: white;\n  border-radius: 4px;\n}\n.hamburger[data-v-1f42fb90],\n.hamburger span[data-v-1f42fb90] {\n  transition: all 0.5s;\n  box-sizing: border-box;\n}\n.hamburger span[data-v-1f42fb90]:nth-child(1) {\n  /* top: 10px; */\n  top: 0;\n}\n.hamburger span[data-v-1f42fb90]:nth-child(2) {\n  /* top: 20px; */\n  top: 15px;\n}\n.hamburger span[data-v-1f42fb90]:nth-child(3) {\n  /* top: 30px; */\n  bottom: 0;\n}\n\n/* ナビ開いてる時のボタン */\n.hamburger.active[data-v-1f42fb90] {\n  transform: rotate(360deg);\n}\n.hamburger.active span[data-v-1f42fb90]:nth-child(1) {\n  transform: translateY(15px) rotate(-45deg);\n}\n.hamburger.active span[data-v-1f42fb90]:nth-child(2) {\n  transform: translateY(0) rotate(45deg);\n}\n.hamburger.active span[data-v-1f42fb90]:nth-child(3) {\n  opacity: 0;\n}\nnav.globalMenuSp[data-v-1f42fb90] {\n  position: fixed;\n  z-index: 2;\n  top: 0;\n  left: 0;\n  color: #fff;\n  background: black;\n  text-align: center;\n  width: 100%;\n  /* opacity: 0; */\n  display: none;\n  min-height: 100vh;\n  /* transition: opacity .6s ease, visibility .6s ease; */\n}\nnav.globalMenuSp ul[data-v-1f42fb90] {\n  margin: 0 auto;\n  padding: 0;\n  width: 100%;\n}\nnav.globalMenuSp ul li[data-v-1f42fb90] {\n  list-style-type: none;\n  padding: 0;\n  width: 100%;\n  /* transition: .4s all; */\n}\nnav.globalMenuSp ul li[data-v-1f42fb90]:last-child {\n  padding-bottom: 0;\n}\nnav.globalMenuSp ul li.link[data-v-1f42fb90]:hover {\n  background: #ddd;\n}\nnav.globalMenuSp ul li a[data-v-1f42fb90] {\n  display: block;\n  color: #fff;\n  padding: 1em 0;\n  text-decoration: none;\n}\n\n/* nav.globalMenuSp.active {\n  opacity: 100;\n  display: inline-block;\n\n} */\n@media (max-width: 670px) {\n.nav_link[data-v-1f42fb90] {\n    display: none;\n}\n.hamburger[data-v-1f42fb90] {\n    z-index: 3;\n    display: block;\n}\nnav.globalMenuSp.active[data-v-1f42fb90] {\n    display: flex;\n    align-items: center;\n}\n}\n", ""]);
 
 // exports
 
@@ -40682,7 +40593,7 @@ var render = function() {
             { attrs: { to: "/" } },
             [
               _c("v-toolbar-title", { staticClass: "logo" }, [
-                _vm._v("\n                YOUR RYOKAN\n            ")
+                _vm._v(" YOUR RYOKAN ")
               ])
             ],
             1
@@ -41475,10 +41386,7 @@ var render = function() {
                     {
                       staticClass: "detail_link",
                       attrs: {
-                        to: {
-                          name: "RyokanDetail",
-                          params: { ryokanId: ryokan.id }
-                        }
+                        to: { name: "RyokanDetail", params: { id: ryokan.id } }
                       }
                     },
                     [
@@ -104189,18 +104097,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Ryokan_RyokanPage_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Ryokan/RyokanPage.vue */ "./resources/js/components/Ryokan/RyokanPage.vue");
 /* harmony import */ var _components_Ryokan_RyokanDetail_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Ryokan/RyokanDetail.vue */ "./resources/js/components/Ryokan/RyokanDetail.vue");
 /* harmony import */ var _components_Kanri_RyokanAdd_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Kanri/RyokanAdd.vue */ "./resources/js/components/Kanri/RyokanAdd.vue");
-<<<<<<< HEAD
-/* harmony import */ var _components_topPage_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/topPage.vue */ "./resources/js/components/topPage.vue");
-/* harmony import */ var _components_Contact_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Contact.vue */ "./resources/js/components/Contact.vue");
-/* harmony import */ var _components_Event_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Event.vue */ "./resources/js/components/Event.vue");
-/* harmony import */ var _components_Kanri_EventRegister_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Kanri/EventRegister.vue */ "./resources/js/components/Kanri/EventRegister.vue");
-=======
 /* harmony import */ var _components_Ryokan_EventDetail_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Ryokan/EventDetail.vue */ "./resources/js/components/Ryokan/EventDetail.vue");
 /* harmony import */ var _components_topPage_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/topPage.vue */ "./resources/js/components/topPage.vue");
 /* harmony import */ var _components_Contact_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Contact.vue */ "./resources/js/components/Contact.vue");
 /* harmony import */ var _components_Event_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Event.vue */ "./resources/js/components/Event.vue");
-/* harmony import */ var _components_EventRegister_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/EventRegister.vue */ "./resources/js/components/EventRegister.vue");
->>>>>>> 3829a3219cf71e6f119c8b61e357bd16bc227439
+/* harmony import */ var _components_Kanri_EventRegister_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Kanri/EventRegister.vue */ "./resources/js/components/Kanri/EventRegister.vue");
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
@@ -104263,22 +104164,16 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
     // 名前付きルートを設定したい場合付与
     name: 'eventRegister',
     // コンポーネントの指定
-<<<<<<< HEAD
-    component: _components_Kanri_EventRegister_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
+    component: _components_Kanri_EventRegister_vue__WEBPACK_IMPORTED_MODULE_9__["default"]
+  }, {
+    // routeのパス設定
+    path: '/EventDetail/:id',
+    // 名前付きルートを設定したい場合付与
+    name: 'RyokanDetail',
+    // コンポーネントの指定
+    component: _components_Ryokan_EventDetail_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+    props: true
   }],
-=======
-    component: _components_EventRegister_vue__WEBPACK_IMPORTED_MODULE_9__["default"]
-  } // {
-  //     // routeのパス設定
-  //     path: '/EventDetail/:id',
-  //     // 名前付きルートを設定したい場合付与
-  //     name: 'RyokanDetail',
-  //     // コンポーネントの指定
-  //     component: EventDetail,
-  //     props: true
-  // },
-  ],
->>>>>>> 3829a3219cf71e6f119c8b61e357bd16bc227439
   scrollBehavior: function scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
