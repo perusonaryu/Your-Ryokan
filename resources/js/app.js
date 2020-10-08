@@ -34,6 +34,8 @@ Vue.use(Vuetify);
 //旅館ページ(RyokanPage)で使う部品
 // Vue.component('RyokanItem', require('./components/Ryokan/RyokanItem.vue').default);
 Vue.component('RyokanForm', require('./components/Ryokan/RyokanForm.vue').default);
+Vue.component('RyokanList', require('./components/Kanri/RyokanList.vue').default);
+Vue.component('RyokanAdd', require('./components/Kanri/RyokanAdd.vue').default);
 
 
 Vue.component('header-component', require('./components/Header.vue').default);
