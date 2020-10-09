@@ -7,13 +7,21 @@ Vue.use(VueRouter);
 
 import RyokanPage from './components/Ryokan/RyokanPage.vue'
 import RyokanDetail from './components/Ryokan/RyokanDetail.vue'
-import RyokanAdd from './components/Kanri/RyokanAdd.vue'
 import EventDetail from './components/Ryokan/EventDetail.vue'
 
 import toppage from './components/topPage.vue'
 import contact from './components/Contact.vue'
 import event from './components/Event.vue'
-import eventRegister from './components/Kanri/EventRegister.vue'
+
+
+//管理画面
+import Login from './components/Login.vue'
+import Register from './components/Register.vue'
+import Dashboard from './components/Kanri/Dashboard.vue'
+import eventRegister from './components//Kanri/EventRegister.vue'
+import RyokanAdd from './components/Kanri/RyokanAdd.vue'
+import Axios from 'axios';
+
 
 
 export default new VueRouter({
@@ -86,14 +94,50 @@ export default new VueRouter({
             component: eventRegister,
             
         },
+        // {
+        //     // routeのパス設定
+        //     path: '/EventDetail/:id',
+        //     // 名前付きルートを設定したい場合付与
+        //     name: 'RyokanDetail',
+        //     // コンポーネントの指定
+        //     component: EventDetail,
+        //     props: true
+        // },
         {
-            // routeのパス設定
-            path: '/EventDetail/:id',
+
+        
+            path: '/login',
             // 名前付きルートを設定したい場合付与
-            name: 'RyokanDetail',
+            name: 'Login',
             // コンポーネントの指定
-            component: EventDetail,
-            props: true
+            component: Login,
+            
+        },
+        {
+
+        
+            path: '/register',
+            // 名前付きルートを設定したい場合付与
+            name: 'Register',
+            // コンポーネントの指定
+            component: Register,
+            
+        },
+        {
+
+        
+            path: '/dashboard',
+            // 名前付きルートを設定したい場合付与
+            name: 'Dashboard',
+            // コンポーネントの指定
+            component: Dashboard,
+            beforeEnter: (to, form, next)=>{
+                axios.get('/authenticated').then(()=>{
+                    next()
+                }).catch(()=>{
+                    return next({name:'Login'})
+                })
+            }
         },
 
 

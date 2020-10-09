@@ -1,20 +1,12 @@
 <template>
-  <div class="ryokan">
-    <!-- <v-row> -->
-    <v-row no-gutters>
-      <!-- <div >  ,-->
-      <v-col
-        md="6"
-        cols="12"
-        v-for="(ryokan, index) in ryokaninfo"
-        :key="ryokan.id"
-        v-if="index === 0 || index === 3"
-      >
-        <router-link
-          class="detail_link"
-          v-bind:to="{ name: 'RyokanDetail', params: { id: ryokan.id } }"
-        >
-          <v-img
+<div class="ryokan">
+  <!-- <v-row> -->
+      <v-row no-gutters  >
+          <!-- <div >  ,-->
+            <v-col md="6" cols="12"   v-for="(ryokan,index) in ryokaninfo" :key="ryokan.id" v-if="index%3===0">
+            <router-link  class="detail_link "  
+            v-bind:to="{name: 'RyokanDetail', params: {ryokanId: ryokan.id}}">
+            <v-img
             class="white--text image align-center"
             align="center"
             height="100%"
@@ -39,17 +31,17 @@
             height="100%"
             width="100%"
             :src="ryokan.ryokan_img"
-          >
-            <p class="ryokan_text">
-              {{ ryokan.ryokan_place }}<br />
-              <span> {{ ryokan.ryokan_name }}</span>
-            </p>
-          </v-img>
-        </router-link>
-      </v-col>
+            >
+            <p class="ryokan_text">{{ryokan.ryokan_place}}<br><span>{{ryokan.ryokan_name}}</span></p>
+            </v-img>
+            </router-link>
+        </v-col> 
+        
+ 
     </v-row>
+  
+</div>    
 
-  </div>
 </template>
 <script>
 export default {
