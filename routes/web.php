@@ -27,12 +27,20 @@ Route::post('/contactadd', 'ContactController@store');
 Route::post('/contactmail','MailSendController@send');
 
 
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return auth()->user();
+});
 
+Route::middleware('auth:sanctum')->get('/authenticated', function (Request $request) {
+    return true;
+});
+
+Route::post('register','RegisterController@register');
+Route::post('login','LoginController@login');
+Route::post('logout','LoginController@logout');
 
 Route::get('/{any}', function () {
     return view('vue');
 })->where('any', '.*');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');

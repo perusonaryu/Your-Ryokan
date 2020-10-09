@@ -132,7 +132,7 @@ export default new VueRouter({
             // コンポーネントの指定
             component: Dashboard,
             beforeEnter: (to, form, next)=>{
-                axios.get('api/authenticated').then(()=>{
+                axios.get('/authenticated').then(()=>{
                     next()
                 }).catch(()=>{
                     return next({name:'Login'})

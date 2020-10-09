@@ -15,7 +15,7 @@ export default {
         }
     },
      mounted(){
-        axios.get('/api/user').then((res)=>{
+        axios.get('/user').then((res)=>{
             this.user = res.data
             
             console.log(res.data);
@@ -25,7 +25,7 @@ export default {
     },
      methods:{
         logout(){
-            axios.post('/api/logout').then(()=>{
+            axios.post('/logout').then(()=>{
             this.$router.push({name:'top-page'});
         })
 
