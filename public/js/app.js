@@ -2290,27 +2290,66 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       user: '',
       message: '' // currentView:'RyokanList',
+      //  clipped: false,
+      //   drawer: true,
+      //   fixed: false,
+      //   items: [
+      //     {
+      //       icon: 'mdi-account',
+      //       title: '管理者一覧',
+      //       to: '/admin'
+      //     },
+      //   ],
+      //   miniVariant: false,
+      //   title: 'Laravel Nuxt Admin'
 
     };
   },
-  mounted: function mounted() {// axios.get('/api/user').then((res)=>{
-    //     this.user = res.data
-    //     console.log(res.data);
-    // }).catch((err)=>{
-    //     console.log(err);
-    // });
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('/api/user').then(function (res) {
+      _this.user = res.data;
+      console.log(res.data);
+    })["catch"](function (err) {
+      console.log(err);
+    });
   },
   methods: {
     logout: function logout() {
-      var _this = this;
+      var _this2 = this;
 
       axios.post('/api/logout').then(function () {
-        _this.$router.push({
+        _this2.$router.push({
           name: 'top-page'
         });
       });
@@ -2601,17 +2640,65 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      ReservationData: ''
+      headers: [{
+        text: 'ID',
+        value: 'id'
+      }, {
+        text: 'お客様名',
+        value: 'name'
+      }, {
+        text: 'メールアドレス',
+        value: 'email'
+      }, {
+        text: '電話番号',
+        value: 'phone'
+      }, {
+        text: '訪問期間',
+        value: 'visit_duration'
+      }, {
+        text: 'お部屋',
+        value: 'room'
+      }, {
+        text: '旅館ID',
+        value: 'ryokan_id'
+      } // {
+      //   text:'削除',
+      //   value:'delete',
+      //   sortable:false
+      // }
+      ],
+      ReservationData: []
     };
   },
+  mounted: function mounted() {
+    this.getReservation();
+  },
   methods: {
-    getRyokanInfo: function getRyokanInfo() {
+    getReservation: function getReservation() {
       var _this = this;
 
-      axios.get('/api/ryokan').then(function (res) {
+      axios.get('/api/reservation').then(function (res) {
         _this.ReservationData = res.data;
         console.log(res.data);
       })["catch"](function (err) {
@@ -3080,9 +3167,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: {
-    ryokanId: String
-  },
+  // props:{
+  //     ryokanId:Number
+  // },
   data: function data() {
     return {
       ryokanitem: "",
@@ -3093,12 +3180,15 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     this.getRyokanItem();
     this.getEventItem();
+    var id = this.$route.params.ryokanId;
+    console.log(this.$route.params.ryokanId);
+    console.log(id);
   },
   methods: {
     getRyokanItem: function getRyokanItem() {
       var _this = this;
 
-      axios.get('/api/ryokan/' + this.ryokanId) //$route.params.id/
+      axios.get('/api/ryokan/' + this.$route.params.ryokanId) //$route.params.id/
       .then(function (res) {
         _this.ryokanitem = res.data;
         console.log(res.data);
@@ -3109,7 +3199,7 @@ __webpack_require__.r(__webpack_exports__);
     getEventItem: function getEventItem() {
       var _this2 = this;
 
-      axios.get('/eventdetail/' + this.ryokanId).then(function (res) {
+      axios.get('/eventdetail/' + this.$route.params.ryokanId).then(function (res) {
         _this2.eventitem = res.data[0]; // this.ryokanitem_name = res.data.ryokan_name;
         // this.ryokanitem_place = res.data.ryokan_place;
 
@@ -3228,6 +3318,7 @@ __webpack_require__.r(__webpack_exports__);
       ReservationRoom: ''
     };
   },
+  props: ['RyokanId'],
   computed: {
     nameErrors: function nameErrors() {
       var errors = [];
@@ -3272,6 +3363,7 @@ __webpack_require__.r(__webpack_exports__);
       data.append("phone", this.phone);
       data.append("visit_duration", this.ReservationDate);
       data.append("room", this.ReservationRoom);
+      data.append("ryokan_id", this.RyokanId);
       axios.post('api/reservation', data).then(function (res) {
         _this.name = "";
         _this.email = "";
@@ -8252,7 +8344,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\na[data-v-61a7c374]{\n    color:white!important;\n    text-decoration: none;\n}\n.footer[data-v-61a7c374]{\n    background-color: black;\n    color:white;\n    padding:30px 0;\n    position: absolute;\n    width:100%;\n    bottom:0;\n    margin-top: 250px;\n}\n.icons i+i[data-v-61a7c374]{\n    margin-left: 10px;\n}\n.text[data-v-61a7c374]{\n    text-align: center;\n}\n.text p[data-v-61a7c374]{\n    text-align: center;\n}\n.text p+p[data-v-61a7c374]{\n    margin-top: 10px;\n}\n", ""]);
+exports.push([module.i, "\na[data-v-61a7c374]{\n    color:white!important;\n    text-decoration: none;\n}\n.footer[data-v-61a7c374]{\n    background-color: black;\n    color:white;\n    padding:30px 0;\n    position: absolute;\n    width:100%;\n    bottom:0;\n}\n.icons i+i[data-v-61a7c374]{\n    margin-left: 10px;\n}\n.text[data-v-61a7c374]{\n    text-align: center;\n}\n.text p[data-v-61a7c374]{\n    text-align: center;\n}\n.text p+p[data-v-61a7c374]{\n    margin-top: 10px;\n}\n", ""]);
 
 // exports
 
@@ -8290,7 +8382,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.aaaa {\n  margin-top: 50px;\n}\n", ""]);
+exports.push([module.i, "\n.aaaa {\n  width: 170px !important;\n}\n.button-link{\n  color: white;\n  font-weight: bold;\n  font-size: 25px;\n  background: black;\n  width: 100%;\n  box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);/*影*/\n  margin: 15px;\n  border-radius: 5px;\n  text-align: center;\n}\n.button-link:hover {/*ホバー時*/\n  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);\n}\n.button{\n  text-decoration: none !important;\n  width: 200px;\n}\n", ""]);
 
 // exports
 
@@ -8404,7 +8496,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.ryokan {\n  margin: 50px 0;\n}\n.detail_link {\n  text-decoration: none !important;\n}\n.ryokan_text {\n  font-family: Noto Serif JP;\n  /* display: flex;\n    justify-content: center;\n    align-items: center; */\n}\n\n/* div.ryokan_card{\n        position: relative;\n        height:500px;\n        text-align: center;\n    }\n    img.ryokan_img{\n        width:100%;\n        height:100%;\n        object-fit:cover;\n    } */\n\n/* .ryokan_text{\n        position: absolute;\n        color: white;\n        font-size: 21px;\n        font-family: serif;\n        font-weight: 500;\n        top: 50%;\n        left: 50%;\n        -ms-transform: translate(-50%,-50%);\n        -webkit-transform: translate(-50%,-50%);\n        transform: translate(-50%,-50%);\n        margin:0;\n        padding:0;\n    } */\n.ryokan_text span {\n  font-size: 30px;\n}\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .ryokan {\n  margin: 50px 0;\n} */\n.detail_link {\n  text-decoration: none !important;\n}\n.ryokan_text {\n  font-family: Noto Serif JP;\n  /* display: flex;\n    justify-content: center;\n    align-items: center; */\n}\n\n/* div.ryokan_card{\n        position: relative;\n        height:500px;\n        text-align: center;\n    }\n    img.ryokan_img{\n        width:100%;\n        height:100%;\n        object-fit:cover;\n    } */\n\n/* .ryokan_text{\n        position: absolute;\n        color: white;\n        font-size: 21px;\n        font-family: serif;\n        font-weight: 500;\n        top: 50%;\n        left: 50%;\n        -ms-transform: translate(-50%,-50%);\n        -webkit-transform: translate(-50%,-50%);\n        transform: translate(-50%,-50%);\n        margin:0;\n        padding:0;\n    } */\n.ryokan_text span {\n  font-size: 30px;\n}\n\n", ""]);
 
 // exports
 
@@ -41295,68 +41387,82 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "div",
-      { staticClass: "aaaa" },
-      [
-        _vm._v("\n    Dashboard "),
-        _c("br"),
-        _vm._v("\n    Name: " + _vm._s(_vm.user.name)),
-        _c("br"),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            on: {
-              click: function($event) {
-                $event.preventDefault()
-                return _vm.logout($event)
-              }
+  return _c(
+    "div",
+    [
+      _c("div", { staticClass: "button-link aaaa" }, [
+        _vm._v("\n   " + _vm._s(_vm.user.name)),
+        _c("br")
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "button-link aaaa",
+          on: {
+            click: function($event) {
+              $event.preventDefault()
+              return _vm.logout($event)
             }
-          },
-          [_vm._v("ログアウト")]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          {
-            staticClass: "button d-flex align-center justify-center",
-            attrs: { to: "/EventList" }
-          },
-          [_c("div", [_vm._v("\n      イベント一覧\n    ")])]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          {
-            staticClass: "button d-flex align-center justify-center",
-            attrs: { to: "/RyokanList" }
-          },
-          [_c("div", [_vm._v("\n     旅館一覧\n    ")])]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          {
-            staticClass: "button d-flex align-center justify-center",
-            attrs: { to: "/RyokanAdd" }
-          },
-          [_c("div", [_vm._v("\n      旅館追加\n    ")])]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          {
-            staticClass: "button d-flex align-center justify-center",
-            attrs: { to: "/RyokanAdd" }
-          },
-          [_c("div", [_vm._v("\n      予約確認\n    ")])]
-        )
-      ],
-      1
-    )
-  ])
+          }
+        },
+        [_vm._v("ログアウト")]
+      ),
+      _vm._v(" "),
+      _c(
+        "router-link",
+        {
+          staticClass: "button d-flex align-center justify-center",
+          attrs: { to: "/EventList" }
+        },
+        [
+          _c("div", { staticClass: "button-link" }, [
+            _vm._v("\n      イベント一覧\n    ")
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "router-link",
+        {
+          staticClass: "button d-flex align-center justify-center",
+          attrs: { to: "/RyokanList" }
+        },
+        [
+          _c("div", { staticClass: "button-link" }, [
+            _vm._v("\n     旅館一覧\n    ")
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "router-link",
+        {
+          staticClass: "button d-flex align-center justify-center",
+          attrs: { to: "/RyokanAdd" }
+        },
+        [
+          _c("div", { staticClass: "button-link" }, [
+            _vm._v("\n      旅館追加\n    ")
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "router-link",
+        {
+          staticClass: "button d-flex align-center justify-center",
+          attrs: { to: "/ReservationList" }
+        },
+        [
+          _c("div", { staticClass: "button-link" }, [
+            _vm._v("\n      予約確認\n    ")
+          ])
+        ]
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -41691,7 +41797,38 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n" + _vm._s(_vm.ReservationData) + "\n")])
+  return _c(
+    "div",
+    [
+      _c(
+        "v-container",
+        [
+          _c("h1", { staticStyle: { "text-align": "center" } }, [
+            _vm._v("御予約状況")
+          ]),
+          _vm._v(" "),
+          _c(
+            "v-row",
+            [
+              _c(
+                "v-col",
+                { attrs: { cols: "12" } },
+                [
+                  _c("v-data-table", {
+                    attrs: { headers: _vm.headers, items: _vm.ReservationData }
+                  })
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -42621,7 +42758,9 @@ var render = function() {
       _c(
         "v-col",
         { staticClass: "form", attrs: { md: "6", cols: "10" } },
-        [_c("RyokanForm")],
+        [
+          _c("RyokanForm", { attrs: { RyokanId: this.$route.params.ryokanId } })
+        ],
         1
       )
     ],
@@ -42864,7 +43003,10 @@ var render = function() {
                     {
                       staticClass: "detail_link",
                       attrs: {
-                        to: { name: "RyokanDetail", params: { id: ryokan.id } }
+                        to: {
+                          name: "RyokanDetail",
+                          params: { ryokanId: ryokan.id }
+                        }
                       }
                     },
                     [

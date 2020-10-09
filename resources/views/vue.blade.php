@@ -18,7 +18,7 @@
     }
 
     .content{
-      margin-bottom:250px;
+      margin-bottom:232px;
       height:100%;
     }
 

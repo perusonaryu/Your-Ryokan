@@ -36,7 +36,7 @@ class ContactController extends Controller
         $contact->save();
 
         
-        Mail::to('perusonaryu1127@gmail.com')->send(new ContactMail($data));
+        Mail::to('shinhaaa22@gmail.com')->send(new ContactMail($data));
     }
 
 }

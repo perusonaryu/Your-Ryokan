@@ -80,7 +80,6 @@ a{
     position: absolute;
     width:100%;
     bottom:0;
-    margin-top: 250px;
     
 }
 
