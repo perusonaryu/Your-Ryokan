@@ -42,6 +42,14 @@
 
     </v-app>
   </div>
-  <script src="{{mix('js/app.js')}}"></script>
+  @if(config('app.env') === 'local')
+    <script src="{{mix('js/app.js')}}"></script>
+
+  @elseif(config('app.env') === 'production')
+    <script src="your-ryokan/js/app.js"></script>
+  @endif
+
+
+  
 </body>
 </html>
