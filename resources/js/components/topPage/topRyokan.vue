@@ -13,7 +13,7 @@
           <router-link 
           :to="{
             name: 'RyokanDetail',
-            params: { id: ryokan.id }
+            params: { ryokanId: ryokan.id }
           }"
           >
             <v-img

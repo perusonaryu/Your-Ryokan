@@ -3642,79 +3642,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -8631,7 +8558,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\na[data-v-77a464bb]{\n    text-decoration: none;\n    color:white!important;\n}\n.event[data-v-77a464bb]{\n    margin: 60px 0 60px;\n}\n.tit[data-v-77a464bb]{\n    text-align: center;\n    margin-bottom: 40px;\n}\n.event-card[data-v-77a464bb]{\n    padding:0;\n    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);\n    border-radius: 3px;\n}\n.event-card[data-v-77a464bb]{\n    margin-left: 10px;\n}\n.card-wrap[data-v-77a464bb]{\n    padding:5px;\n}\n.card-wrap p[data-v-77a464bb]{\n    color:#666666;\n    margin: 0;\n}\n.v-card__actions a[data-v-77a464bb]{\n    width:100%;\n    text-decoration: none;\n    color:black;\n    background-color: #eeeeee;\n}\n.v-card__text[data-v-77a464bb]{\n    padding:0 16px ;\n}\n.detail_btn[data-v-77a464bb]{\n    color:black;\n}\n.button[data-v-77a464bb]{\n  width:200px;\n  height: 50px;\n  border-radius:50px;\n  background-color:black;\n  margin:18px auto 0;\n}\n@media (max-width: 670px)\n{\n.event-card[data-v-77a464bb]{\n    margin-left: 0;\n    margin-bottom: 10px;\n}\n}\n\n\n", ""]);
+exports.push([module.i, "\na[data-v-77a464bb] {\n  text-decoration: none;\n  color: white !important;\n}\n.event[data-v-77a464bb] {\n  margin: 60px 0 60px;\n}\n.tit[data-v-77a464bb] {\n  text-align: center;\n  margin-bottom: 40px;\n}\n.event-card[data-v-77a464bb] {\n  padding: 0;\n  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);\n  border-radius: 3px;\n}\n.event-card[data-v-77a464bb] {\n  margin-left: 10px;\n}\n.card-wrap[data-v-77a464bb] {\n  padding: 5px;\n}\n.card-wrap p[data-v-77a464bb] {\n  color: #666666;\n  margin: 0;\n}\n.v-card__actions a[data-v-77a464bb] {\n  width: 100%;\n  text-decoration: none;\n  color: black;\n  background-color: #eeeeee;\n}\n.v-card__text[data-v-77a464bb] {\n  padding: 0 16px;\n}\n.detail_btn[data-v-77a464bb] {\n  color: black;\n}\n.button[data-v-77a464bb] {\n  width: 200px;\n  height: 50px;\n  border-radius: 50px;\n  background-color: black;\n  margin: 18px auto 0;\n}\n@media (max-width: 670px) {\n.event-card[data-v-77a464bb] {\n    margin-left: 0;\n    margin-bottom: 10px;\n}\n}\n", ""]);
 
 // exports
 
@@ -43264,9 +43191,9 @@ var render = function() {
                         _vm._v(" "),
                         _c("p", [
                           _vm._v(
-                            "\n                        " +
+                            "\n              " +
                               _vm._s(event.event_description) +
-                              "\n                    "
+                              "\n            "
                           )
                         ])
                       ]),
@@ -43288,9 +43215,7 @@ var render = function() {
                             },
                             [
                               _c("div", { staticClass: "detail_btn" }, [
-                                _vm._v(
-                                  "\n                                詳細\n                            "
-                                )
+                                _vm._v("\n                詳細\n              ")
                               ])
                             ]
                           )
@@ -43315,7 +43240,7 @@ var render = function() {
           staticClass: "button d-flex align-center justify-center",
           attrs: { to: "/event" }
         },
-        [_c("div", [_vm._v("\n        イベント一覧\n      ")])]
+        [_c("div", [_vm._v("\n      イベント一覧\n    ")])]
       )
     ],
     1
@@ -43370,7 +43295,7 @@ var render = function() {
                       attrs: {
                         to: {
                           name: "RyokanDetail",
-                          params: { id: ryokan.id }
+                          params: { ryokanId: ryokan.id }
                         }
                       }
                     },
