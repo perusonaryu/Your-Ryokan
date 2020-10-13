@@ -51,7 +51,10 @@ export default {
                 contact_message:this.message,
             })
             .then(response => {
-                console.log('OK');
+                alert('お問い合わせしました！');
+                this.name = '';
+                this.email = '';
+                this.message = '';
             })
             .catch(error => console.log(error));
         }

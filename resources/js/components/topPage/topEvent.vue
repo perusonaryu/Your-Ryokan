@@ -132,7 +132,7 @@ export default {
             axios.get('/eventgettop')
             .then(response => {
                 this.eventsData = response.data;
-                console.log(response.data);
+                // console.log(response.data);
             })
             .catch(error => console.log(error));
         }

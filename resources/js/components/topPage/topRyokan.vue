@@ -135,7 +135,7 @@ export default {
         .then((response) => {
           //   console.log(response.data);
           this.ryokaninfo = response.data;
-          console.log(this.ryokaninfo);
+          // console.log(this.ryokaninfo);
           //   console.log(this.ryokaninfo[0]);
         })
         .catch((err) => {
