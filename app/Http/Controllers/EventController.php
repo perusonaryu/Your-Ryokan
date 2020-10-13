@@ -53,12 +53,17 @@ class EventController extends Controller
         $ryokanEvent->event_title         = request()->event_title;
         $ryokanEvent->event_description         = request()->event_description;
         $ryokanEvent->event_duration         = request()->event_duration;
+        $ryokanEvent->ryokan_id         = request()->ryokan_id;
         // $ryokanEvent->event_img_main         = request()->event_img_main;
         if(request()->event_img_main){
             $file_name = request()->event_img_main->getClientOriginalName();
             request()->event_img_main->storeAs('public/ryokanEventMain/',$file_name);
 
-            $ryokanEvent->event_img_main         = '/storage/ryokanEventMain/'.$file_name; 
+            if(config('app.env') === 'local'){
+                $ryokanEvent->event_img_main     = '/storage/ryokanEventMain/'.$file_name; 
+            }else if(config('app.env') === 'production'){
+                $ryokanEvent->event_img_main     = 'your-ryokan/storage/ryokanEventMain/'.$file_name; 
+            }
         }
         $ryokanEvent->save();
     }

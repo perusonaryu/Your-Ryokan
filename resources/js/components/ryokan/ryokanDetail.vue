@@ -55,7 +55,7 @@
         </v-col>
 
         <v-col md="6" cols="10" class="form">   
-            <RyokanForm/>
+            <RyokanForm :RyokanId="this.$route.params.ryokanId"/>
         </v-col>
     </v-row>
     
@@ -63,23 +63,27 @@
 
 <script>
 export default {
-    props:{
-        ryokanId:String
-    },
+    // props:{
+    //     ryokanId:Number
+    // },
     data(){
         return{
             ryokanitem:"",
             eventitem:"",
             picker: new Date().toISOString().substr(0, 10),
+            
         }
     },
     mounted(){
         this.getRyokanItem();
         this.getEventItem();
+        let id = this.$route.params.ryokanId;
+        console.log(this.$route.params.ryokanId);
+        console.log(id);
     },
     methods: {
         getRyokanItem() {
-            axios.get('/api/ryokan/' + this.ryokanId)//$route.params.id/
+            axios.get('/api/ryokan/' + this.$route.params.ryokanId)//$route.params.id/
             .then( ( res ) => {
                 this.ryokanitem = res.data;
                 console.log(res.data);
@@ -89,7 +93,7 @@ export default {
                 });
         },
         getEventItem() {
-            axios.get('/eventdetail/'+this.ryokanId)
+            axios.get('/eventdetail/'+this.$route.params.ryokanId)
             .then( ( res ) => {
                 this.eventitem = res.data[0];
                 // this.ryokanitem_name = res.data.ryokan_name;

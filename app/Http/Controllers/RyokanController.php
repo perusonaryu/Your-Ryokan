@@ -43,9 +43,13 @@ class RyokanController extends Controller
             $ryokan->ryokan_name = $request->ryokan_name;
             $ryokan->ryokan_region = $request->ryokan_region;
             $ryokan->ryokan_place = $request->ryokan_place;
-            $ryokan->ryokan_img = 'storage/ryokan_images/' . $file_name;//publicにシンボリックリンク
             $ryokan->ryokan_discription = $request->ryokan_discription;
             $ryokan->ryokan_url = $request->ryokan_url;
+            if(config('app.env') === 'local'){
+                $ryokan->ryokan_img = 'storage/ryokan_images/' . $file_name;//publicにシンボリックリンク
+            }else if(config('app.env') === 'production'){
+                $ryokan->ryokan_img = 'your-ryokan/storage/ryokan_images/' . $file_name;//publicにシンボリックリンク
+            }
             $ryokan->save();
 
             return ['success' => '登録しました!'];

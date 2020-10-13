@@ -22,7 +22,7 @@
       </v-col>
       <v-col md="3" cols="12" v-else>
         <router-link
-          v-bind:to="{ name: 'RyokanDetail', params: { id: ryokan.id } }"
+          v-bind:to="{ name: 'RyokanDetail', params: { ryokanId: ryokan.id } }"
           class="detail_link"
         >
           <v-img
@@ -74,9 +74,9 @@ export default {
 };
 </script>
 <style >
-.ryokan {
+/* .ryokan {
   margin: 50px 0;
-}
+} */
 .detail_link {
   text-decoration: none !important;
 }

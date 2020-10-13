@@ -77,6 +77,9 @@
       ReservationDate: '',
       ReservationRoom: '',
     }),
+    props:[
+      'RyokanId'
+    ],
 
     computed: {
       nameErrors () {
@@ -121,6 +124,7 @@
         data.append("phone", this.phone);
         data.append("visit_duration", this.ReservationDate);
         data.append("room", this.ReservationRoom);
+        data.append("ryokan_id", this.RyokanId);
         axios.post('api/reservation',data)
         .then( ( res ) => {
                 this.name = "";
