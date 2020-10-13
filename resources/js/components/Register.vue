@@ -52,7 +52,7 @@ export default {
     },
     methods:{
         save(){
-            axios.post('/api/register',this.form).then(()=>{
+            axios.post('/register',this.form).then(()=>{
                 alert('登録しました！');
             }).catch((error)=>{
                 this.errors = error.response.data.errors;

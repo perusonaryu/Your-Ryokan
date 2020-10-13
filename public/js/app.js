@@ -2736,7 +2736,7 @@ __webpack_require__.r(__webpack_exports__);
     save: function save() {
       var _this = this;
 
-      axios.post('/api/register', this.form).then(function () {
+      axios.post('/register', this.form).then(function () {
         alert('登録しました！');
       })["catch"](function (error) {
         _this.errors = error.response.data.errors;
