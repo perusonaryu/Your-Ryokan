@@ -8175,13 +8175,12 @@ exports.push([module.i, "\n*{\n  box-sizing: border-box;\n}\n.topPage{\n  margin
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n.top-image[data-v-0717af00]{\n    background-image:url(" + escape(__webpack_require__(/*! ../../../../public/img/youjokan_top.jpg */ "./public/img/youjokan_top.jpg")) + ");\n    /* background-image:url('https://your-ryokan.slack.com/files/U019LJJ9J5N/F01BAD9CZ5Z/________________.jpg'); */\n    background-size: cover;\n    background-position: center;\n    min-height:100vh;\n    width:100%;\n}\n.sub-image img[data-v-0717af00]{\n    width:100%;\n    height:350px;\n    border-radius:10px;\n}\n.text[data-v-0717af00]{\n    text-align: center;\n    line-height:3;\n    margin-top: 60px;\n    font-family: 'Noto Serif JP';\n    font-weight:200;\n}\n@media (max-width: 670px)\n{\n.sub-image img[data-v-0717af00]{\n    border-radius:0;\n}\n}\n", ""]);
+exports.push([module.i, "\n.top-image[data-v-0717af00]{\n    background-image:url('http://perusonaryu.sakura.ne.jp/your-ryokan/img/youjokan_top.jpg');\n    /* background-image:url('https://your-ryokan.slack.com/files/U019LJJ9J5N/F01BAD9CZ5Z/________________.jpg'); */\n    background-size: cover;\n    background-position: center;\n    min-height:100vh;\n    width:100%;\n}\n.sub-image img[data-v-0717af00]{\n    width:100%;\n    height:350px;\n    border-radius:10px;\n}\n.text[data-v-0717af00]{\n    text-align: center;\n    line-height:3;\n    margin-top: 60px;\n    font-family: 'Noto Serif JP';\n    font-weight:200;\n}\n@media (max-width: 670px)\n{\n.sub-image img[data-v-0717af00]{\n    border-radius:0;\n}\n}\n", ""]);
 
 // exports
 
@@ -8327,33 +8326,6 @@ function toComment(sourceMap) {
 	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
 
 	return '/*# ' + data + ' */';
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/lib/url/escape.js":
-/*!***************************************************!*\
-  !*** ./node_modules/css-loader/lib/url/escape.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function escape(url) {
-    if (typeof url !== 'string') {
-        return url
-    }
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
 }
 
 
@@ -103434,17 +103406,6 @@ module.exports = function(module) {
 	return module;
 };
 
-
-/***/ }),
-
-/***/ "./public/img/youjokan_top.jpg":
-/*!*************************************!*\
-  !*** ./public/img/youjokan_top.jpg ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/youjokan_top.jpg?d66d5aed6af6db214177dbda8bc477f0";
 
 /***/ }),
 

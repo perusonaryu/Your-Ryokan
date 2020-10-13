@@ -43,7 +43,7 @@ export default {
 <style scoped>
 
 .top-image{
-    background-image:url('../../../../public/img/youjokan_top.jpg');
+    background-image:url('http://perusonaryu.sakura.ne.jp/your-ryokan/img/youjokan_top.jpg');
     /* background-image:url('https://your-ryokan.slack.com/files/U019LJJ9J5N/F01BAD9CZ5Z/________________.jpg'); */
     background-size: cover;
     background-position: center;
