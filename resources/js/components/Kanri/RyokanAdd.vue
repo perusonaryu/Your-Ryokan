@@ -78,6 +78,7 @@ export default {
                     this.$nextTick(function() {
                         this.view = true;
                     });
+                    alert('登録しました！');
                 })
                 .catch(err => {
                     this.message = err;

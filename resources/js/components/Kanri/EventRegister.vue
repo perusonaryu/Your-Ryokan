@@ -48,8 +48,8 @@
 </template>
 
 <script>
-import { validationMixin } from "vuelidate";
-import { required, maxLength, email } from "vuelidate/lib/validators";
+import { validationMixin } from 'vuelidate';
+import { required, maxLength, email } from 'vuelidate/lib/validators';
 
 export default {
   mixins: [validationMixin],
@@ -61,15 +61,18 @@ export default {
     eventDuration: { required },
     eventImage: { required },
   },
+  props: {
+    ryokanId: Number,
+  },
 
   data: () => ({
     // storeName: '',
-    ryokanName: "",
-    eventTitle: "",
-    eventDescription: "",
-    eventDuration: "",
-    eventImage: "",
-    image:[],
+    ryokanName: '',
+    eventTitle: '',
+    eventDescription: '',
+    eventDuration: '',
+    eventImage: '',
+    image: [],
   }),
 
   computed: {
@@ -83,62 +86,68 @@ export default {
     ryokanNameErrors() {
       const errors = [];
       if (!this.$v.ryokanName.$dirty) return errors;
-      !this.$v.ryokanName.required && errors.push("旅館名を入力してください");
+      !this.$v.ryokanName.required && errors.push('旅館名を入力してください');
       return errors;
     },
     eventTitleErrors() {
       const errors = [];
       if (!this.$v.eventTitle.$dirty) return errors;
-      !this.$v.eventTitle.required &&
-        errors.push("イベントのタイトルを入力してください");
+      !this.$v.eventTitle.required && errors.push('イベントのタイトルを入力してください');
       return errors;
     },
     eventDescriptionErrors() {
       const errors = [];
       if (!this.$v.eventDescription.$dirty) return errors;
-      !this.$v.eventDescription.required &&
-        errors.push("イベント詳細を入力してください");
+      !this.$v.eventDescription.required && errors.push('イベント詳細を入力してください');
       return errors;
     },
     eventDurationErrors() {
       const errors = [];
       if (!this.$v.eventDuration.$dirty) return errors;
-      !this.$v.eventDuration.required &&
-        errors.push("イベント期間を入力してください");
+      !this.$v.eventDuration.required && errors.push('イベント期間を入力してください');
       return errors;
     },
   },
-
+mounted(){
+this.getRyokanItem();
+},
   methods: {
     fileSelected(event) {
       this.eventImage = event[0];
       console.log(event[0]);
     },
-    fileRelease(){
-
+    fileRelease() {},
+    getRyokanItem() {
+      axios
+        .get('/api/ryokan/' + this.ryokanId) //$route.params.id/
+        .then(res => {
+          this.ryokanName = res.data.ryokan_name;
+          console.log(res.data.ryokan_name);
+        })
+        .catch(err => {
+          console.log(err);
+        });
     },
-
     eventAdd() {
       let eventData = new FormData();
-      eventData.append("ryokan_name", this.ryokanName);
-      eventData.append("event_title", this.eventTitle);
-      eventData.append("event_description", this.eventDescription);
-      eventData.append("event_duration", this.eventDuration);
-      eventData.append("event_img_main", this.eventImage);
+      eventData.append('ryokan_name', this.ryokanName);
+      eventData.append('event_title', this.eventTitle);
+      eventData.append('event_description', this.eventDescription);
+      eventData.append('event_duration', this.eventDuration);
+      eventData.append('event_img_main', this.eventImage);
+      eventData.append('ryokan_id', this.ryokanId);
 
       axios
-        .post("/eventadd", eventData)
-        .then((response) => {
-          alert("イベントを追加しました！");
+        .post('/eventadd', eventData)
+        .then(response => {
+          alert('イベントを追加しました！');
           this.ryokanName = '';
           this.eventTitle = '';
           this.eventDescription = '';
           this.eventDuration = '';
           this.image = [];
-
-
         })
-        .catch((error) => console.log(error));
+        .catch(error => console.log(error));
     },
   },
 };

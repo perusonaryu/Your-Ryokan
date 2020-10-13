@@ -20,6 +20,9 @@ import Register from './components/Register.vue'
 import Dashboard from './components/Kanri/Dashboard.vue'
 import eventRegister from './components//Kanri/EventRegister.vue'
 import RyokanAdd from './components/Kanri/RyokanAdd.vue'
+import EventList from './components/Kanri/EventList.vue'
+import RyokanList from './components/Kanri/RyokanList.vue'
+import ReservationList from './components/Kanri/ReservationList.vue'
 import Axios from 'axios';
 
 
@@ -87,12 +90,12 @@ export default new VueRouter({
         {
 
         
-            path: '/eventRegister',
+            path: '/eventRegister/:ryokanId',
             // 名前付きルートを設定したい場合付与
             name: 'eventRegister',
             // コンポーネントの指定
             component: eventRegister,
-            
+            props: true
         },
         // {
         //     // routeのパス設定
@@ -138,6 +141,54 @@ export default new VueRouter({
                     return next({name:'Login'})
                 })
             }
+        },
+        {
+
+        
+            path: '/EventList',
+            // 名前付きルートを設定したい場合付与
+            name: 'EventList',
+            // コンポーネントの指定
+            component: EventList,
+            // beforeEnter: (to, form, next)=>{
+            //     axios.get('api/authenticated').then(()=>{
+            //         next()
+            //     }).catch(()=>{
+            //         return next({name:'Login'})
+            //     })
+            // }
+        },
+        {
+
+        
+            path: '/RyokanList',
+            // 名前付きルートを設定したい場合付与
+            name: 'RyokanList',
+            // コンポーネントの指定
+            component: RyokanList,
+            // beforeEnter: (to, form, next)=>{
+            //     axios.get('api/authenticated').then(()=>{
+            //         next()
+            //     }).catch(()=>{
+            //         return next({name:'Login'})
+            //     })
+            // }
+        },
+        {
+
+        
+            path: '/ReservationList',
+            // 名前付きルートを設定したい場合付与
+            name: 'ReservationList',
+            // コンポーネントの指定
+            component: ReservationList,
+            // beforeEnter: (to, form, next)=>{
+            //     axios.get('api/authenticated').then(()=>{
+            //         next()
+            //     }).catch(()=>{
+            //         return next({name:'Login'})
+            //     })
+            // }
         },
 
 
