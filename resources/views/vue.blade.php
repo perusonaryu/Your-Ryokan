@@ -13,7 +13,7 @@
   <style>
     #app{
       overflow: hidden;
-      background-image:url('../../storage/washi.jpg');
+      background-image:url('http://perusonaryu.sakura.ne.jp/your-ryokan/images/washi.jpg');
       position:relative;
     }
 

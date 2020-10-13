@@ -1956,12 +1956,17 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     send: function send() {
+      var _this = this;
+
       axios.post('/contactadd', {
         contact_name: this.name,
         contact_email: this.email,
         contact_message: this.message
       }).then(function (response) {
-        console.log('OK');
+        alert('お問い合わせしました！');
+        _this.name = '';
+        _this.email = '';
+        _this.message = '';
       })["catch"](function (error) {
         return console.log(error);
       });
@@ -3724,8 +3729,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       axios.get('/eventgettop').then(function (response) {
-        _this.eventsData = response.data;
-        console.log(response.data);
+        _this.eventsData = response.data; // console.log(response.data);
       })["catch"](function (error) {
         return console.log(error);
       });
@@ -3880,8 +3884,8 @@ __webpack_require__.r(__webpack_exports__);
 
       axios.get("/topryokan").then(function (response) {
         //   console.log(response.data);
-        _this.ryokaninfo = response.data;
-        console.log(_this.ryokaninfo); //   console.log(this.ryokaninfo[0]);
+        _this.ryokaninfo = response.data; // console.log(this.ryokaninfo);
+        //   console.log(this.ryokaninfo[0]);
       })["catch"](function (err) {
         console.log(err);
       });
