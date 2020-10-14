@@ -3016,6 +3016,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -42307,6 +42308,7 @@ var render = function() {
             _vm._v(" "),
             _c("v-text-field", {
               attrs: {
+                type: "password",
                 color: "black",
                 label: "パスワード",
                 required: "",
@@ -104409,7 +104411,9 @@ try {
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-if (false) {}
+if (true) {
+  window.axios.defaults.baseURL = "http://perusonaryu.sakura.ne.jp/your-ryokan";
+}
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
