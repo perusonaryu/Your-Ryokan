@@ -5,7 +5,7 @@
       <v-row justify="center">
         <v-col
           md="4"
-          col="12"
+          cols="12"
           class="ryokan-image"
           v-for="ryokan in ryokaninfo"
           :key="ryokan.id"
