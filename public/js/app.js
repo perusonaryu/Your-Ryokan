@@ -43286,7 +43286,7 @@ var render = function() {
                 {
                   key: ryokan.id,
                   staticClass: "ryokan-image",
-                  attrs: { md: "4", col: "12" }
+                  attrs: { md: "4", cols: "12" }
                 },
                 [
                   _c(
@@ -104409,9 +104409,7 @@ try {
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-if (true) {
-  window.axios.defaults.baseURL = "http://perusonaryu.sakura.ne.jp/your-ryokan";
-}
+if (false) {}
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
