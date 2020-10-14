@@ -15,6 +15,7 @@
         ></v-text-field>
         <v-text-field
           v-model="form.password"
+          type="password"
           color="black"
           label="パスワード"
           required
