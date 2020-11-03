@@ -15,6 +15,7 @@
       overflow: hidden;
       background-image:url('http://perusonaryu.sakura.ne.jp/your-ryokan/images/washi.jpg');
       position:relative;
+      font-family: "Noto Serif JP";
     }
 
     .content{
