@@ -23,8 +23,10 @@ Route::get('/topryokan','RyokanController@topget');
 
 // コンタクト機能たち
 Route::post('/contactadd', 'ContactController@store');
-
 Route::post('/contactmail','MailSendController@send');
+
+//地名で旅館検索
+Route::get('/placeSerch/{place}','RyokanController@placeSerch');
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

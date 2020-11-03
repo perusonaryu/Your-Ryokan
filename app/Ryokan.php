@@ -8,6 +8,7 @@ class Ryokan extends Model
 {
     //
     protected $fillable = [
+        'id',
         'ryokan_name',
         'ryokan_place',
         'ryokan_img',

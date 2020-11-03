@@ -23,7 +23,7 @@ import RyokanAdd from './components/Kanri/RyokanAdd.vue'
 import EventList from './components/Kanri/EventList.vue'
 import RyokanList from './components/Kanri/RyokanList.vue'
 import ReservationList from './components/Kanri/ReservationList.vue'
-import Axios from 'axios';
+import placeSerchList from './components/placeSerchList.vue'
 
 
 
@@ -190,6 +190,11 @@ export default new VueRouter({
             //     })
             // }
         },
+        {
+            path: '/placeSerchList/:place',
+            name: 'placeSerchList',
+            component: placeSerchList,
+        }
 
 
     ],

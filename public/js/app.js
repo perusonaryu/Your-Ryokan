@@ -3514,6 +3514,68 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/placeSerchList.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/placeSerchList.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      ryokanSerchResult: '',
+      serchPlace: ''
+    };
+  },
+  mounted: function mounted() {
+    this.placeSerchResult();
+  },
+  methods: {
+    placeSerchResult: function placeSerchResult() {
+      var _this = this;
+
+      axios.get('/placeSerch/' + this.$route.params.place).then(function (response) {
+        _this.ryokanSerchResult = response.data;
+        _this.serchPlace = _this.$route.params.place;
+      })["catch"](function (error) {
+        return console.log(error);
+      });
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage.vue?vue&type=script&lang=js& ***!
@@ -3583,7 +3645,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      placeSerch: ''
+    };
+  }
+});
 
 /***/ }),
 
@@ -3676,84 +3760,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -8490,6 +8496,25 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/placeSerchList.vue?vue&type=style&index=0&id=6eb54a72&scoped=true&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/placeSerchList.vue?vue&type=style&index=0&id=6eb54a72&scoped=true&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n*[data-v-6eb54a72] {\n  box-sizing: border-box;\n}\na[data-v-6eb54a72] {\n  text-decoration: none;\n  color: white !important;\n}\n.result[data-v-6eb54a72]{\n    margin-top: 50px;\n}\n.tit[data-v-6eb54a72] {\n  text-align: center;\n  font-size: 48px !important;\n  font-weight: initial;\n  margin-bottom: 20px;\n}\n.image[data-v-6eb54a72] {\n  width: 100%;\n  border-radius: 10px;\n  height: 280px;\n  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);\n}\n.ryokan-name[data-v-6eb54a72] {\n  height: 100%;\n  text-align: center;\n  color: white;\n}\n.ryokan_region[data-v-6eb54a72]{\n    font-size:30px;\n    font-weight:bold;\n}\n.ryokan-image[data-v-6eb54a72] {\n  padding: 5px;\n  border-radius: 10px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css&":
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css& ***!
@@ -8521,7 +8546,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.top-image[data-v-0717af00]{\n    background-image:url('http://perusonaryu.sakura.ne.jp/your-ryokan/img/youjokan_top.jpg');\n    /* background-image:url('https://your-ryokan.slack.com/files/U019LJJ9J5N/F01BAD9CZ5Z/________________.jpg'); */\n    background-size: cover;\n    background-position: center;\n    min-height:100vh;\n    width:100%;\n}\n.sub-image img[data-v-0717af00]{\n    width:100%;\n    height:350px;\n    border-radius:10px;\n}\n.text[data-v-0717af00]{\n    text-align: center;\n    line-height:3;\n    margin-top: 60px;\n    font-family: 'Noto Serif JP';\n    font-weight:200;\n}\n@media (max-width: 670px)\n{\n.sub-image img[data-v-0717af00]{\n    border-radius:0;\n}\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .top-detail{\n    padding-top: 50px;\n} */\n.top-title h1[data-v-0717af00] {\n  /* font-weight: bold; */\n  font-size: 40px;\n}\n.top-image[data-v-0717af00] {\n  background-image: url('http://perusonaryu.sakura.ne.jp/your-ryokan/img/youjokan_top.jpg');\n  /* background-image:url('https://your-ryokan.slack.com/files/U019LJJ9J5N/F01BAD9CZ5Z/________________.jpg'); */\n  background-size: cover;\n  background-position: center;\n  min-height: 100vh;\n  width: 100%;\n}\n.sub-image img[data-v-0717af00] {\n  width: 100%;\n  height: 350px;\n  border-radius: 10px;\n}\n.text[data-v-0717af00] {\n  text-align: center;\n  line-height: 3;\n  margin-top: 60px;\n  font-family: 'Noto Serif JP';\n  font-weight: 200;\n}\n#serch-form[data-v-0717af00] {\n  height: 60px;\n  width: 100%;\n  margin-top: 100px;\n}\n#sbox2[data-v-0717af00] {\n  width: 60%;\n  height: 100%;\n  padding: 0 10px;\n  border-radius: 2px 0 0 2px;\n  outline: 0;\n  background: #eee;\n}\n/*検索ボタン*/\n#sbtn[data-v-0717af00] {\n  width: 70px; /*検索ボタンの横幅*/\n  height: 100%; /*検索ボタンの縦幅*/\n  border-radius: 0 2px 2px 0; /*検索ボタンの角を丸める*/\n  background:black; /*検索ボタンの背景カラー*/\n  border: none; /*検索ボタンの枠線を消す*/\n  color: #fff; /*検索ボタンのテキストカラー*/\n  font-weight: bold; /*検索ボタンのテキスト太字*/\n  font-size: 16px; /*検索ボタンのフォントサイズ*/\n  margin-left: -4px;\n}\n/*検索ボタンマウスオーバー時*/\n#sbtn[data-v-0717af00]:hover {\n    opacity: 0.7; /*検索ボタンマウスオーバー時のフォントカラー*/\n}\n@media (max-width: 670px) {\n.sub-image img[data-v-0717af00] {\n    border-radius: 0;\n}\n}\n", ""]);
 
 // exports
 
@@ -8540,7 +8565,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.v-parallax__image{\n    min-height:100vw;\n    background-size: cover;\n}\n", ""]);
+exports.push([module.i, "\n.v-parallax__image {\n  min-height: 100vw;\n  background-size: cover;\n}\n", ""]);
 
 // exports
 
@@ -8578,7 +8603,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n*[data-v-16fb3602] {\n  box-sizing: border-box;\n}\na[data-v-16fb3602] {\n  text-decoration: none;\n  color: white !important;\n}\n\n/* .ryokan{\n  margin: 60px 150px 0px;\n} */\n.tit[data-v-16fb3602] {\n  text-align: center;\n  font-size: 48px !important;\n  font-weight: initial;\n  margin-bottom: 20px;\n}\n.image[data-v-16fb3602] {\n  width: 100%;\n  border-radius: 10px;\n  height: 280px;\n  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);\n}\n.ryokan-name[data-v-16fb3602] {\n  height: 100%;\n  text-align: center;\n  color: white;\n}\n.ryokan-image[data-v-16fb3602] {\n  padding: 5px;\n\n  border-radius: 10px;\n}\n.button[data-v-16fb3602] {\n  width: 200px;\n  height: 50px;\n  border-radius: 50px;\n  background-color: black;\n  margin: 18px auto 0;\n}\n", ""]);
+exports.push([module.i, "\n*[data-v-16fb3602] {\n  box-sizing: border-box;\n}\na[data-v-16fb3602] {\n  text-decoration: none;\n  color: white !important;\n}\n\n/* .ryokan{\n  margin: 60px 150px 0px;\n} */\n.tit[data-v-16fb3602] {\n  text-align: center;\n  font-size: 48px !important;\n  font-weight: initial;\n  margin-bottom: 20px;\n}\n.image[data-v-16fb3602] {\n  width: 100%;\n  border-radius: 10px;\n  height: 280px;\n  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);\n}\n.ryokan-name[data-v-16fb3602] {\n  height: 100%;\n  text-align: center;\n  color: white;\n}\n.ryokan-image[data-v-16fb3602] {\n  padding: 5px;\n  border-radius: 10px;\n}\n.button[data-v-16fb3602] {\n  width: 200px;\n  height: 50px;\n  border-radius: 50px;\n  background-color: black;\n  margin: 18px auto 0;\n}\n", ""]);
 
 // exports
 
@@ -40104,6 +40129,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/placeSerchList.vue?vue&type=style&index=0&id=6eb54a72&scoped=true&lang=css&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/placeSerchList.vue?vue&type=style&index=0&id=6eb54a72&scoped=true&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./placeSerchList.vue?vue&type=style&index=0&id=6eb54a72&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/placeSerchList.vue?vue&type=style&index=0&id=6eb54a72&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css&":
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage.vue?vue&type=style&index=0&lang=css& ***!
@@ -43007,6 +43062,104 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/placeSerchList.vue?vue&type=template&id=6eb54a72&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/placeSerchList.vue?vue&type=template&id=6eb54a72&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "placeSerchList" },
+    [
+      _c("h2", { staticClass: "text-center result" }, [
+        _vm._v(" " + _vm._s(_vm.serchPlace) + " での検索結果")
+      ]),
+      _vm._v(" "),
+      _c(
+        "v-container",
+        [
+          _c(
+            "v-row",
+            _vm._l(_vm.ryokanSerchResult, function(ryokan) {
+              return _c(
+                "v-col",
+                {
+                  key: ryokan.id,
+                  staticClass: "ryokan-image",
+                  attrs: { md: "4", cols: "12" }
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      attrs: {
+                        to: {
+                          name: "RyokanDetail",
+                          params: { ryokanId: ryokan.id }
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "v-img",
+                        {
+                          staticClass: "image",
+                          attrs: { src: ryokan.ryokan_img }
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "d-flex justify-center align-center ryokan-name"
+                            },
+                            [
+                              _c("div", [
+                                _c("h5", { staticClass: "ryokan_region" }, [
+                                  _vm._v(_vm._s(ryokan.ryokan_region))
+                                ]),
+                                _vm._v(" "),
+                                _c("h4", { staticClass: "ryokan_name" }, [
+                                  _vm._v(_vm._s(ryokan.ryokan_name))
+                                ])
+                              ])
+                            ]
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            }),
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee&":
 /*!**********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage.vue?vue&type=template&id=26dbf5ee& ***!
@@ -43064,7 +43217,77 @@ var render = function() {
     "div",
     { staticClass: "top-detail" },
     [
-      _c("div", { staticClass: "top-image" }),
+      _c(
+        "div",
+        {
+          staticClass:
+            "top-image d-flex justify-center align-center text-center"
+        },
+        [
+          _c("div", { staticClass: "text-white top-title" }, [
+            _c("h1", { staticClass: "mb-15" }, [
+              _vm._v(
+                "クリエイティビティを必要とする遠大ビジネスマンに最適な環境を"
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _c("h1", [_vm._v("Your Ryokan")]),
+            _vm._v(" "),
+            _c("div", { staticClass: "d-flex justify-center align-center" }, [
+              _c(
+                "div",
+                { attrs: { id: "serch-form", method: "get" } },
+                [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.placeSerch,
+                        expression: "placeSerch"
+                      }
+                    ],
+                    attrs: {
+                      id: "sbox2",
+                      type: "text",
+                      placeholder: "地名で探す"
+                    },
+                    domProps: { value: _vm.placeSerch },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.placeSerch = $event.target.value
+                      }
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      attrs: {
+                        to: {
+                          name: "placeSerchList",
+                          params: { place: "" + _vm.placeSerch }
+                        }
+                      }
+                    },
+                    [
+                      _c("input", {
+                        attrs: { id: "sbtn", type: "submit", value: "検索" }
+                      })
+                    ]
+                  )
+                ],
+                1
+              )
+            ])
+          ])
+        ]
+      ),
       _vm._v(" "),
       _c(
         "v-row",
@@ -43072,22 +43295,20 @@ var render = function() {
         [
           _c("v-col", [
             _c("p", { staticClass: "text" }, [
-              _vm._v("\n              旅館を通じて "),
+              _vm._v("\n        旅館を通じて "),
               _c("br"),
-              _vm._v("\n              人々のクリエイティビティを最大化する "),
+              _vm._v("\n        人々のクリエイティビティを最大化する "),
               _c("br"),
-              _vm._v("\n              木曾路はすべて山の中である。 "),
+              _vm._v("\n        木曾路はすべて山の中である。 "),
+              _c("br"),
+              _vm._v("\n        あるところは岨づたいに行く崖の道であり、"),
               _c("br"),
               _vm._v(
-                "\n              あるところは岨づたいに行く崖の道であり、"
+                "\n        あるところは数十間の深さに臨む木曾川の岸であり、 "
               ),
               _c("br"),
               _vm._v(
-                "\n              あるところは数十間の深さに臨む木曾川の岸であり、 "
-              ),
-              _c("br"),
-              _vm._v(
-                "\n              あるところは山の尾をめぐる谷の入り口である。\n          "
+                "\n        あるところは山の尾をめぐる谷の入り口である。\n      "
               )
             ])
           ])
@@ -43119,7 +43340,20 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h1", [
+      _vm._v(
+        "\n        創造性が必要なプロ人材のアウトプットを最大化する\n        "
+      ),
+      _c("br"),
+      _vm._v("\n        短期集中宿泊型サービス\n      ")
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -43317,7 +43551,9 @@ var render = function() {
                             },
                             [
                               _c("div", [
-                                _c("h5", [_vm._v(_vm._s(ryokan.ryokan_place))]),
+                                _c("h5", [
+                                  _vm._v(_vm._s(ryokan.ryokan_region))
+                                ]),
                                 _vm._v(" "),
                                 _c("h4", [_vm._v(_vm._s(ryokan.ryokan_name))])
                               ])
@@ -105750,6 +105986,93 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/placeSerchList.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/components/placeSerchList.vue ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _placeSerchList_vue_vue_type_template_id_6eb54a72_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./placeSerchList.vue?vue&type=template&id=6eb54a72&scoped=true& */ "./resources/js/components/placeSerchList.vue?vue&type=template&id=6eb54a72&scoped=true&");
+/* harmony import */ var _placeSerchList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./placeSerchList.vue?vue&type=script&lang=js& */ "./resources/js/components/placeSerchList.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _placeSerchList_vue_vue_type_style_index_0_id_6eb54a72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./placeSerchList.vue?vue&type=style&index=0&id=6eb54a72&scoped=true&lang=css& */ "./resources/js/components/placeSerchList.vue?vue&type=style&index=0&id=6eb54a72&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _placeSerchList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _placeSerchList_vue_vue_type_template_id_6eb54a72_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _placeSerchList_vue_vue_type_template_id_6eb54a72_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "6eb54a72",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/placeSerchList.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/placeSerchList.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/placeSerchList.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_placeSerchList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./placeSerchList.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/placeSerchList.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_placeSerchList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/placeSerchList.vue?vue&type=style&index=0&id=6eb54a72&scoped=true&lang=css&":
+/*!*************************************************************************************************************!*\
+  !*** ./resources/js/components/placeSerchList.vue?vue&type=style&index=0&id=6eb54a72&scoped=true&lang=css& ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_placeSerchList_vue_vue_type_style_index_0_id_6eb54a72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./placeSerchList.vue?vue&type=style&index=0&id=6eb54a72&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/placeSerchList.vue?vue&type=style&index=0&id=6eb54a72&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_placeSerchList_vue_vue_type_style_index_0_id_6eb54a72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_placeSerchList_vue_vue_type_style_index_0_id_6eb54a72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_placeSerchList_vue_vue_type_style_index_0_id_6eb54a72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_placeSerchList_vue_vue_type_style_index_0_id_6eb54a72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_placeSerchList_vue_vue_type_style_index_0_id_6eb54a72_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/placeSerchList.vue?vue&type=template&id=6eb54a72&scoped=true&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/placeSerchList.vue?vue&type=template&id=6eb54a72&scoped=true& ***!
+  \***********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_placeSerchList_vue_vue_type_template_id_6eb54a72_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./placeSerchList.vue?vue&type=template&id=6eb54a72&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/placeSerchList.vue?vue&type=template&id=6eb54a72&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_placeSerchList_vue_vue_type_template_id_6eb54a72_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_placeSerchList_vue_vue_type_template_id_6eb54a72_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/topPage.vue":
 /*!*********************************************!*\
   !*** ./resources/js/components/topPage.vue ***!
@@ -106142,8 +106465,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Kanri_EventList_vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/Kanri/EventList.vue */ "./resources/js/components/Kanri/EventList.vue");
 /* harmony import */ var _components_Kanri_RyokanList_vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/Kanri/RyokanList.vue */ "./resources/js/components/Kanri/RyokanList.vue");
 /* harmony import */ var _components_Kanri_ReservationList_vue__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/Kanri/ReservationList.vue */ "./resources/js/components/Kanri/ReservationList.vue");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _components_placeSerchList_vue__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/placeSerchList.vue */ "./resources/js/components/placeSerchList.vue");
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
@@ -106291,6 +106613,10 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
     //     })
     // }
 
+  }, {
+    path: '/placeSerchList/:place',
+    name: 'placeSerchList',
+    component: _components_placeSerchList_vue__WEBPACK_IMPORTED_MODULE_16__["default"]
   }],
   scrollBehavior: function scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

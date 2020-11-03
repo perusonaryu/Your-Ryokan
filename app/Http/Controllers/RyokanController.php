@@ -91,6 +91,13 @@ class RyokanController extends Controller
         Ryokan::where('id', $id)->update($update);
     }
 
+    public function placeSerch($place){
+        $shop = Ryokan::where('ryokan_place','like','%'.$place.'%')->orderBy('id','desc')->get();
+
+        // dd($shop);
+        return $shop;
+    }
+
     /**
      * Remove the specified resource from storage.
      *
