@@ -3661,6 +3661,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -3791,22 +3793,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      ryokaninfo: ""
+      ryokaninfo: ''
     };
   },
   mounted: function mounted() {
@@ -3816,7 +3806,7 @@ __webpack_require__.r(__webpack_exports__);
     getRyokanInfo: function getRyokanInfo() {
       var _this = this;
 
-      axios.get("/topryokan").then(function (response) {
+      axios.get('/topryokan').then(function (response) {
         //   console.log(response.data);
         _this.ryokaninfo = response.data; // console.log(this.ryokaninfo);
         //   console.log(this.ryokaninfo[0]);
@@ -8546,7 +8536,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .top-detail{\n    padding-top: 50px;\n} */\n.top-title h1[data-v-0717af00] {\n  /* font-weight: bold; */\n  font-size: 40px;\n}\n.top-image[data-v-0717af00] {\n  background-image: url('http://perusonaryu.sakura.ne.jp/your-ryokan/img/youjokan_top.jpg');\n  /* background-image:url('https://your-ryokan.slack.com/files/U019LJJ9J5N/F01BAD9CZ5Z/________________.jpg'); */\n  background-size: cover;\n  background-position: center;\n  min-height: 100vh;\n  width: 100%;\n}\n.sub-image img[data-v-0717af00] {\n  width: 100%;\n  height: 350px;\n  border-radius: 10px;\n}\n.text[data-v-0717af00] {\n  text-align: center;\n  line-height: 3;\n  margin-top: 60px;\n  font-family: 'Noto Serif JP';\n  font-weight: 200;\n}\n#serch-form[data-v-0717af00] {\n  height: 60px;\n  width: 100%;\n  margin-top: 100px;\n}\n#sbox2[data-v-0717af00] {\n  width: 60%;\n  height: 100%;\n  padding: 0 10px;\n  border-radius: 2px 0 0 2px;\n  outline: 0;\n  background: #eee;\n}\n/*検索ボタン*/\n#sbtn[data-v-0717af00] {\n  width: 70px; /*検索ボタンの横幅*/\n  height: 100%; /*検索ボタンの縦幅*/\n  border-radius: 0 2px 2px 0; /*検索ボタンの角を丸める*/\n  background:black; /*検索ボタンの背景カラー*/\n  border: none; /*検索ボタンの枠線を消す*/\n  color: #fff; /*検索ボタンのテキストカラー*/\n  font-weight: bold; /*検索ボタンのテキスト太字*/\n  font-size: 16px; /*検索ボタンのフォントサイズ*/\n  margin-left: -4px;\n}\n/*検索ボタンマウスオーバー時*/\n#sbtn[data-v-0717af00]:hover {\n    opacity: 0.7; /*検索ボタンマウスオーバー時のフォントカラー*/\n}\n@media (max-width: 670px) {\n.sub-image img[data-v-0717af00] {\n    border-radius: 0;\n}\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .top-detail{\n    padding-top: 50px;\n} */\n.top-title h1[data-v-0717af00] {\n  /* font-weight: bold; */\n  font-size: 40px;\n}\n.top-image[data-v-0717af00] {\n  background-image: url('http://perusonaryu.sakura.ne.jp/your-ryokan/img/youjokan_top.jpg');\n  /* background-image:url('https://your-ryokan.slack.com/files/U019LJJ9J5N/F01BAD9CZ5Z/________________.jpg'); */\n  background-size: cover;\n  background-position: center;\n  min-height: 100vh;\n  width: 100%;\n}\n.sub-image img[data-v-0717af00] {\n  width: 100%;\n  height: 350px;\n  border-radius: 10px;\n}\n.text[data-v-0717af00] {\n  text-align: center;\n  line-height: 3;\n  margin-top: 60px;\n  font-family: 'Noto Serif JP';\n  font-weight: 200;\n}\n#serch-form[data-v-0717af00] {\n  height: 60px;\n  width: 100%;\n  margin-top: 100px;\n}\n#sbox2[data-v-0717af00] {\n  width: 90%;\n  height: 100%;\n  padding: 0 10px;\n  border-radius: 2px 0 0 2px;\n  outline: 0;\n  background: #eee;\n}\n/*検索ボタン*/\n#sbtn[data-v-0717af00] {\n  width: 10%; /*検索ボタンの横幅*/\n  height: 100%; /*検索ボタンの縦幅*/\n  border-radius: 0 2px 2px 0; /*検索ボタンの角を丸める*/\n  background: black; /*検索ボタンの背景カラー*/\n  border: none; /*検索ボタンの枠線を消す*/\n  color: #fff; /*検索ボタンのテキストカラー*/\n  font-weight: bold; /*検索ボタンのテキスト太字*/\n  font-size: 16px; /*検索ボタンのフォントサイズ*/\n  margin-left: -4px;\n}\n/*検索ボタンマウスオーバー時*/\n#sbtn[data-v-0717af00]:hover {\n  opacity: 0.7; /*検索ボタンマウスオーバー時のフォントカラー*/\n}\n@media (max-width: 670px) {\n.sub-image img[data-v-0717af00] {\n    border-radius: 0;\n}\n}\n", ""]);
 
 // exports
 
@@ -8603,7 +8593,26 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n*[data-v-16fb3602] {\n  box-sizing: border-box;\n}\na[data-v-16fb3602] {\n  text-decoration: none;\n  color: white !important;\n}\n\n/* .ryokan{\n  margin: 60px 150px 0px;\n} */\n.tit[data-v-16fb3602] {\n  text-align: center;\n  font-size: 48px !important;\n  font-weight: initial;\n  margin-bottom: 20px;\n}\n.image[data-v-16fb3602] {\n  width: 100%;\n  border-radius: 10px;\n  height: 280px;\n  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);\n}\n.ryokan-name[data-v-16fb3602] {\n  height: 100%;\n  text-align: center;\n  color: white;\n}\n.ryokan-image[data-v-16fb3602] {\n  padding: 5px;\n  border-radius: 10px;\n}\n.button[data-v-16fb3602] {\n  width: 200px;\n  height: 50px;\n  border-radius: 50px;\n  background-color: black;\n  margin: 18px auto 0;\n}\n", ""]);
+exports.push([module.i, "\n*[data-v-16fb3602] {\n  box-sizing: border-box;\n}\na[data-v-16fb3602] {\n  text-decoration: none;\n  color: white !important;\n}\n\n/* .ryokan{\n  margin: 60px 150px 0px;\n} */\n.tit[data-v-16fb3602] {\n  text-align: center;\n  font-size: 48px !important;\n  font-weight: initial;\n  margin-bottom: 20px;\n}\n.image[data-v-16fb3602] {\n  width: 100%;\n  border-radius: 10px;\n  height: 280px;\n  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);\n}\n.ryokan-name[data-v-16fb3602] {\n  height: 100%;\n  text-align: center;\n  color: white;\n}\n.ryokan-name h4[data-v-16fb3602], .ryokan-name h5[data-v-16fb3602]{\n  font-weight:bold;\n}\n.ryokan-image[data-v-16fb3602] {\n  padding: 5px;\n  border-radius: 10px;\n}\n.button[data-v-16fb3602] {\n  width: 200px;\n  height: 50px;\n  border-radius: 50px;\n  background-color: black;\n  margin: 18px auto 0;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage/topRyokan.vue?vue&type=style&index=1&lang=css&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage/topRyokan.vue?vue&type=style&index=1&lang=css& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.v-image__image--cover {\n  filter: brightness(60%);\n}\n", ""]);
 
 // exports
 
@@ -40309,6 +40318,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage/topRyokan.vue?vue&type=style&index=1&lang=css&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topPage/topRyokan.vue?vue&type=style&index=1&lang=css& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./topRyokan.vue?vue&type=style&index=1&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage/topRyokan.vue?vue&type=style&index=1&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -43213,132 +43252,74 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "top-detail" },
-    [
-      _c(
-        "div",
-        {
-          staticClass:
-            "top-image d-flex justify-center align-center text-center"
-        },
-        [
-          _c("div", { staticClass: "text-white top-title" }, [
-            _c("h1", { staticClass: "mb-15" }, [
-              _vm._v(
-                "クリエイティビティを必要とする遠大ビジネスマンに最適な環境を"
-              )
-            ]),
-            _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _c("h1", [_vm._v("Your Ryokan")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "d-flex justify-center align-center" }, [
-              _c(
-                "div",
-                { attrs: { id: "serch-form", method: "get" } },
-                [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.placeSerch,
-                        expression: "placeSerch"
+  return _c("div", { staticClass: "top-detail" }, [
+    _c(
+      "div",
+      {
+        staticClass: "top-image d-flex justify-center align-center text-center"
+      },
+      [
+        _c("div", { staticClass: "text-white top-title" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("h1", [_vm._v("Your Ryokan")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "d-flex justify-center align-center" }, [
+            _c(
+              "div",
+              { attrs: { id: "serch-form", method: "get" } },
+              [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.placeSerch,
+                      expression: "placeSerch"
+                    }
+                  ],
+                  attrs: {
+                    id: "sbox2",
+                    type: "text",
+                    placeholder: "地名で探す"
+                  },
+                  domProps: { value: _vm.placeSerch },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
                       }
-                    ],
+                      _vm.placeSerch = $event.target.value
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
                     attrs: {
-                      id: "sbox2",
-                      type: "text",
-                      placeholder: "地名で探す"
-                    },
-                    domProps: { value: _vm.placeSerch },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.placeSerch = $event.target.value
+                      to: {
+                        name: "placeSerchList",
+                        params: { place: "" + _vm.placeSerch }
                       }
                     }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      attrs: {
-                        to: {
-                          name: "placeSerchList",
-                          params: { place: "" + _vm.placeSerch }
-                        }
-                      }
-                    },
-                    [
-                      _c("input", {
-                        attrs: { id: "sbtn", type: "submit", value: "検索" }
-                      })
-                    ]
-                  )
-                ],
-                1
-              )
-            ])
+                  },
+                  [
+                    _vm.placeSerch.length > 0
+                      ? _c("input", {
+                          attrs: { id: "sbtn", type: "submit", value: "検索" }
+                        })
+                      : _vm._e()
+                  ]
+                )
+              ],
+              1
+            )
           ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "v-row",
-        { attrs: { justify: "center" } },
-        [
-          _c("v-col", [
-            _c("p", { staticClass: "text" }, [
-              _vm._v("\n        旅館を通じて "),
-              _c("br"),
-              _vm._v("\n        人々のクリエイティビティを最大化する "),
-              _c("br"),
-              _vm._v("\n        木曾路はすべて山の中である。 "),
-              _c("br"),
-              _vm._v("\n        あるところは岨づたいに行く崖の道であり、"),
-              _c("br"),
-              _vm._v(
-                "\n        あるところは数十間の深さに臨む木曾川の岸であり、 "
-              ),
-              _c("br"),
-              _vm._v(
-                "\n        あるところは山の尾をめぐる谷の入り口である。\n      "
-              )
-            ])
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "v-row",
-        { attrs: { justify: "center" } },
-        [
-          _c(
-            "v-col",
-            { staticClass: "sub-image", attrs: { md: "4", cols: "12" } },
-            [
-              _c("img", {
-                attrs: {
-                  src:
-                    "https://images.unsplash.com/photo-1504474298956-b1812fe43d92?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjYzNDZ9",
-                  alt: ""
-                }
-              })
-            ]
-          )
-        ],
-        1
-      )
-    ],
-    1
-  )
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -43346,11 +43327,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("h1", [
-      _vm._v(
-        "\n        創造性が必要なプロ人材のアウトプットを最大化する\n        "
-      ),
+      _vm._v("\n        プロ人材のアウトプットを最大化する\n        "),
       _c("br"),
-      _vm._v("\n        短期集中宿泊型サービス\n      ")
+      _vm._v("\n        宿泊サービス\n      ")
     ])
   }
 ]
@@ -104647,9 +104626,7 @@ try {
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-if (true) {
-  window.axios.defaults.baseURL = "http://perusonaryu.sakura.ne.jp/your-ryokan";
-}
+if (false) {}
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
@@ -106364,7 +106341,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _topRyokan_vue_vue_type_template_id_16fb3602_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./topRyokan.vue?vue&type=template&id=16fb3602&scoped=true& */ "./resources/js/components/topPage/topRyokan.vue?vue&type=template&id=16fb3602&scoped=true&");
 /* harmony import */ var _topRyokan_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./topRyokan.vue?vue&type=script&lang=js& */ "./resources/js/components/topPage/topRyokan.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _topRyokan_vue_vue_type_style_index_0_id_16fb3602_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./topRyokan.vue?vue&type=style&index=0&id=16fb3602&scoped=true&lang=css& */ "./resources/js/components/topPage/topRyokan.vue?vue&type=style&index=0&id=16fb3602&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _topRyokan_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./topRyokan.vue?vue&type=style&index=1&lang=css& */ "./resources/js/components/topPage/topRyokan.vue?vue&type=style&index=1&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -106373,7 +106352,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__["default"])(
   _topRyokan_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _topRyokan_vue_vue_type_template_id_16fb3602_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _topRyokan_vue_vue_type_template_id_16fb3602_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -106418,6 +106397,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topRyokan_vue_vue_type_style_index_0_id_16fb3602_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topRyokan_vue_vue_type_style_index_0_id_16fb3602_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topRyokan_vue_vue_type_style_index_0_id_16fb3602_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topRyokan_vue_vue_type_style_index_0_id_16fb3602_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
  /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topRyokan_vue_vue_type_style_index_0_id_16fb3602_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/topPage/topRyokan.vue?vue&type=style&index=1&lang=css&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/topPage/topRyokan.vue?vue&type=style&index=1&lang=css& ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topRyokan_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./topRyokan.vue?vue&type=style&index=1&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topPage/topRyokan.vue?vue&type=style&index=1&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topRyokan_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topRyokan_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topRyokan_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topRyokan_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_topRyokan_vue_vue_type_style_index_1_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

@@ -7,27 +7,29 @@
     </v-parallax> -->
     <div class="top-image d-flex justify-center align-center text-center">
       <div class="text-white top-title">
-        <h1 class="mb-15">クリエイティビティを必要とする遠大ビジネスマンに最適な環境を</h1>
+        <!-- <h1 class="mb-15">クリエイティビティを必要とする遠大ビジネスマンに最適な環境を</h1> -->
         <h1>
-          創造性が必要なプロ人材のアウトプットを最大化する
+          プロ人材のアウトプットを最大化する
           <br />
-          短期集中宿泊型サービス
+          宿泊サービス
         </h1>
         <h1>Your Ryokan</h1>
         <div class="d-flex justify-center align-center">
           <div id="serch-form" method="get">
             <input id="sbox2" v-model="placeSerch" type="text" placeholder="地名で探す" />
-            <router-link :to="{
-                name:'placeSerchList',
-                params:{place:`${placeSerch}`}
-            }">
-                <input id="sbtn" type="submit" value="検索" />
+            <router-link
+              :to="{
+                name: 'placeSerchList',
+                params: { place: `${placeSerch}` },
+              }"
+            >
+              <input v-if="placeSerch.length > 0" id="sbtn" type="submit" value="検索" />
             </router-link>
           </div>
         </div>
       </div>
     </div>
-    <v-row justify="center">
+    <!-- <v-row justify="center">
       <v-col>
         <p class="text">
           旅館を通じて <br />
@@ -46,15 +48,15 @@
           alt=""
         />
       </v-col>
-    </v-row>
+    </v-row> -->
   </div>
 </template>
 
 <script>
 export default {
-    data: () => ({
-        placeSerch:'',
-    })
+  data: () => ({
+    placeSerch: '',
+  }),
 };
 </script>
 
@@ -98,7 +100,7 @@ export default {
 }
 
 #sbox2 {
-  width: 60%;
+  width: 90%;
   height: 100%;
   padding: 0 10px;
   border-radius: 2px 0 0 2px;
@@ -107,10 +109,10 @@ export default {
 }
 /*検索ボタン*/
 #sbtn {
-  width: 70px; /*検索ボタンの横幅*/
+  width: 10%; /*検索ボタンの横幅*/
   height: 100%; /*検索ボタンの縦幅*/
   border-radius: 0 2px 2px 0; /*検索ボタンの角を丸める*/
-  background:black; /*検索ボタンの背景カラー*/
+  background: black; /*検索ボタンの背景カラー*/
   border: none; /*検索ボタンの枠線を消す*/
   color: #fff; /*検索ボタンのテキストカラー*/
   font-weight: bold; /*検索ボタンのテキスト太字*/
@@ -119,7 +121,7 @@ export default {
 }
 /*検索ボタンマウスオーバー時*/
 #sbtn:hover {
-    opacity: 0.7; /*検索ボタンマウスオーバー時のフォントカラー*/
+  opacity: 0.7; /*検索ボタンマウスオーバー時のフォントカラー*/
 }
 
 @media (max-width: 670px) {
