@@ -3,26 +3,17 @@
     <h1 class="tit">旅館</h1>
     <v-container>
       <v-row justify="center">
-        <v-col
-          md="4"
-          cols="12"
-          class="ryokan-image"
-          v-for="ryokan in ryokaninfo"
-          :key="ryokan.id"
-        >
-          <router-link 
-          :to="{
-            name: 'RyokanDetail',
-            params: { ryokanId: ryokan.id }
-          }"
+        <v-col md="4" cols="12" class="ryokan-image" v-for="ryokan in ryokaninfo" :key="ryokan.id">
+          <router-link
+            :to="{
+              name: 'RyokanDetail',
+              params: { ryokanId: ryokan.id },
+            }"
           >
-            <v-img
-              :src="ryokan.ryokan_img"
-              class="image"
-            >
+            <v-img :src="ryokan.ryokan_img" class="image">
               <div class="d-flex justify-center align-center ryokan-name">
                 <div>
-                  <h5>{{ ryokan.ryokan_region}}</h5>
+                  <h5>{{ ryokan.ryokan_region }}</h5>
                   <h4>{{ ryokan.ryokan_name }}</h4>
                 </div>
               </div>
@@ -32,10 +23,7 @@
       </v-row>
     </v-container>
 
-    <router-link
-      to="/RyokanPage"
-      class="button d-flex align-center justify-center"
-    >
+    <router-link to="/RyokanPage" class="button d-flex align-center justify-center">
       <div>旅館一覧</div>
     </router-link>
   </div>
@@ -44,7 +32,7 @@
 <script>
 export default {
   data: () => ({
-    ryokaninfo: "",
+    ryokaninfo: '',
   }),
 
   mounted() {
@@ -53,14 +41,14 @@ export default {
   methods: {
     getRyokanInfo() {
       axios
-        .get("/topryokan")
-        .then((response) => {
+        .get('/topryokan')
+        .then(response => {
           //   console.log(response.data);
           this.ryokaninfo = response.data;
           // console.log(this.ryokaninfo);
           //   console.log(this.ryokaninfo[0]);
         })
-        .catch((err) => {
+        .catch(err => {
           console.log(err);
         });
     },
@@ -102,6 +90,10 @@ a {
   color: white;
 }
 
+.ryokan-name h4 , .ryokan-name h5{
+  font-weight:bold;
+}
+
 .ryokan-image {
   padding: 5px;
   border-radius: 10px;
@@ -113,5 +105,13 @@ a {
   border-radius: 50px;
   background-color: black;
   margin: 18px auto 0;
+}
+</style>
+
+
+
+<style>
+.v-image__image--cover {
+  filter: brightness(60%);
 }
 </style>

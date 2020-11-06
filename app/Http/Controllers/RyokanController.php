@@ -21,7 +21,7 @@ class RyokanController extends Controller
 
     public function topget()
     {
-        $ryokan = Ryokan::orderBy('id','DESC')->take(6)->get();
+        $ryokan = Ryokan::orderBy('id','DESC')->take(3)->get();
         return $ryokan;
     }
 

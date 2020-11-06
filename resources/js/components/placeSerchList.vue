@@ -2,7 +2,7 @@
   <div class="placeSerchList">
       <h2 class="text-center result"> {{ serchPlace }} での検索結果</h2>
     <v-container>
-      <v-row>
+      <v-row >
         <v-col md="4" cols="12" class="ryokan-image" v-for="ryokan in ryokanSerchResult" :key="ryokan.id">
           <router-link
             :to="{
