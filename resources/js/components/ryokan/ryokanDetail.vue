@@ -5,13 +5,13 @@
     <!-- 旅館詳細部分 -->
 
     <v-col md="5" cols="12">
-      <v-img class="white--text image " height="100%" width="100%" :src="ryokanitem.ryokan_img">
+      <v-img class="white--text image " height="300px" width="100%" :src="ryokanitem.ryokan_img">
       </v-img>
     </v-col>
 
     <v-col md="7" cols="12" align-self="center" class="text_content">
       <h1>{{ ryokanitem.ryokan_name }}</h1>
-      <h4>{{ ryokanitem.ryokan_discription }}</h4>
+      <p class="ryokan-description">{{ ryokanitem.ryokan_discription }}</p>
     </v-col>
 
     <!-- 部屋詳細リンク -->
@@ -98,7 +98,7 @@ export default {
 </script>
 
 <style scoped>
-.event-description{
+.event-description , .ryokan-description{
   white-space: pre-wrap !important;
 }
 
@@ -116,7 +116,7 @@ export default {
 }
 
 .event_content{
-    padding:10px;
+    padding:20px;
     font-family: Noto Serif JP;
 }
 

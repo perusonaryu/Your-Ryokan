@@ -10,7 +10,7 @@
               params: { ryokanId: ryokan.id },
             }"
           >
-            <v-img :src="ryokan.ryokan_img" class="image">
+            <v-img :src="ryokan.ryokan_img" class="image top-ryokan-image">
               <div class="d-flex justify-center align-center ryokan-name">
                 <div>
                   <h5>{{ ryokan.ryokan_region }}</h5>
@@ -84,6 +84,8 @@ a {
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
+
+
 .ryokan-name {
   height: 100%;
   text-align: center;
@@ -111,7 +113,7 @@ a {
 
 
 <style>
-.v-image__image--cover {
+.top-ryokan-image .v-image__image--cover {
   filter: brightness(60%);
 }
 </style>

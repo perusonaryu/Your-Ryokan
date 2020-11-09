@@ -13,7 +13,7 @@
 
             <v-card-text class="text--primary">
               <h4 class="mb-2">@{{ event.ryokan_name }}</h4>
-              <h5>{{ event.event_title }}</h5>
+              <h5 class="event-title">{{ event.event_title }}</h5>
               <!-- <p>
                 {{ event.event_description }}
               </p> -->
@@ -75,6 +75,10 @@ a {
 }
 .event {
   margin: 60px 0 60px;
+}
+
+.event-title{
+  font-size:15px;
 }
 
 .tit {
