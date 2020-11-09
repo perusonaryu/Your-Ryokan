@@ -24,9 +24,9 @@
                             <v-card-text class="text--primary">
                             <h4 class="mb-2"> {{event.ryokan_name}} </h4>
                             <h4> {{event.event_title}}</h4>
-                            <p>
+                            <!-- <p>
                                 {{event.event_description}}
-                            </p>
+                            </p> -->
                             </v-card-text>
 
                             <v-card-actions >

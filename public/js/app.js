@@ -2515,6 +2515,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3195,27 +3205,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   // props:{
   //     ryokanId:Number
   // },
   data: function data() {
     return {
-      ryokanitem: "",
-      eventitem: "",
+      ryokanitem: '',
+      eventitem: '',
       picker: new Date().toISOString().substr(0, 10)
     };
   },
@@ -8448,10 +8445,10 @@ exports.push([module.i, "\n.login-form[data-v-6bdc8b8e] {\n  height: 60vh;\n}\n"
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&lang=css&":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&lang=css& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&id=31d1c3b6&scoped=true&lang=css&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&id=31d1c3b6&scoped=true&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8460,7 +8457,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.wrapper{\n    margin:100px 100px\n}\n@media screen and (max-width:960px){\n.wrapper {\n   margin:0px 0px 200px;\n}\n}\n.text_content{\n    padding:50px !important;\n    font-family: Noto Serif JP;\n}\n.text_content p{\n    font-size: 25px;\n}\n.calender,.form{\n    margin: 55px auto ;\n}\n.dapi{\n    width: 300px;\n    margin:0 auto;\n}\n\n", ""]);
+exports.push([module.i, "\n.event-description[data-v-31d1c3b6]{\n  white-space: pre-wrap !important;\n}\n.wrapper[data-v-31d1c3b6] {\n  margin: 100px 100px;\n}\n@media screen and (max-width: 960px) {\n.wrapper[data-v-31d1c3b6] {\n    margin: 0px 0px 200px;\n}\n}\n.text_content[data-v-31d1c3b6] {\n  padding: 50px !important;\n  font-family: Noto Serif JP;\n}\n.event_content[data-v-31d1c3b6]{\n    padding:10px;\n    font-family: Noto Serif JP;\n}\n.calender[data-v-31d1c3b6],\n.form[data-v-31d1c3b6] {\n  margin: 55px auto;\n}\n.dapi[data-v-31d1c3b6] {\n  width: 300px;\n  margin: 0 auto;\n}\n", ""]);
 
 // exports
 
@@ -8574,7 +8571,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\na[data-v-77a464bb] {\n  text-decoration: none;\n  color: white !important;\n}\n.event[data-v-77a464bb] {\n  margin: 60px 0 60px;\n}\n.tit[data-v-77a464bb] {\n  text-align: center;\n  margin-bottom: 40px;\n}\n.event-card[data-v-77a464bb] {\n  padding: 0;\n  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);\n  border-radius: 3px;\n}\n.event-card[data-v-77a464bb] {\n  margin-left: 10px;\n}\n.card-wrap[data-v-77a464bb] {\n  padding: 5px;\n}\n.card-wrap p[data-v-77a464bb] {\n  color: #666666;\n  margin: 0;\n}\n.v-card__actions a[data-v-77a464bb] {\n  width: 100%;\n  text-decoration: none;\n  color: black;\n  background-color: #eeeeee;\n}\n.v-card__text[data-v-77a464bb] {\n  padding: 0 16px;\n}\n.detail_btn[data-v-77a464bb] {\n  color: black;\n}\n.button[data-v-77a464bb] {\n  width: 200px;\n  height: 50px;\n  border-radius: 50px;\n  background-color: black;\n  margin: 18px auto 0;\n}\n@media (max-width: 670px) {\n.event-card[data-v-77a464bb] {\n    margin-left: 0;\n    margin-bottom: 10px;\n}\n}\n", ""]);
+exports.push([module.i, "\na[data-v-77a464bb] {\n  text-decoration: none;\n  color: white !important;\n}\n.event[data-v-77a464bb] {\n  margin: 60px 0 60px;\n}\n.tit[data-v-77a464bb] {\n  text-align: center;\n  margin-bottom: 40px;\n}\n.event-card[data-v-77a464bb] {\n  padding: 0;\n  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);\n  border-radius: 3px;\n}\n.event-card[data-v-77a464bb] {\n  margin-left: 10px;\n}\n.text--primary h6[data-v-77a464bb]{\n  font-weight:bold;\n}\n.card-wrap[data-v-77a464bb] {\n  padding: 5px;\n  height:100%;\n}\n.card-wrap .card-detail[data-v-77a464bb]{\n  height:100%;\n}\n.card-wrap p[data-v-77a464bb] {\n  color: #666666;\n  margin: 0;\n}\n.v-card__actions a[data-v-77a464bb] {\n  width: 100%;\n  text-decoration: none;\n  color: black;\n  background-color: #eeeeee;\n}\n.v-card__text[data-v-77a464bb] {\n  padding: 0 16px;\n}\n.detail_btn[data-v-77a464bb] {\n  color: black;\n}\n.button[data-v-77a464bb] {\n  width: 200px;\n  height: 50px;\n  border-radius: 50px;\n  background-color: black;\n  margin: 18px auto 0;\n}\n@media (max-width: 670px) {\n.event-card[data-v-77a464bb] {\n    margin-left: 0;\n    margin-bottom: 10px;\n}\n}\n", ""]);
 
 // exports
 
@@ -40078,15 +40075,15 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&lang=css&":
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&lang=css& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&id=31d1c3b6&scoped=true&lang=css&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&id=31d1c3b6&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./RyokanDetail.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&lang=css&");
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./RyokanDetail.vue?vue&type=style&index=0&id=31d1c3b6&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&id=31d1c3b6&scoped=true&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -41129,14 +41126,6 @@ var render = function() {
                                   _vm._v(" "),
                                   _c("h4", [
                                     _vm._v(" " + _vm._s(event.event_title))
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("p", [
-                                    _vm._v(
-                                      "\n                                " +
-                                        _vm._s(event.event_description) +
-                                        "\n                            "
-                                    )
                                   ])
                                 ]
                               ),
@@ -41745,7 +41734,8 @@ var render = function() {
         attrs: {
           "error-messages": _vm.ryokanNameErrors,
           label: "旅館名",
-          required: ""
+          required: "",
+          disabled: ""
         },
         on: {
           input: function($event) {
@@ -41787,11 +41777,12 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _c("v-text-field", {
+      _c("v-textarea", {
         attrs: {
           "error-messages": _vm.eventDescriptionErrors,
           label: "イベント詳細",
-          required: ""
+          required: "",
+          autocomplete: "email"
         },
         on: {
           input: function($event) {
@@ -42681,10 +42672,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=template&id=31d1c3b6&":
-/*!**********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=template&id=31d1c3b6& ***!
-  \**********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=template&id=31d1c3b6&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=template&id=31d1c3b6&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -42698,7 +42689,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-row",
-    { staticClass: "wrapper", attrs: { "no-gutters": "" } },
+    { staticClass: "wrapper", attrs: { "no-gutters": "", align: "center" } },
     [
       _c(
         "v-col",
@@ -42725,48 +42716,22 @@ var render = function() {
         [
           _c("h1", [_vm._v(_vm._s(_vm.ryokanitem.ryokan_name))]),
           _vm._v(" "),
-          _c("p", [_vm._v(_vm._s(_vm.ryokanitem.ryokan_discription))])
+          _c("h4", [_vm._v(_vm._s(_vm.ryokanitem.ryokan_discription))])
         ]
       ),
-      _vm._v(" "),
-      _c("v-col", { attrs: { cols: "12" } }, [
-        _c(
-          "p",
-          {
-            staticStyle: {
-              "text-align": "center",
-              "font-size": "30px",
-              "font-family": "Noto Serif JP",
-              margin: "55px auto"
-            }
-          },
-          [
-            _c(
-              "a",
-              {
-                staticStyle: { "text-decoration": "none", color: "black" },
-                attrs: { href: _vm.ryokanitem.ryokan_url }
-              },
-              [
-                _vm._v(
-                  "\n                お部屋の詳細はこちらから\n            "
-                )
-              ]
-            )
-          ]
-        )
-      ]),
       _vm._v(" "),
       _c(
         "v-col",
         {
-          staticClass: "text_content",
+          staticClass: "event_content mt-9",
           attrs: { md: "7", cols: "12", "align-self": "center" }
         },
         [
-          _c("h1", [_vm._v(_vm._s(_vm.eventitem.event_title))]),
+          _c("h3", [_vm._v(_vm._s(_vm.eventitem.event_title))]),
           _vm._v(" "),
-          _c("p", [_vm._v(_vm._s(_vm.eventitem.event_description))])
+          _c("p", { staticClass: "event-description" }, [
+            _vm._v(_vm._s(_vm.eventitem.event_description))
+          ])
         ]
       ),
       _vm._v(" "),
@@ -43378,7 +43343,7 @@ var render = function() {
                 [
                   _c(
                     "v-card",
-                    { staticClass: "mx-auto" },
+                    { staticClass: "mx-auto card-detail" },
                     [
                       _c(
                         "v-img",
@@ -43399,18 +43364,10 @@ var render = function() {
                       _vm._v(" "),
                       _c("v-card-text", { staticClass: "text--primary" }, [
                         _c("h4", { staticClass: "mb-2" }, [
-                          _vm._v(_vm._s(event.ryokan_name))
+                          _vm._v("@" + _vm._s(event.ryokan_name))
                         ]),
                         _vm._v(" "),
-                        _c("h4", [_vm._v(_vm._s(event.event_title))]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "\n              " +
-                              _vm._s(event.event_description) +
-                              "\n            "
-                          )
-                        ])
+                        _c("h5", [_vm._v(_vm._s(event.event_title))])
                       ]),
                       _vm._v(" "),
                       _c(
@@ -105731,9 +105688,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _RyokanDetail_vue_vue_type_template_id_31d1c3b6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RyokanDetail.vue?vue&type=template&id=31d1c3b6& */ "./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=template&id=31d1c3b6&");
+/* harmony import */ var _RyokanDetail_vue_vue_type_template_id_31d1c3b6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RyokanDetail.vue?vue&type=template&id=31d1c3b6&scoped=true& */ "./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=template&id=31d1c3b6&scoped=true&");
 /* harmony import */ var _RyokanDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RyokanDetail.vue?vue&type=script&lang=js& */ "./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _RyokanDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RyokanDetail.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&lang=css&");
+/* empty/unused harmony star reexport *//* harmony import */ var _RyokanDetail_vue_vue_type_style_index_0_id_31d1c3b6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RyokanDetail.vue?vue&type=style&index=0&id=31d1c3b6&scoped=true&lang=css& */ "./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&id=31d1c3b6&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -105745,11 +105702,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _RyokanDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _RyokanDetail_vue_vue_type_template_id_31d1c3b6___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _RyokanDetail_vue_vue_type_template_id_31d1c3b6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _RyokanDetail_vue_vue_type_template_id_31d1c3b6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _RyokanDetail_vue_vue_type_template_id_31d1c3b6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "31d1c3b6",
   null
   
 )
@@ -105775,35 +105732,35 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&lang=css&":
-/*!******************************************************************************************!*\
-  !*** ./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&lang=css& ***!
-  \******************************************************************************************/
+/***/ "./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&id=31d1c3b6&scoped=true&lang=css&":
+/*!******************************************************************************************************************!*\
+  !*** ./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&id=31d1c3b6&scoped=true&lang=css& ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./RyokanDetail.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_style_index_0_id_31d1c3b6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./RyokanDetail.vue?vue&type=style&index=0&id=31d1c3b6&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=style&index=0&id=31d1c3b6&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_style_index_0_id_31d1c3b6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_style_index_0_id_31d1c3b6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_style_index_0_id_31d1c3b6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_style_index_0_id_31d1c3b6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_style_index_0_id_31d1c3b6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
-/***/ "./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=template&id=31d1c3b6&":
-/*!****************************************************************************************!*\
-  !*** ./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=template&id=31d1c3b6& ***!
-  \****************************************************************************************/
+/***/ "./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=template&id=31d1c3b6&scoped=true&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=template&id=31d1c3b6&scoped=true& ***!
+  \****************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_template_id_31d1c3b6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./RyokanDetail.vue?vue&type=template&id=31d1c3b6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=template&id=31d1c3b6&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_template_id_31d1c3b6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_template_id_31d1c3b6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./RyokanDetail.vue?vue&type=template&id=31d1c3b6&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Ryokan/RyokanDetail.vue?vue&type=template&id=31d1c3b6&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_template_id_31d1c3b6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_template_id_31d1c3b6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RyokanDetail_vue_vue_type_template_id_31d1c3b6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

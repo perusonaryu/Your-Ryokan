@@ -4,7 +4,7 @@
     <v-row justify="center">
       <v-col md="3" cols="11" class="event-card" v-for="event in eventsData" :key="event.id">
         <div class="card-wrap">
-          <v-card class="mx-auto">
+          <v-card class="mx-auto card-detail">
             <v-img class="white--text align-end" height="200px" :src="` ${event.event_img_main} `">
               <v-card-title></v-card-title>
             </v-img>
@@ -12,11 +12,11 @@
             <v-card-subtitle class="pb-0 mb-1">From {{ event.event_duration }}</v-card-subtitle>
 
             <v-card-text class="text--primary">
-              <h4 class="mb-2">{{ event.ryokan_name }}</h4>
-              <h4>{{ event.event_title }}</h4>
-              <p>
+              <h4 class="mb-2">@{{ event.ryokan_name }}</h4>
+              <h5>{{ event.event_title }}</h5>
+              <!-- <p>
                 {{ event.event_description }}
-              </p>
+              </p> -->
             </v-card-text>
 
             <v-card-actions>
@@ -92,8 +92,17 @@ a {
   margin-left: 10px;
 }
 
+.text--primary h6{
+  font-weight:bold;
+}
+
 .card-wrap {
   padding: 5px;
+  height:100%;
+}
+
+.card-wrap .card-detail{
+  height:100%;
 }
 
 .card-wrap p {
