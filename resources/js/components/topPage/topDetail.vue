@@ -100,7 +100,7 @@ export default {
 }
 
 #sbox2 {
-  width: 90%;
+  width: 85%;
   height: 100%;
   padding: 0 10px;
   border-radius: 2px 0 0 2px;
