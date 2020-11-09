@@ -5,6 +5,7 @@
       :error-messages="ryokanNameErrors"
       label="旅館名"
       required
+      disabled
       @input="$v.ryokanName.$touch()"
       @blur="$v.ryokanName.$touch()"
     ></v-text-field>
@@ -16,14 +17,23 @@
       @input="$v.eventTitle.$touch()"
       @blur="$v.eventTitle.$touch()"
     ></v-text-field>
-    <v-text-field
+    <!-- <v-text-field
       v-model="eventDescription"
       :error-messages="eventDescriptionErrors"
       label="イベント詳細"
       required
       @input="$v.eventDescription.$touch()"
       @blur="$v.eventDescription.$touch()"
-    ></v-text-field>
+    ></v-text-field> -->
+    <v-textarea
+      v-model="eventDescription"
+      :error-messages="eventDescriptionErrors"
+      label="イベント詳細"
+      required
+      autocomplete="email"
+      @input="$v.eventDescription.$touch()"
+      @blur="$v.eventDescription.$touch()"
+    ></v-textarea>
     <v-text-field
       v-model="eventDuration"
       :error-messages="eventDurationErrors"
