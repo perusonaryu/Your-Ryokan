@@ -8533,7 +8533,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .top-detail{\n    padding-top: 50px;\n} */\n.top-title h1[data-v-0717af00] {\n  /* font-weight: bold; */\n  font-size: 40px;\n}\n.top-image[data-v-0717af00] {\n  background-image: url('http://perusonaryu.sakura.ne.jp/your-ryokan/img/youjokan_top.jpg');\n  /* background-image:url('https://your-ryokan.slack.com/files/U019LJJ9J5N/F01BAD9CZ5Z/________________.jpg'); */\n  background-size: cover;\n  background-position: center;\n  min-height: 100vh;\n  width: 100%;\n}\n.sub-image img[data-v-0717af00] {\n  width: 100%;\n  height: 350px;\n  border-radius: 10px;\n}\n.text[data-v-0717af00] {\n  text-align: center;\n  line-height: 3;\n  margin-top: 60px;\n  font-family: 'Noto Serif JP';\n  font-weight: 200;\n}\n#serch-form[data-v-0717af00] {\n  height: 60px;\n  width: 100%;\n  margin-top: 100px;\n}\n#sbox2[data-v-0717af00] {\n  width: 90%;\n  height: 100%;\n  padding: 0 10px;\n  border-radius: 2px 0 0 2px;\n  outline: 0;\n  background: #eee;\n}\n/*検索ボタン*/\n#sbtn[data-v-0717af00] {\n  width: 10%; /*検索ボタンの横幅*/\n  height: 100%; /*検索ボタンの縦幅*/\n  border-radius: 0 2px 2px 0; /*検索ボタンの角を丸める*/\n  background: black; /*検索ボタンの背景カラー*/\n  border: none; /*検索ボタンの枠線を消す*/\n  color: #fff; /*検索ボタンのテキストカラー*/\n  font-weight: bold; /*検索ボタンのテキスト太字*/\n  font-size: 16px; /*検索ボタンのフォントサイズ*/\n  margin-left: -4px;\n}\n/*検索ボタンマウスオーバー時*/\n#sbtn[data-v-0717af00]:hover {\n  opacity: 0.7; /*検索ボタンマウスオーバー時のフォントカラー*/\n}\n@media (max-width: 670px) {\n.sub-image img[data-v-0717af00] {\n    border-radius: 0;\n}\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .top-detail{\n    padding-top: 50px;\n} */\n.top-title h1[data-v-0717af00] {\n  /* font-weight: bold; */\n  font-size: 40px;\n}\n.top-image[data-v-0717af00] {\n  background-image: url('http://perusonaryu.sakura.ne.jp/your-ryokan/img/youjokan_top.jpg');\n  /* background-image:url('https://your-ryokan.slack.com/files/U019LJJ9J5N/F01BAD9CZ5Z/________________.jpg'); */\n  background-size: cover;\n  background-position: center;\n  min-height: 100vh;\n  width: 100%;\n}\n.sub-image img[data-v-0717af00] {\n  width: 100%;\n  height: 350px;\n  border-radius: 10px;\n}\n.text[data-v-0717af00] {\n  text-align: center;\n  line-height: 3;\n  margin-top: 60px;\n  font-family: 'Noto Serif JP';\n  font-weight: 200;\n}\n#serch-form[data-v-0717af00] {\n  height: 60px;\n  width: 100%;\n  margin-top: 100px;\n}\n#sbox2[data-v-0717af00] {\n  width: 85%;\n  height: 100%;\n  padding: 0 10px;\n  border-radius: 2px 0 0 2px;\n  outline: 0;\n  background: #eee;\n}\n/*検索ボタン*/\n#sbtn[data-v-0717af00] {\n  width: 10%; /*検索ボタンの横幅*/\n  height: 100%; /*検索ボタンの縦幅*/\n  border-radius: 0 2px 2px 0; /*検索ボタンの角を丸める*/\n  background: black; /*検索ボタンの背景カラー*/\n  border: none; /*検索ボタンの枠線を消す*/\n  color: #fff; /*検索ボタンのテキストカラー*/\n  font-weight: bold; /*検索ボタンのテキスト太字*/\n  font-size: 16px; /*検索ボタンのフォントサイズ*/\n  margin-left: -4px;\n}\n/*検索ボタンマウスオーバー時*/\n#sbtn[data-v-0717af00]:hover {\n  opacity: 0.7; /*検索ボタンマウスオーバー時のフォントカラー*/\n}\n@media (max-width: 670px) {\n.sub-image img[data-v-0717af00] {\n    border-radius: 0;\n}\n}\n", ""]);
 
 // exports
 
@@ -104587,9 +104587,7 @@ try {
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-if (true) {
-  window.axios.defaults.baseURL = "http://perusonaryu.sakura.ne.jp/your-ryokan";
-}
+if (false) {}
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
