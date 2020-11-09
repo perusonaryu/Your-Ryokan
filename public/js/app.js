@@ -8457,7 +8457,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.event-description[data-v-31d1c3b6]{\n  white-space: pre-wrap !important;\n}\n.wrapper[data-v-31d1c3b6] {\n  margin: 100px 100px;\n}\n@media screen and (max-width: 960px) {\n.wrapper[data-v-31d1c3b6] {\n    margin: 0px 0px 200px;\n}\n}\n.text_content[data-v-31d1c3b6] {\n  padding: 50px !important;\n  font-family: Noto Serif JP;\n}\n.event_content[data-v-31d1c3b6]{\n    padding:10px;\n    font-family: Noto Serif JP;\n}\n.calender[data-v-31d1c3b6],\n.form[data-v-31d1c3b6] {\n  margin: 55px auto;\n}\n.dapi[data-v-31d1c3b6] {\n  width: 300px;\n  margin: 0 auto;\n}\n", ""]);
+exports.push([module.i, "\n.event-description[data-v-31d1c3b6], .ryokan-description[data-v-31d1c3b6]{\n  white-space: pre-wrap !important;\n}\n.wrapper[data-v-31d1c3b6] {\n  margin: 100px 100px;\n}\n@media screen and (max-width: 960px) {\n.wrapper[data-v-31d1c3b6] {\n    margin: 0px 0px 200px;\n}\n}\n.text_content[data-v-31d1c3b6] {\n  padding: 50px !important;\n  font-family: Noto Serif JP;\n}\n.event_content[data-v-31d1c3b6]{\n    padding:20px;\n    font-family: Noto Serif JP;\n}\n.calender[data-v-31d1c3b6],\n.form[data-v-31d1c3b6] {\n  margin: 55px auto;\n}\n.dapi[data-v-31d1c3b6] {\n  width: 300px;\n  margin: 0 auto;\n}\n", ""]);
 
 // exports
 
@@ -8571,7 +8571,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\na[data-v-77a464bb] {\n  text-decoration: none;\n  color: white !important;\n}\n.event[data-v-77a464bb] {\n  margin: 60px 0 60px;\n}\n.tit[data-v-77a464bb] {\n  text-align: center;\n  margin-bottom: 40px;\n}\n.event-card[data-v-77a464bb] {\n  padding: 0;\n  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);\n  border-radius: 3px;\n}\n.event-card[data-v-77a464bb] {\n  margin-left: 10px;\n}\n.text--primary h6[data-v-77a464bb]{\n  font-weight:bold;\n}\n.card-wrap[data-v-77a464bb] {\n  padding: 5px;\n  height:100%;\n}\n.card-wrap .card-detail[data-v-77a464bb]{\n  height:100%;\n}\n.card-wrap p[data-v-77a464bb] {\n  color: #666666;\n  margin: 0;\n}\n.v-card__actions a[data-v-77a464bb] {\n  width: 100%;\n  text-decoration: none;\n  color: black;\n  background-color: #eeeeee;\n}\n.v-card__text[data-v-77a464bb] {\n  padding: 0 16px;\n}\n.detail_btn[data-v-77a464bb] {\n  color: black;\n}\n.button[data-v-77a464bb] {\n  width: 200px;\n  height: 50px;\n  border-radius: 50px;\n  background-color: black;\n  margin: 18px auto 0;\n}\n@media (max-width: 670px) {\n.event-card[data-v-77a464bb] {\n    margin-left: 0;\n    margin-bottom: 10px;\n}\n}\n", ""]);
+exports.push([module.i, "\na[data-v-77a464bb] {\n  text-decoration: none;\n  color: white !important;\n}\n.event[data-v-77a464bb] {\n  margin: 60px 0 60px;\n}\n.event-title[data-v-77a464bb]{\n  font-size:15px;\n}\n.tit[data-v-77a464bb] {\n  text-align: center;\n  margin-bottom: 40px;\n}\n.event-card[data-v-77a464bb] {\n  padding: 0;\n  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);\n  border-radius: 3px;\n}\n.event-card[data-v-77a464bb] {\n  margin-left: 10px;\n}\n.text--primary h6[data-v-77a464bb]{\n  font-weight:bold;\n}\n.card-wrap[data-v-77a464bb] {\n  padding: 5px;\n  height:100%;\n}\n.card-wrap .card-detail[data-v-77a464bb]{\n  height:100%;\n}\n.card-wrap p[data-v-77a464bb] {\n  color: #666666;\n  margin: 0;\n}\n.v-card__actions a[data-v-77a464bb] {\n  width: 100%;\n  text-decoration: none;\n  color: black;\n  background-color: #eeeeee;\n}\n.v-card__text[data-v-77a464bb] {\n  padding: 0 16px;\n}\n.detail_btn[data-v-77a464bb] {\n  color: black;\n}\n.button[data-v-77a464bb] {\n  width: 200px;\n  height: 50px;\n  border-radius: 50px;\n  background-color: black;\n  margin: 18px auto 0;\n}\n@media (max-width: 670px) {\n.event-card[data-v-77a464bb] {\n    margin-left: 0;\n    margin-bottom: 10px;\n}\n}\n", ""]);
 
 // exports
 
@@ -8609,7 +8609,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.v-image__image--cover {\n  filter: brightness(60%);\n}\n", ""]);
+exports.push([module.i, "\n.top-ryokan-image .v-image__image--cover {\n  filter: brightness(60%);\n}\n", ""]);
 
 // exports
 
@@ -42698,7 +42698,7 @@ var render = function() {
           _c("v-img", {
             staticClass: "white--text image ",
             attrs: {
-              height: "100%",
+              height: "300px",
               width: "100%",
               src: _vm.ryokanitem.ryokan_img
             }
@@ -42716,7 +42716,9 @@ var render = function() {
         [
           _c("h1", [_vm._v(_vm._s(_vm.ryokanitem.ryokan_name))]),
           _vm._v(" "),
-          _c("h4", [_vm._v(_vm._s(_vm.ryokanitem.ryokan_discription))])
+          _c("p", { staticClass: "ryokan-description" }, [
+            _vm._v(_vm._s(_vm.ryokanitem.ryokan_discription))
+          ])
         ]
       ),
       _vm._v(" "),
@@ -43367,7 +43369,9 @@ var render = function() {
                           _vm._v("@" + _vm._s(event.ryokan_name))
                         ]),
                         _vm._v(" "),
-                        _c("h5", [_vm._v(_vm._s(event.event_title))])
+                        _c("h5", { staticClass: "event-title" }, [
+                          _vm._v(_vm._s(event.event_title))
+                        ])
                       ]),
                       _vm._v(" "),
                       _c(
@@ -43475,7 +43479,7 @@ var render = function() {
                       _c(
                         "v-img",
                         {
-                          staticClass: "image",
+                          staticClass: "image top-ryokan-image",
                           attrs: { src: ryokan.ryokan_img }
                         },
                         [
